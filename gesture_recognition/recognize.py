@@ -7,7 +7,9 @@ from datetime import datetime
 from pathlib import Path
 from motion_bridge import GestureDispatcher, RobotClient, load_actions
 
-DEFAULT_MODEL = Path(__file__).resolve().parents[1] / "models" / "YOLOv10x_gestures_openvino_model"
+from robot_config import MODEL, DEVICE_URL, setting
+
+DEFAULT_MODEL = MODEL
 
 ZH = {
     "grabbing": "抓取", "grip": "握持", "holy": "双手合拢",
@@ -187,8 +189,8 @@ def main() -> int:
     parser.add_argument("--imgsz", type=int, default=960, help="inference size, larger helps distant hands")
     parser.add_argument("--stable-frames", type=int, default=3, help="matching frames before output")
     parser.add_argument("--execute", action="store_true", help="send recognized gestures to the verified robot")
-    parser.add_argument("--robot-url", default=None, help="robot LAN HTTP address; or set OTTO_DEVICE_URL")
-    parser.add_argument("--studio-url", default="http://127.0.0.1:8765", help="local composition service")
+    parser.add_argument("--robot-url", default=DEVICE_URL, help="robot LAN HTTP address")
+    parser.add_argument("--studio-url", default=f"http://127.0.0.1:{setting('OTTO_PORT', 8765)}", help="local composition service")
     parser.add_argument("--cooldown", type=float, default=5.0, help="seconds between repeats of the same held gesture")
     parser.add_argument("--no-preview", action="store_true", help="print to terminal without preview window")
     parser.add_argument("--list", action="store_true", help="list actual model classes and exit")

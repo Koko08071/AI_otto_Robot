@@ -1,0 +1,6 @@
+-r web/requirements.txt
+ultralytics>=8.3,<9
+opencv-python>=4.10,<5
+openvino>=2024.6,<2027
+Pillow>=10,<13
+imageio-ffmpeg>=0.5,<1

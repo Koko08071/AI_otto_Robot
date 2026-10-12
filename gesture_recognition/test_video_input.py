@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import Mock
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'studio_video_patch'))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'web'))
 from video_input import VideoInput, StudioMotion
 
 

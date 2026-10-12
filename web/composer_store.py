@@ -9,6 +9,8 @@ import subprocess
 import threading
 import uuid
 import wave
+import sys
+from audio_tools import ffmpeg
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -198,9 +200,9 @@ def _write_audio_meta(item):
     tmp.replace(target)
 
 def _convert_audio(source,identifier,label,origin,old=None,text=None):
-    if not shutil.which('ffmpeg'):raise StoreError('需要安装 ffmpeg 才能转换声音',503)
+    executable=ffmpeg()
     target=AUDIO/(identifier+'-'+uuid.uuid4().hex+'.wav')
-    command=['ffmpeg','-nostdin','-hide_banner','-loglevel','error','-y','-i',str(source),'-map','0:a:0','-vn']
+    command=[executable,'-nostdin','-hide_banner','-loglevel','error','-y','-i',str(source),'-map','0:a:0','-vn']
     if origin=='tts':command+=['-af','highpass=f=180,lowpass=f=3600,tremolo=f=9:d=0.12,acompressor=threshold=0.04:ratio=4:attack=4:release=80:makeup=6,alimiter=limit=0.94:level=0']
     command+=['-ac','1','-ar','24000','-c:a','pcm_s16le',str(target)]
     result=subprocess.run(command,
@@ -241,12 +243,18 @@ def save_audio(stream,length,filename,mime,identifier=None,label=None):
 
 def synthesize_audio(text,label,identifier=None):
     if not isinstance(text,str) or not text.strip() or len(text)>2000:raise StoreError('请输入 1–2000 字的语音文本')
-    if not shutil.which('say'):raise StoreError('本机没有 macOS 语音合成器 say',503)
+    if sys.platform!='win32' and not shutil.which('say'):raise StoreError('此平台暂不支持离线语音合成，请上传音频',503)
     AUDIO.mkdir(parents=True,exist_ok=True)
-    source=AUDIO/(uuid.uuid4().hex+'.aiff')
+    source=AUDIO/(uuid.uuid4().hex+('.wav' if sys.platform=='win32' else '.aiff'))
     try:
-        result=subprocess.run(['say','-v','Eddy (中文（中国大陆）)','-r','190','-o',str(source),text.strip()],
-                              capture_output=True,text=True,timeout=120)
+        if sys.platform=='win32':
+            request=source.with_suffix('.json')
+            request.write_text(json.dumps({'text':text.strip(),'output':str(source.resolve())}),encoding='utf-8')
+            try:
+                result=subprocess.run(['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File',str(ROOT.parent/'tools/windows_tts.ps1'),str(request.resolve())],capture_output=True,text=True,timeout=120)
+            finally:request.unlink(missing_ok=True)
+        else:
+            result=subprocess.run(['say','-v','Eddy (中文（中国大陆）)','-r','190','-o',str(source),text.strip()],capture_output=True,text=True,timeout=120)
         if result.returncode or not source.is_file():raise StoreError('语音合成失败：'+result.stderr.strip())
         with _LOCK:
             old=_audio_meta(identifier) if identifier else None

@@ -10,8 +10,8 @@ import sys
 import threading
 import time
 
-GESTURES = Path(os.environ.get("OTTO_GESTURE_DIR", r"D:\Robot\gesture_recognition"))
-sys.path.insert(0, str(GESTURES))
+GESTURES = Path(__file__).resolve().parents[1] / 'gesture_recognition'
+sys.path.append(str(GESTURES))
 from motion_bridge import GestureDispatcher, load_actions, TARGET_ID
 from recognize import StableGesture, confirmation_frames
 
@@ -81,7 +81,7 @@ class VideoInput:
         if self.infer_override:
             return self.infer_override(jpeg)
         if self.process is None or self.process.poll() is not None:
-            python = GESTURES.parent / "gesture-yolo" / "Scripts" / "python.exe"
+            python = sys.executable
             self.results = queue.Queue()
             self.process = subprocess.Popen(
                 [str(python), str(GESTURES / "video_worker.py")],

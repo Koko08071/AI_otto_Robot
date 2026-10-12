@@ -4,6 +4,10 @@ Preferred capture on macOS is the webpage microphone (browser getUserMedia),
 which posts PCM chunks to the local server. Robot body mic remains available.
 """
 import os
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parents[1] / 'gesture_recognition'))
+from robot_config import local_path
 from http.client import IncompleteRead
 import queue
 import shutil
@@ -12,7 +16,6 @@ import threading
 import time
 import urllib.request
 from urllib.parse import urlparse
-from pathlib import Path
 
 WAKE_WORD = '小黄小黄'
 # Aliases cover Whisper mishears seen in handoff tests (小黃→OpenCC, 小巴, contractions).
@@ -48,6 +51,8 @@ class VoiceListener:
             return dict(self.state)
 
     def start(self, source='browser'):
+        if source == 'computer' and sys.platform != 'darwin':
+            raise ValueError('Windows 请使用网页麦克风或机器人麦克风')
         if source not in SOURCES:
             raise ValueError('未知麦克风来源')
         if source == 'computer' and not shutil.which('ffmpeg'):
@@ -185,9 +190,11 @@ class VoiceListener:
         try:
             import numpy as np
             from faster_whisper import WhisperModel
-            bundled = Path(__file__).resolve().parents[1] / 'voice-model/base'
+            bundled = local_path('OTTO_WHISPER_MODEL','voice-model/base')
+            if not bundled.is_dir():
+                raise RuntimeError('缺少离线语音模型，请运行 tools/download_models.py --kind voice')
             model = WhisperModel(
-                os.environ.get('OTTO_WHISPER_MODEL', str(bundled) if bundled.is_dir() else 'base'),
+                str(bundled),
                 device='cpu', compute_type='int8',
             )
             previous = np.empty(0, dtype=np.float32)

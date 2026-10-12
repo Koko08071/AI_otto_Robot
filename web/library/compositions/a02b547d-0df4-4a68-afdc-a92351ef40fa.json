@@ -3,9 +3,9 @@
   "id": "a02b547d-0df4-4a68-afdc-a92351ef40fa",
   "name": "你是笨蛋",
   "trigger": "你是笨蛋",
-  "revision": 10,
+  "revision": 11,
   "createdAt": "2026-10-10T07:52:04.858330+00:00",
-  "updatedAt": "2026-10-10T13:15:58.157213+00:00",
+  "updatedAt": "2026-10-12T03:45:35.019284+00:00",
   "durationMs": 10350,
   "clipCount": 8,
   "tracks": [
@@ -16,23 +16,23 @@
       "clips": [
         {
           "id": "6e2dddbd-6b2e-458a-8b4c-49076c8f2f8d",
-          "resourceId": "home_complete",
+          "resourceId": "home_complete_p1000",
           "startMs": 0,
-          "durationMs": 375,
+          "durationMs": 1201,
           "muted": false,
           "resourceSnapshot": {
-            "label": "归位 [补全版]",
+            "label": "归位 · 原速补全",
             "revision": 1,
             "kind": "motion",
-            "durationMs": 375,
+            "durationMs": 1201,
             "source": "OttoDIY/OttoDIYLib",
             "program": {
-              "name": "home_complete",
+              "name": "home_complete_p1000",
               "reset_phase_on_repeat": true,
               "segments": [
                 {
                   "type": "move",
-                  "duration": 156,
+                  "duration": 500,
                   "pose": [
                     90,
                     90,
@@ -42,7 +42,7 @@
                 },
                 {
                   "type": "move",
-                  "duration": 156,
+                  "duration": 500,
                   "pose": [
                     90,
                     90,
@@ -57,7 +57,7 @@
                 },
                 {
                   "type": "move",
-                  "duration": 62,
+                  "duration": 200,
                   "pose": [
                     90,
                     90,
@@ -66,7 +66,10 @@
                   ]
                 }
               ]
-            }
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "原速补全"
           }
         },
         {
@@ -172,7 +175,8 @@
             "durationMs": 2520,
             "source": "Espressif Emote Pack / esp_emote_gen_player",
             "preview": "/official/angry_20s.gif"
-          }
+          },
+          "loopCount": 1
         },
         {
           "id": "595b7ebc-c00e-44f5-a83a-5edb0dd1eeea",
@@ -187,7 +191,8 @@
             "durationMs": 3200,
             "source": "Espressif Emote Pack / esp_emote_gen_player",
             "preview": "/official/cry_10s_10s.gif"
-          }
+          },
+          "loopCount": 1
         },
         {
           "id": "f9efc504-057c-4a48-b4e7-46bacb78e34f",
@@ -202,7 +207,8 @@
             "durationMs": 1000,
             "source": "Espressif Emote Pack / esp_emote_gen_player",
             "preview": "/official/smile_static.gif"
-          }
+          },
+          "loopCount": 1
         },
         {
           "id": "283839bf-fb2f-4488-8694-dd8b1a6e07e1",
@@ -217,7 +223,8 @@
             "durationMs": 1000,
             "source": "Espressif Emote Pack / esp_emote_gen_player",
             "preview": "/official/smile_static.gif"
-          }
+          },
+          "loopCount": 1
         }
       ]
     },

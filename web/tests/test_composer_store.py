@@ -81,7 +81,7 @@ class ComposerStoreTests(unittest.TestCase):
 
     def test_mp4_upload_converts_to_wav_and_delete_preserves_saved_file(self):
         source=Path(self.tmp.name)/'test.mp4'
-        subprocess.run(['ffmpeg','-v','error','-f','lavfi','-i','sine=frequency=440:duration=1',
+        subprocess.run([store.ffmpeg(),'-v','error','-f','lavfi','-i','sine=frequency=440:duration=1',
                         '-c:a','aac','-y',str(source)],check=True)
         data=source.read_bytes()
         item=store.save_audio(io.BytesIO(data),len(data),'test.mp4','video/mp4')
@@ -147,4 +147,3 @@ class ComposerStoreTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-

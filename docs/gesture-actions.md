@@ -7,7 +7,8 @@
 | 手势枪 | `finger_gun` | 中弹侧倒并保持倒地 |
 | 拳头 | `fist` | 后退 |
 | OK | `ok` | 返回站姿 |
-| 张开手掌 / Stop | `stop` | 停止当前动作 |
+| V 手势（含反向） | `peace` / `peace_inverted` | 前进 |
+| Stop | `stop` | 停止当前动作 |
 | 双手比心 | `heart` | 播放“爱你”组合 |
 | 小拇指 | `little_finger` | 播放“你是笨蛋”组合 |
 | 中指 | `middle_finger` | 播放“你是笨蛋”组合 |

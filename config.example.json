@@ -1,0 +1,8 @@
+{
+  "OTTO_DEVICE_URL": "http://otto.local",
+  "OTTO_DEVICE_ID": "14c19f300e70",
+  "OTTO_BLE_NAME": "Otto-0E70",
+  "OTTO_GESTURE_MODEL": "models/YOLOv10x_gestures_openvino_model",
+  "OTTO_WHISPER_MODEL": "voice-model/base",
+  "OTTO_PORT": 8765
+}

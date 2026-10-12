@@ -8,6 +8,7 @@ models/
 voice-model/
 web/library/audio/
 web/library/_backups/
+web/behaviors/
 *.pt
 *.onnx
 *.bin
@@ -16,10 +17,11 @@ web/library/_backups/
 
 # Device-specific configuration and logs
 .env
+config.local.json
+*.zip
 *.log
 logs/
 
 # Build output
 firmware/build/
 firmware/managed_components/
-

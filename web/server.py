@@ -15,6 +15,9 @@ import wave
 from pathlib import Path
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlparse, unquote, parse_qs
+import sys
+sys.path.append(str(Path(__file__).resolve().parents[1] / 'gesture_recognition'))
+from robot_config import DEVICE_URL, TARGET_ID, setting
 from ble_link import BleTransport
 from composer_store import StoreError, resource_catalog, list_compositions, get_composition, save_composition, delete_composition, save_audio, synthesize_audio, update_audio, delete_audio, audio_file, match_voice_trigger
 from voice_trigger import CHUNK_BYTES, VoiceListener
@@ -85,8 +88,8 @@ def validate_program(raw):
 class RobotLink:
     def __init__(self):
         self.mode='ble'; self.ble=BleTransport(); self.lock=threading.RLock()
-        self.url=os.environ.get('OTTO_DEVICE_URL','http://10.240.103.49').rstrip('/')
-        self.urls=list(dict.fromkeys((self.url,'http://10.240.103.49','http://192.168.1.183')))
+        self.url=DEVICE_URL
+        self.urls=[self.url]
         self.connected=False; self.last_pose=dict(STAND); self.last_error=None
     def request(self,path,body=None):
         try:
@@ -141,7 +144,7 @@ class RobotLink:
                     except RequestError:
                         if mode=='wifi':continue
                         raise
-                    if info.get('device_id','').replace(':','').lower()!='14c19f300e70':
+                    if info.get('device_id','').replace(':','').lower()!=TARGET_ID:
                         if mode=='ble':self.ble.disconnect()
                         if mode=='wifi':continue
                         raise RequestError('目标机器人身份不匹配',409)
@@ -172,7 +175,7 @@ class RobotLink:
         try:
             with urllib.request.urlopen(self.url+'/api/status',timeout=4) as response:
                 status=json.load(response)
-            if status.get('device_id','').replace(':','').lower()!='14c19f300e70':
+            if status.get('device_id','').replace(':','').lower()!=TARGET_ID:
                 raise RequestError('Wi-Fi 地址不是这台 Otto 机器人',409)
             if not status.get('audio_available'):
                 raise RequestError('机器人固件尚未提供扬声器播放，请先刷入音频固件',409)
@@ -302,7 +305,8 @@ class Handler(BaseHTTPRequestHandler):
             return value
         except (ValueError,UnicodeDecodeError):raise RequestError('请求需要 JSON 对象')
     def handle_request(self,method):
-        if self.headers.get('Host') not in ('127.0.0.1:8765','localhost:8765'):raise RequestError('只接受本机地址',403)
+        port=self.server.server_port
+        if self.headers.get('Host') not in (f'127.0.0.1:{port}',f'localhost:{port}'):raise RequestError('只接受本机地址',403)
         path=unquote(urlparse(self.path).path)
         if method=='GET':
             if path=='/api/status':return self.reply(LINK.status())
@@ -424,5 +428,6 @@ class Handler(BaseHTTPRequestHandler):
         print('[http] '+fmt%args)
 
 if __name__=='__main__':
-    print('Otto Studio · BLE / Wi-Fi · http://127.0.0.1:8765')
-    ThreadingHTTPServer(('127.0.0.1',8765),Handler).serve_forever()
+    port=int(setting('OTTO_PORT',8765))
+    print(f'Otto Studio · BLE / Wi-Fi · http://127.0.0.1:{port}')
+    ThreadingHTTPServer(('127.0.0.1',port),Handler).serve_forever()

@@ -49,5 +49,18 @@
         {"type": "move", "duration": 1200, "pose": [90, 90, 100, 90]}
       ]
     }
+  },
+  "forward": {
+    "label": "前进",
+    "program": {
+      "name": "walk_complete_p500",
+      "reset_phase_on_repeat": true,
+      "segments": [
+        {"type": "move", "duration": 250, "pose": [90, 90, 100, 90]},
+        {"type": "move", "duration": 100, "pose": [90, 90, 114, 106]},
+        {"type": "oscillate", "duration": 2000, "period": 500, "amplitude": [30, 30, 20, 20], "offset": [0, 0, 4, -4], "phase": [0, 0, 90, 90]},
+        {"type": "move", "duration": 100, "pose": [90, 90, 100, 90]}
+      ]
+    }
   }
 }

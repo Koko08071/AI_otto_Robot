@@ -4,6 +4,10 @@ import json
 import threading
 import time
 from bleak import BleakClient, BleakScanner
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parents[1] / 'gesture_recognition'))
+from robot_config import BLE_NAME
 
 SERVICE = '6e400001-b5a3-f393-e0a9-e50e24dcca9e'
 RX = '6e400002-b5a3-f393-e0a9-e50e24dcca9e'
@@ -36,10 +40,10 @@ class BleTransport:
         if self.client and self.client.is_connected:
             return
         device = await BleakScanner.find_device_by_filter(
-            lambda d, a: a.local_name == 'Otto-0E70' and SERVICE in a.service_uuids,
+            lambda d, a: a.local_name == BLE_NAME and SERVICE in a.service_uuids,
             timeout=10, service_uuids=[SERVICE])
         if not device:
-            raise RuntimeError('未发现 Otto-0E70，请确认机器人已开机、电脑蓝牙已开启')
+            raise RuntimeError(f'未发现 {BLE_NAME}，请确认机器人已开机、电脑蓝牙已开启')
         self.client = BleakClient(device, timeout=12, disconnected_callback=self._on_disconnected)
         await self.client.connect()
         self.last_disconnect = None

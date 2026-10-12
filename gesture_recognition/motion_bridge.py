@@ -7,7 +7,7 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-TARGET_ID = "14c19f300e70"
+from robot_config import TARGET_ID
 DEFAULT_ACTIONS = Path(__file__).with_name("gesture_actions.json")
 
 
@@ -109,7 +109,9 @@ class GestureDispatcher:
         now = time.monotonic() if now is None else now
         gestures = tuple(sorted({
             "heart" if g in ("hand_heart", "hand_heart2")
-            else "little_finger" if g in ("pinkie", "middle_finger", "mid.finger", "mid_finger") else g for g in gestures
+            else "little_finger" if g in ("pinkie", "middle_finger", "mid.finger", "mid_finger")
+            else "forward" if g in ("peace", "peace_inverted") else g
+            for g in gestures
         }))
         if "stop" in gestures:
             if self.stop_held:

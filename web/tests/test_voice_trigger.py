@@ -70,7 +70,7 @@ class VoiceTriggerTests(unittest.TestCase):
                 link=Link()
                 listener=VoiceListener(link,runner,lambda:[{'id':'dance','name':'跳舞','trigger':'跳舞'}],
                                        lambda text,items:items[0] if '跳舞' in text else None)
-                with patch.dict(sys.modules,{'faster_whisper':types.SimpleNamespace(WhisperModel=Model)}):
+                with patch('voice_trigger.Path.is_dir', return_value=True), patch.dict(sys.modules,{'faster_whisper':types.SimpleNamespace(WhisperModel=Model)}):
                     listener.state['listening']=True
                     worker=threading.Thread(target=listener._listen,args=(listener.cancel,listener.chunks))
                     worker.start()

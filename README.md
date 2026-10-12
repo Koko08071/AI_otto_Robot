@@ -17,6 +17,10 @@ firmware/              ESP32-S3 / ESP-IDF 固件源码
 web/                   本地网页控制台、多轨编排器与资源库
 gesture_recognition/   摄像头手势识别和手势到动作映射
 docs/                  硬件、通信、动作和维护文档
+tools/                 模型下载、环境检查、资源迁移和 Windows 语音合成
+models/                本地手势模型（下载生成，不提交）
+voice-model/           本地语音模型（下载生成，不提交）
+.venv/                 本项目 Python 环境（安装生成，不提交）
 ```
 
 ## 按功能找文件
@@ -45,15 +49,18 @@ docs/                  硬件、通信、动作和维护文档
 
 ## 快速启动网页控制台
 
-Windows PowerShell：
+Windows 需先安装 Python 3.12。在下载的仓库根目录打开 PowerShell：
 
 ```powershell
-cd web
-py -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-$env:OTTO_DEVICE_URL = "http://机器人IP"
-\.venv\Scripts\python.exe server.py
+powershell -ExecutionPolicy Bypass -File .\setup.ps1
+.\.venv\Scripts\python.exe tools/download_models.py
+.\.venv\Scripts\python.exe tools/check_environment.py
+powershell -ExecutionPolicy Bypass -File .\start.ps1
 ```
+
+如果 Python 没有加入 PATH，安装时指定解释器，例如 `powershell -ExecutionPolicy Bypass -File .\setup.ps1 -Python D:\Robot\Python312\python.exe`。这只是当前电脑的安装示例，项目运行不依赖此固定路径。
+
+启动前编辑自动生成的 `config.local.json`，将 `OTTO_DEVICE_URL` 改为机器人实际局域网地址。默认 `otto.local` 仅是占位地址，不保证设备支持 mDNS。设备 ID 和蓝牙名默认对应当前机器人，换设备时须核对后修改。配置文件不上传 Git。
 
 打开：
 
@@ -63,19 +70,36 @@ $env:OTTO_DEVICE_URL = "http://机器人IP"
 
 ## 启动手势识别
 
-把模型放在 `models/YOLOv10x_gestures_openvino_model/`，或通过参数指定模型目录：
+安装脚本创建一个仓库内 `.venv`，网页和摄像头识别共用此环境。模型下载脚本取得 HaGRID YOLOv10x 权重并导出 OpenVINO，同时下载 Faster-Whisper base。首次需要联网，模型许可遵循上游；大模型推理速度取决于电脑性能。
+
+手势模型默认在 `models/YOLOv10x_gestures_openvino_model/`，可通过 `config.local.json` 或 `--model` 指定：
 
 ```powershell
-py -m pip install ultralytics opencv-python numpy
-py gesture_recognition/recognize.py --model models/YOLOv10x_gestures_openvino_model
-py gesture_recognition/recognize.py --model models/YOLOv10x_gestures_openvino_model --execute --robot-url http://机器人IP
+.\.venv\Scripts\python.exe gesture_recognition/recognize.py
+.\.venv\Scripts\python.exe gesture_recognition/recognize.py --execute
 ```
 
 默认映射见 `gesture_recognition/gesture_actions.json`。修改动作时同步更新该文件和网页资源库中的 `web/static/actions.json`。
 
 ## 安全与提交边界
 
-不要把 Wi-Fi 密码、API 密钥、真实设备配置、YOLO 权重、语音模型、编译产物或刷机二进制提交到公开仓库。使用 `.env` 配置设备地址；`.env` 已被 `.gitignore` 忽略。
+不要把 Wi-Fi 密码、API 密钥、真实设备配置、YOLO 权重、语音模型、编译产物或刷机二进制提交到公开仓库。统一使用 `config.local.json`，同名环境变量优先；代码不自动加载 `.env`。
+
+## 模型、声音与迁移
+
+仓库包含代码、网页素材、动作表情目录和已保存组合；不包含模型权重、个人音频和刷机镜像。无需复制 Python 安装目录、旧虚拟环境或整个 D 盘。
+
+- 单独下载手势模型：`python tools/download_models.py --kind gesture`。
+- 单独下载语音模型：`python tools/download_models.py --kind voice`。
+- 导入自己的声音资源：`python tools/resources.py import 路径/资源包.zip`。
+- 导出自己的声音和个人动作覆盖文件：`python tools/resources.py export 资源包.zip`。
+- 检查依赖、模型和组合音频：`python tools/check_environment.py`。
+
+以上 python 应使用本仓库 `.venv` 的解释器。缺少音频的历史组合需要导入资源包，或在编排器中替换/屏蔽声音片段；下载仓库本身不会取得这些音频。导入工具遇到同名文件会停止，避免覆盖修改。
+
+Windows 语音监听使用“网页麦克风”或“机器人麦克风”；“本机 FFmpeg 麦克风”仍仅支持 macOS。Windows 合成声音使用系统中文语音，需安装可供 System.Speech 使用的中文语音；macOS 使用 say。音频转换优先调用系统 FFmpeg，否则使用 Python 依赖提供的 FFmpeg。
+
+固件源码和电脑运行环境是两部分。控制已有兼容固件的机器人不需要重新刷机；从空白主板复刻还需 ESP-IDF、匹配板型和动画分区资源，当前仓库不包含完整固件资源二进制，不能视作下载后直接烧录的完整包。
 
 首次实机运行请托稳机器人，准备断开舵机电源。网页停止按钮不是硬件急停。
 
@@ -103,7 +127,8 @@ py gesture_recognition/recognize.py --model models/YOLOv10x_gestures_openvino_mo
 | 手势枪 | 中弹侧倒并保持倒地 |
 | 拳头 | 后退 |
 | OK | 返回站姿 |
-| 张开手掌 / Stop | 停止当前动作 |
+| V 手势 / Peace（含反向） | 前进 |
+| Stop | 停止当前动作 |
 | 双手比心 | 播放“爱你”组合 |
 | 小拇指 / 中指 | 播放“你是笨蛋”组合 |
 
@@ -139,4 +164,4 @@ HaGRID 的 `three_gun` 是数据集定义的三指枪形，不等同于所有食
 - [HaGRID](https://github.com/hukenovs/hagrid)：手势数据集和类别参考，请遵守其许可证与数据使用要求。
 - [OttoDIY Docs](https://github.com/txp666/ottodiy-docs)：OttoDIY 文档参考。
 - [OttoDIY Getting Started](https://ottodiy.tech/docs/getting-started)：官方入门教程。
-- [OttoDIYLib](https://github.com/OttoDIY/OttoDIYLib)：动作算法参考，本项目保留相应许可证说明。
+- [OttoDIYLib](https://github.com/OttoDIY/OttoDIYLib)：动作算法参考，使用或分发相关实现时请遵守上游许可证。

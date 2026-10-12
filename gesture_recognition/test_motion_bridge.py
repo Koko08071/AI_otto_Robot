@@ -120,10 +120,18 @@ class MotionBridgeTests(unittest.TestCase):
         self.assertEqual(self.client.play.call_count, 3)
 
     def test_old_gestures_no_longer_control_robot(self):
-        for gesture in ("palm", "peace", "stop_inverted"):
+        for gesture in ("palm", "stop_inverted"):
             self.assertIsNone(self.dispatcher.dispatch((gesture,), now=10))
         self.client.play.assert_not_called()
         self.client.stop.assert_not_called()
+
+    def test_peace_variants_run_forward_once(self):
+        dispatcher = GestureDispatcher(self.actions, self.client)
+        dispatcher.dispatch(("peace",), now=0)
+        dispatcher.dispatch(("peace_inverted",), now=1)
+        self.assertEqual(self.client.play.call_count, 1)
+        self.assertEqual(self.client.play.call_args.args[0]["name"], "walk_complete_p500")
+        self.assertIn("前进", dispatcher.dispatch(("peace",), now=6))
 
     def test_pinkie_and_little_finger_run_the_selected_composition(self):
         dispatcher = GestureDispatcher(self.actions, self.client)
