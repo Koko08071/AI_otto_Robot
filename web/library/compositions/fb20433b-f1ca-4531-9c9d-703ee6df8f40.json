@@ -1,0 +1,536 @@
+{
+  "schemaVersion": 1,
+  "id": "fb20433b-f1ca-4531-9c9d-703ee6df8f40",
+  "name": "爱你-grok原创",
+  "trigger": "爱你原创，格罗克原创爱你，爱你原创踩点",
+  "revision": 6,
+  "createdAt": "2026-10-10T18:10:38.239591+00:00",
+  "updatedAt": "2026-10-10T18:27:54.339296+00:00",
+  "durationMs": 19879,
+  "clipCount": 2,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "9a246c40-085d-47dc-861c-67a832ca605c",
+          "resourceId": "grok_aini_original_long",
+          "startMs": 0,
+          "durationMs": 19879,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "Grok爱你原创踩点",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 19879,
+            "source": "grok-custom",
+            "program": {
+              "name": "grok_aini_original_long",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 600,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 300
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 1200,
+                  "period": 600,
+                  "amplitude": [
+                    22,
+                    22,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 1200,
+                  "period": 600,
+                  "amplitude": [
+                    0,
+                    0,
+                    22,
+                    22
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 300,
+                  "pose": [
+                    90,
+                    90,
+                    108,
+                    78
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 300,
+                  "pose": [
+                    90,
+                    90,
+                    78,
+                    108
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 300,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 300
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 1200,
+                  "period": 600,
+                  "amplitude": [
+                    16,
+                    16,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    8,
+                    -8
+                  ],
+                  "phase": [
+                    0,
+                    180,
+                    -90,
+                    90
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 1200,
+                  "period": 600,
+                  "amplitude": [
+                    22,
+                    22,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "phase": [
+                    90,
+                    -90,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 300
+                },
+                {
+                  "type": "move",
+                  "duration": 300,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 600,
+                  "period": 300,
+                  "amplitude": [
+                    20,
+                    20,
+                    14,
+                    14
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    6,
+                    -6
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    -90,
+                    90
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 600,
+                  "period": 600,
+                  "amplitude": [
+                    0,
+                    0,
+                    22,
+                    22
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    90
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 600,
+                  "period": 600,
+                  "amplitude": [
+                    22,
+                    22,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 1200,
+                  "period": 600,
+                  "amplitude": [
+                    14,
+                    14,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    8,
+                    -8
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    -90,
+                    90
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 1200,
+                  "period": 600,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    8,
+                    -8
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 300,
+                  "pose": [
+                    100,
+                    80,
+                    100,
+                    88
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 300,
+                  "pose": [
+                    80,
+                    100,
+                    88,
+                    100
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 300,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 300
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 1200,
+                  "period": 600,
+                  "amplitude": [
+                    18,
+                    18,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    8,
+                    -8
+                  ],
+                  "phase": [
+                    0,
+                    180,
+                    -90,
+                    90
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 1200,
+                  "period": 600,
+                  "amplitude": [
+                    24,
+                    24,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 300
+                },
+                {
+                  "type": "move",
+                  "duration": 300,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 1200,
+                  "period": 600,
+                  "amplitude": [
+                    0,
+                    0,
+                    22,
+                    22
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    90
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 1200,
+                  "period": 600,
+                  "amplitude": [
+                    16,
+                    16,
+                    18,
+                    18
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    8,
+                    -8
+                  ],
+                  "phase": [
+                    0,
+                    180,
+                    -90,
+                    90
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 600,
+                  "period": 600,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    8,
+                    -8
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    90
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 79
+                },
+                {
+                  "type": "move",
+                  "duration": 300,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 600,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "grok_aini_original_long",
+            "familyLabel": "Grok爱你原创踩点",
+            "variantLabel": "原速",
+            "group": "自定义"
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": []
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": [
+        {
+          "id": "9037176c-b591-43ea-9f49-a24f285e07f6",
+          "resourceId": "5144d03f-10dc-423f-bd38-e3ec2d999bcd",
+          "startMs": 0,
+          "durationMs": 19879,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "爱你",
+            "revision": 1,
+            "kind": "audio",
+            "durationMs": 19879,
+            "source": "爱你",
+            "url": "/api/audio/5144d03f-10dc-423f-bd38-e3ec2d999bcd-4457582d4a6844b5bc7a91e6f913882c.wav",
+            "mime": "audio/wav",
+            "sha256": "8150dc3f940a7ef09dfc7d3d19ecf1aa02f22b054a8da2774039ab253cc76b1b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "kind": "music",
+      "muted": false,
+      "clips": []
+    }
+  ]
+}

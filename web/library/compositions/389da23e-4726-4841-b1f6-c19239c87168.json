@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "id": "389da23e-4726-4841-b1f6-c19239c87168",
+  "name": "往前走",
+  "trigger": "往前走，前进，过来",
+  "revision": 11,
+  "createdAt": "2026-10-10T07:40:03.061410+00:00",
+  "updatedAt": "2026-10-10T13:15:58.159006+00:00",
+  "durationMs": 7364,
+  "clipCount": 6,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "449f14d7-acaf-4def-8b36-5e076fdf35dd",
+          "resourceId": "home_complete",
+          "startMs": 30,
+          "durationMs": 375,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 [补全版]",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 375,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 156,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 156,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "5f4f40b8-3350-4da4-a9fd-105aeeae4b82",
+          "resourceId": "walk_complete",
+          "startMs": 1240,
+          "durationMs": 2145,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "行走（前进） [补全版]",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 1838,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "walk_complete",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 219,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 88,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    114.0,
+                    106.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 1750,
+                  "period": 438,
+                  "amplitude": [
+                    30,
+                    30,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    4,
+                    -4
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 88,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "c3173905-d3fc-4d0c-a73c-e971c1d877d5",
+          "resourceId": "home_complete",
+          "startMs": 6150,
+          "durationMs": 375,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 [补全版]",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 375,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 156,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 156,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "5eba6656-a5a4-4be0-b081-23028c7e813c",
+          "resourceId": "smile_static",
+          "startMs": 80,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "静态微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_static.gif"
+          }
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": [
+        {
+          "id": "91532092-f04c-4a87-a3da-86abfa067ca3",
+          "resourceId": "24ca1543-fb78-4760-b22e-e0d2824ca034",
+          "startMs": 0,
+          "durationMs": 766,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "收到",
+            "revision": 1,
+            "kind": "audio",
+            "durationMs": 766,
+            "source": "",
+            "url": "/api/audio/24ca1543-fb78-4760-b22e-e0d2824ca034-fa5aba8532e3488f97467f4e0e9664a6.wav",
+            "mime": "audio/wav",
+            "sha256": "c0ef62e87d3f6b79cb27c9c8f95ca5dec2f240c55c1a210e8159fa6bca22cc3a"
+          }
+        },
+        {
+          "id": "366d9910-57a9-4562-959c-3f0053905ea2",
+          "resourceId": "85f44317-0a32-438f-9826-9c7794f694c3",
+          "startMs": 6550,
+          "durationMs": 814,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "我来啦",
+            "revision": 1,
+            "kind": "audio",
+            "durationMs": 814,
+            "source": "",
+            "url": "/api/audio/85f44317-0a32-438f-9826-9c7794f694c3-7906bc300da94683a9cc69ff208878fa.wav",
+            "mime": "audio/wav",
+            "sha256": "2cb55be0e91e3b335b87f92aeab90a558973ac523a4076ae8e5271b8a0c92320"
+          }
+        }
+      ]
+    }
+  ]
+}

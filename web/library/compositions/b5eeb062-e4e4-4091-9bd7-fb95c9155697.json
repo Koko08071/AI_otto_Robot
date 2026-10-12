@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 1,
+  "id": "b5eeb062-e4e4-4091-9bd7-fb95c9155697",
+  "name": "变小猫",
+  "trigger": "变小猫，模仿小猫，小猫",
+  "revision": 2,
+  "createdAt": "2026-10-10T17:48:09.874375+00:00",
+  "updatedAt": "2026-10-10T17:48:09.874375+00:00",
+  "durationMs": 3640,
+  "clipCount": 7,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "26869264-b32f-4a4a-9d84-a3af2967fbe9",
+          "resourceId": "home_complete_p250",
+          "startMs": 0,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "f256bb04-1a85-481b-bb1b-0a0c34bab5f6",
+          "resourceId": "bend_complete_p500",
+          "startMs": 350,
+          "durationMs": 1400,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "侧弯 · 中速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 1400,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "bend_complete_p500",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    82,
+                    65
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 175,
+                  "pose": [
+                    90,
+                    90,
+                    62,
+                    35
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 175,
+                  "pose": [
+                    90,
+                    90,
+                    62,
+                    105
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 350
+                },
+                {
+                  "type": "move",
+                  "duration": 175,
+                  "pose": [
+                    90,
+                    90,
+                    78,
+                    96
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 175,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 100,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "bend",
+            "familyLabel": "侧弯",
+            "variantLabel": "中速补全"
+          }
+        },
+        {
+          "id": "aa9a8894-de52-453c-bc5f-a17e88c2d934",
+          "resourceId": "tiptoeswing_complete_p250",
+          "startMs": 1750,
+          "durationMs": 517,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "踮脚摇摆 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 517,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "tiptoeswing_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 139,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 64,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    110.0,
+                    70.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 64,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "tiptoeswing",
+            "familyLabel": "踮脚摇摆",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "e21fd03e-e37b-4500-858a-57c3665c1970",
+          "resourceId": "swing_complete_p250",
+          "startMs": 2300,
+          "durationMs": 475,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "摇摆 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 475,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "swing_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    100.0,
+                    80.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "swing",
+            "familyLabel": "摇摆",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "1df77fbb-e966-4e00-8247-4cc2a9aa4dd8",
+          "resourceId": "home_complete_p250",
+          "startMs": 3000,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "expr-cat_act-0",
+          "resourceId": "cat_act",
+          "startMs": 0,
+          "durationMs": 2640,
+          "muted": false,
+          "loopCount": 3,
+          "resourceSnapshot": {
+            "label": "变小猫",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 2640,
+            "source": "custom EMO-inspired / Emote Pack remix",
+            "preview": "/official/cat_act.gif",
+            "introMs": 240,
+            "loopMs": 720,
+            "outroMs": 240,
+            "hasLoopRange": true,
+            "hasStopFrame": false,
+            "supportsRepeat": true,
+            "loopCount": 3
+          }
+        },
+        {
+          "id": "expr-smile_05s-1",
+          "resourceId": "smile_05s",
+          "startMs": 2640,
+          "durationMs": 1000,
+          "muted": false,
+          "loopCount": 1,
+          "resourceSnapshot": {
+            "label": "微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_05s.gif",
+            "introMs": 480,
+            "loopMs": 520,
+            "outroMs": 0,
+            "hasLoopRange": false,
+            "hasStopFrame": true,
+            "supportsRepeat": true,
+            "loopCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": []
+    },
+    {
+      "id": "music",
+      "kind": "music",
+      "muted": true,
+      "clips": []
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "id": "e965db59-a538-4ec7-a06a-078cada430b1",
+  "name": "往后退",
+  "trigger": "往后退，后退，往后走",
+  "revision": 5,
+  "createdAt": "2026-10-10T08:00:50.117108+00:00",
+  "updatedAt": "2026-10-10T16:16:58.265287+00:00",
+  "durationMs": 6160,
+  "clipCount": 4,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "1b895941-e4d9-426d-a1a9-1f5f68197b2d",
+          "resourceId": "walk_reverse_complete",
+          "startMs": 80,
+          "durationMs": 3803,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "行走（后退） [补全版]",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 3803,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "walk_reverse_complete",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 374,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 216,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    74.0,
+                    66.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 2997,
+                  "period": 750,
+                  "amplitude": [
+                    30,
+                    30,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    4,
+                    -4
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    -90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 216,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "47958b52-8fbf-4cae-850c-71eb3b293523",
+          "resourceId": "shocked_05s_",
+          "startMs": 80,
+          "durationMs": 3000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "震惊",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 3000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/shocked_05s_.gif"
+          }
+        },
+        {
+          "id": "5f130340-acc8-4961-9a55-ee28619101fb",
+          "resourceId": "smile_static",
+          "startMs": 5160,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "静态微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_static.gif"
+          }
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": [
+        {
+          "id": "df8d53b1-c55c-40d6-a5a4-8c93956402cc",
+          "resourceId": "24ca1543-fb78-4760-b22e-e0d2824ca034",
+          "startMs": 70,
+          "durationMs": 766,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "收到",
+            "revision": 1,
+            "kind": "audio",
+            "durationMs": 766,
+            "source": "",
+            "url": "/api/audio/24ca1543-fb78-4760-b22e-e0d2824ca034-fa5aba8532e3488f97467f4e0e9664a6.wav",
+            "mime": "audio/wav",
+            "sha256": "c0ef62e87d3f6b79cb27c9c8f95ca5dec2f240c55c1a210e8159fa6bca22cc3a"
+          }
+        }
+      ]
+    }
+  ]
+}

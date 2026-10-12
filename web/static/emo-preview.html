@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EMO 表情网页预览</title>
+<style>
+body{margin:0;background:#0b0b0b;color:#eee;font:14px/1.45 system-ui,sans-serif}
+header{padding:20px 24px;border-bottom:1px solid #222;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:flex-start;justify-content:space-between}
+h1{margin:0 0 6px;font-size:20px}
+p{margin:0;color:#aaa}
+#status{font-size:13px;color:#9cf;min-width:220px}
+#status.bad{color:#f88}
+#status.ok{color:#8f8}
+#toast{position:fixed;right:16px;bottom:16px;background:#222;border:1px solid #444;padding:10px 14px;border-radius:8px;max-width:360px;display:none;z-index:20}
+section{padding:16px 24px}
+h2{font-size:15px;color:#9cf;margin:0 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}
+.card{margin:0;background:#111;border:1px solid #222;border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.card img{display:block;width:100%;aspect-ratio:1;object-fit:contain;background:#000;image-rendering:auto;cursor:pointer}
+figcaption{padding:8px 10px;font-size:12px;color:#ccc;flex:1}
+code{color:#8f8}
+.actions{display:flex;gap:6px;padding:0 10px 10px}
+.actions button{flex:1;border:1px solid #333;background:#1a1a1a;color:#eee;border-radius:6px;padding:6px 8px;cursor:pointer;font-size:12px}
+.actions button:hover{background:#2a2a2a;border-color:#555}
+.actions button.primary{background:#1e3a5f;border-color:#3a6ea5}
+.actions button:disabled{opacity:.45;cursor:not-allowed}
+.toolbar button{border:1px solid #333;background:#1a1a1a;color:#eee;border-radius:6px;padding:6px 10px;cursor:pointer;margin-right:6px}
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>EMO 头屏表情 · 网页预览（HEAD-ONLY）</h1>
+    <p>只要头/脸填满屏幕（不要全身）。全身卡通已隔离；灰底占位=等待头屏关键帧。点击可重播；「机身播放」需已连接（本批未刷机）。</p>
+    <div class="toolbar" style="margin-top:10px">
+      <button type="button" id="btn-wifi">连接 Wi-Fi</button>
+      <button type="button" id="btn-refresh">刷新状态</button>
+      <a href="/composer.html" style="color:#9cf;margin-left:8px">打开编排页</a>
+    </div>
+  </div>
+  <div id="status">状态加载中…</div>
+</header>
+<section>
+<h2>头屏表情（已生成 / 待关键帧）</h2>
+<div class="grid" id="batch-new"></div>
+</section>
+<section>
+<h2>头屏表情 · 互动类</h2>
+<div class="grid" id="batch-prev"></div>
+</section>
+<div id="toast"></div>
+<script>
+const CACHE_V = 'seg202610111108';
+const NEW_EMOTES = [
+  ['burp_xx','打嗝','待头屏关键帧', false],
+  ['sneeze_xx','打喷嚏','待头屏关键帧', false],
+  ['glasses_xx','眼镜反光','待头屏关键帧', false],
+  ['idea_bulb','灵感灯泡','待头屏关键帧', false],
+  ['lightning_xx','被雷劈','待头屏关键帧', false],
+  ['party_xx','中彩票撒花','待头屏关键帧', false],
+  ['rain_sad','下雨撑伞','待头屏关键帧', false],
+  ['charge_xx','充电回血','待头屏关键帧', false],
+];
+const PREV_EMOTES = [
+  ['shot_die','中弹碎裂','24f · 头屏已生成', true],
+  ['bliss_bub','幸福泡泡','24f · 头屏已生成', true],
+  ['sob_flood','泪水喷涌','24f · 头屏已生成', true],
+  ['wink_xx','眨眼挑逗','24f · 头屏已生成', true],
+  ['dog_act','变小狗','24f · 头屏已生成', true],
+  ['cat_act','变小猫','24f · 头屏已生成', true],
+  ['steam_mad','冒蒸汽怒','待头屏关键帧', false],
+  ['nap_zzz','打瞌睡','待头屏关键帧', false],
+  ['music_25s','弹钢琴','官方暂用 · 待头屏关键帧', false],
+  ['guitar_act','弹吉他','待头屏关键帧', false],
+  ['drums_act','打鼓','待头屏关键帧', false],
+  ['trumpet_act','吹喇叭','待头屏关键帧', false],
+  ['magic_act','变魔术','待头屏关键帧', false],
+  ['rabbit_act','变兔子','待头屏关键帧', false],
+  ['panda_act','变熊猫','待头屏关键帧', false],
+  ['bird_act','变小鸟','待头屏关键帧', false],
+  ['sulk_act','生闷气','待头屏关键帧', false],
+  ['smug_xx','得意挑眉','待头屏关键帧', false],
+  ['awkward_xx','尴尬尬笑','待头屏关键帧', false],
+  ['soul_out','灵魂出窍','待头屏关键帧', false],
+  ['kiss_act','飞吻','待头屏关键帧', false],
+  ['heart_hands','比心','待头屏关键帧', false],
+  ['hello_wave','招手问好','待头屏关键帧', false],
+  ['yes_bounce','大力点头','待头屏关键帧', false],
+  ['no_shake','摇头拒绝','待头屏关键帧', false],
+];
+
+const statusEl = document.getElementById('status');
+const toastEl = document.getElementById('toast');
+let connected = false;
+let toastTimer = 0;
+
+function toast(msg, isError) {
+  toastEl.textContent = msg;
+  toastEl.style.display = 'block';
+  toastEl.style.borderColor = isError ? '#844' : '#444';
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { toastEl.style.display = 'none'; }, 3200);
+}
+
+async function api(path, body) {
+  const opts = { headers: {} };
+  if (body !== undefined) {
+    opts.method = 'POST';
+    opts.headers['Content-Type'] = 'application/json';
+    opts.body = JSON.stringify(body);
+  }
+  const res = await fetch(path, opts);
+  const text = await res.text();
+  let data = null;
+  try { data = text ? JSON.parse(text) : null; } catch { data = { error: text || res.statusText }; }
+  if (!res.ok) throw new Error((data && data.error) || res.statusText || String(res.status));
+  return data;
+}
+
+async function refreshStatus() {
+  try {
+    const s = await api('/api/status');
+    connected = !!s.connected;
+    statusEl.className = connected ? 'ok' : 'bad';
+    const mode = s.mode || '?';
+    const expr = s.expression || 'idle';
+    const port = s.port || '';
+    statusEl.textContent = connected
+      ? `已连接 · ${mode} · 当前脸 ${expr}\n${port}`
+      : `未连接 · ${mode}\n${s.error || '请点「连接 Wi-Fi」'}`;
+    document.querySelectorAll('[data-play]').forEach(btn => { btn.disabled = !connected || btn.dataset.onDevice !== '1'; });
+  } catch (err) {
+    connected = false;
+    statusEl.className = 'bad';
+    statusEl.textContent = '编排服务不可用（8765）：' + err.message;
+    document.querySelectorAll('[data-play]').forEach(btn => { btn.disabled = true; }); // keep disabled when offline
+  }
+}
+
+function replayGif(img) {
+  const src = img.getAttribute('data-src') || img.src.split('?')[0];
+  img.setAttribute('data-src', src);
+  img.src = src + '?t=' + Date.now();
+}
+
+async function playOnRobot(id, label) {
+  if (!connected) {
+    toast('机器人未连接，先点「连接 Wi-Fi」', true);
+    return;
+  }
+  try {
+    await api('/api/face', { expression: id, loopCount: 1 });
+    toast('已推送到机身：' + label);
+    refreshStatus();
+  } catch (err) {
+    toast('机身播放失败：' + err.message, true);
+  }
+}
+
+function card([id, label, meta, onDevice]) {
+  const fig = document.createElement('figure');
+  fig.className = 'card';
+  const img = document.createElement('img');
+  img.src = '/official/' + id + '.gif?v=' + CACHE_V;
+  img.alt = label;
+  img.title = '点击重播动画';
+  img.loading = 'lazy';
+  img.addEventListener('click', () => replayGif(img));
+  img.addEventListener('error', () => {
+    img.replaceWith(Object.assign(document.createElement('div'), {
+      textContent: 'GIF 加载失败\n/official/' + id + '.gif',
+      style: 'aspect-ratio:1;display:grid;place-items:center;background:#200;color:#f88;padding:12px;text-align:center;white-space:pre-wrap;font-size:12px'
+    }));
+  });
+  const cap = document.createElement('figcaption');
+  const badge = onDevice ? '<span style="color:#8f8">可机身</span>' : '<span style="color:#fa6">仅网页 · 待刷分区</span>';
+  cap.innerHTML = '<code>' + id + '</code><br>' + label + (meta ? '<br>' + meta : '') + '<br>' + badge;
+  const actions = document.createElement('div');
+  actions.className = 'actions';
+  const replay = document.createElement('button');
+  replay.type = 'button';
+  replay.textContent = '重播';
+  replay.addEventListener('click', () => replayGif(img));
+  const play = document.createElement('button');
+  play.type = 'button';
+  play.className = 'primary';
+  play.textContent = onDevice ? '机身播放' : '待刷分区';
+  play.dataset.play = id;
+  play.dataset.onDevice = onDevice ? '1' : '0';
+  play.disabled = !onDevice || !connected;
+  play.addEventListener('click', () => {
+    if (!onDevice) { toast('这个表情还没刷进机身，先网页重播；要机身显示需 flash-emotes', true); return; }
+    playOnRobot(id, label);
+  });
+  actions.append(replay, play);
+  fig.append(img, cap, actions);
+  return fig;
+}
+
+function mount(id, list) {
+  const host = document.getElementById(id);
+  host.replaceChildren(...list.map(card));
+}
+
+mount('batch-new', NEW_EMOTES);
+mount('batch-prev', PREV_EMOTES);
+
+document.getElementById('btn-refresh').onclick = () => refreshStatus();
+document.getElementById('btn-wifi').onclick = async () => {
+  try {
+    toast('正在连接 Wi-Fi…');
+    await api('/api/connect', { mode: 'wifi' });
+    toast('Wi-Fi 已连接');
+  } catch (err) {
+    toast('连接失败：' + err.message, true);
+  }
+  refreshStatus();
+};
+
+refreshStatus();
+setInterval(refreshStatus, 5000);
+</script>
+</body>
+</html>

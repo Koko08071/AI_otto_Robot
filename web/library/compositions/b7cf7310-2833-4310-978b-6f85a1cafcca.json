@@ -1,0 +1,505 @@
+{
+  "schemaVersion": 1,
+  "id": "b7cf7310-2833-4310-978b-6f85a1cafcca",
+  "name": "弹钢琴",
+  "trigger": "弹钢琴，演奏，钢琴",
+  "revision": 2,
+  "createdAt": "2026-10-10T17:48:09.869390+00:00",
+  "updatedAt": "2026-10-10T17:48:09.869390+00:00",
+  "durationMs": 5040,
+  "clipCount": 9,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "8368ce89-a8ff-43c1-b956-3039179ac794",
+          "resourceId": "home_complete_p500",
+          "startMs": 0,
+          "durationMs": 601,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 中速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 601,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p500",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 250,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 250,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 100,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "中速补全"
+          }
+        },
+        {
+          "id": "844ccdb8-47a5-45d9-a578-cf1e764861d1",
+          "resourceId": "swing_complete_p250",
+          "startMs": 601,
+          "durationMs": 475,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "摇摆 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 475,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "swing_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    100.0,
+                    80.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "swing",
+            "familyLabel": "摇摆",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "6d1de864-bbcc-4dbf-bb4a-d621b88b6422",
+          "resourceId": "tiptoeswing_complete_p250",
+          "startMs": 1076,
+          "durationMs": 517,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "踮脚摇摆 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 517,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "tiptoeswing_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 139,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 64,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    110.0,
+                    70.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 64,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "tiptoeswing",
+            "familyLabel": "踮脚摇摆",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "bf716cf2-ccd2-45ce-b113-e37810ab69b2",
+          "resourceId": "flapping_complete_p250",
+          "startMs": 1800,
+          "durationMs": 491,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "拍翼 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 491,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "flapping_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 58,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    80.0,
+                    100.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    12,
+                    12,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    180,
+                    -90,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 58,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "flapping",
+            "familyLabel": "拍翼",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "20ec27cd-76fd-4988-b1d4-78236cd27461",
+          "resourceId": "swing_complete_p250",
+          "startMs": 2500,
+          "durationMs": 475,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "摇摆 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 475,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "swing_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    100.0,
+                    80.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "swing",
+            "familyLabel": "摇摆",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "b91c75fd-8d3a-431b-a7f0-d2076437eca1",
+          "resourceId": "home_complete_p250",
+          "startMs": 3200,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "expr-music_25s-0",
+          "resourceId": "music_25s",
+          "startMs": 0,
+          "durationMs": 4040,
+          "muted": false,
+          "loopCount": 2,
+          "resourceSnapshot": {
+            "label": "弹钢琴",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 4040,
+            "source": "custom EMO-inspired / Emote Pack remix",
+            "preview": "/official/music_25s.gif",
+            "introMs": 480,
+            "loopMs": 1520,
+            "outroMs": 520,
+            "hasLoopRange": true,
+            "hasStopFrame": false,
+            "supportsRepeat": true,
+            "loopCount": 2
+          }
+        },
+        {
+          "id": "expr-smile_05s-1",
+          "resourceId": "smile_05s",
+          "startMs": 4040,
+          "durationMs": 1000,
+          "muted": false,
+          "loopCount": 1,
+          "resourceSnapshot": {
+            "label": "微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_05s.gif",
+            "introMs": 480,
+            "loopMs": 520,
+            "outroMs": 0,
+            "hasLoopRange": false,
+            "hasStopFrame": true,
+            "supportsRepeat": true,
+            "loopCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": []
+    },
+    {
+      "id": "music",
+      "kind": "music",
+      "muted": true,
+      "clips": []
+    }
+  ]
+}

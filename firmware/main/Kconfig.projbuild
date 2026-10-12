@@ -1,0 +1,46 @@
+menu "OTTO Expression Motion"
+    choice OTTO_BOARD_PROFILE
+        prompt "Board pin profile"
+        default OTTO_BOARD_DISABLED
+        help
+            Leave outputs disabled until the physical board variant is confirmed.
+        config OTTO_BOARD_DISABLED
+            bool "Disabled (safe offline default)"
+        config OTTO_BOARD_CAMERA
+            bool "Camera variant from reference firmware"
+        config OTTO_BOARD_NO_CAMERA
+            bool "No-camera variant from reference firmware"
+    endchoice
+
+    config OTTO_SERVO_OUTPUT_ENABLE
+        bool "Allow servo PWM output"
+        default n
+        help
+            Enable only after the board profile, mechanics, and neutral angles are verified.
+
+    config OTTO_EMOTE_GEN_PLAYER
+        bool "Use esp_emote_gen_player for screen animations"
+        depends on !OTTO_BOARD_DISABLED
+        default n
+        help
+            Uses the official 360x360 pack plus gfx fixtures in the emote_gen partition.
+
+    config OTTO_WIFI_SSID
+        string "Wi-Fi SSID"
+        default "YOUR_WIFI_SSID"
+
+    config OTTO_WIFI_PASSWORD
+        string "Wi-Fi password"
+        default "YOUR_WIFI_PASSWORD"
+        help
+            Stored in the application configuration. Use a private network.
+
+    config OTTO_WIFI_FALLBACK_SSID
+        string "Optional second Wi-Fi SSID"
+        default ""
+
+    config OTTO_WIFI_FALLBACK_PASSWORD
+        string "Optional second Wi-Fi password"
+        default ""
+
+endmenu

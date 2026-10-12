@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 1,
+  "id": "df457493-bdc7-49d4-956b-bfc1490b6fe9",
+  "name": "转圈",
+  "trigger": "转圈，转一圈，原地转",
+  "revision": 2,
+  "createdAt": "2026-10-10T10:00:06.362225+00:00",
+  "updatedAt": "2026-10-10T17:48:09.902265+00:00",
+  "durationMs": 5560,
+  "clipCount": 6,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "c7049b4a-78f7-4fb3-86df-5d8e0e7e47e6",
+          "resourceId": "home_complete_p250",
+          "startMs": 0,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "b2b14279-7151-476b-bece-4b52b5038cbb",
+          "resourceId": "turn_complete_p500",
+          "startMs": 301,
+          "durationMs": 2479,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "转向 · 中速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 2479,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "turn_complete_p500",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 104,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 146,
+                  "pose": [
+                    90,
+                    90,
+                    74,
+                    66
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 2000,
+                  "period": 500,
+                  "amplitude": [
+                    30,
+                    10,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    4,
+                    -4
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    -90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 146,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 83,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "turn",
+            "familyLabel": "转向",
+            "variantLabel": "中速补全"
+          }
+        },
+        {
+          "id": "2d36a5a4-49c2-4efb-b9e2-cacb6034d9d2",
+          "resourceId": "turn_reverse_complete_p500",
+          "startMs": 2780,
+          "durationMs": 2479,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "转向 · 反向 · 中速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 2479,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "turn_reverse_complete_p500",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 104,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 146,
+                  "pose": [
+                    90,
+                    90,
+                    74,
+                    66
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 2000,
+                  "period": 500,
+                  "amplitude": [
+                    10,
+                    30,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    4,
+                    -4
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    -90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 146,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 83,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "turn_reverse",
+            "familyLabel": "转向 · 反向",
+            "variantLabel": "中速补全"
+          }
+        },
+        {
+          "id": "13380667-7191-4421-af9d-370e0a9dab11",
+          "resourceId": "home_complete_p250",
+          "startMs": 5259,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "81d61485-ab6b-47df-9904-4e581207cf14",
+          "resourceId": "shocked_05s_",
+          "startMs": 0,
+          "durationMs": 3000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "震惊",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 3000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/shocked_05s_.gif",
+            "introMs": 480,
+            "loopMs": 1000,
+            "outroMs": 1520,
+            "hasLoopRange": true,
+            "hasStopFrame": false,
+            "supportsRepeat": true,
+            "loopCount": 1
+          },
+          "loopCount": 1
+        },
+        {
+          "id": "37cb4258-49b0-49c4-beb5-9ae1f8fca9f7",
+          "resourceId": "smile_05s",
+          "startMs": 3200,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_05s.gif",
+            "introMs": 480,
+            "loopMs": 520,
+            "outroMs": 0,
+            "hasLoopRange": false,
+            "hasStopFrame": true,
+            "supportsRepeat": true,
+            "loopCount": 1
+          },
+          "loopCount": 1
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": []
+    },
+    {
+      "id": "music",
+      "kind": "music",
+      "muted": true,
+      "clips": []
+    }
+  ]
+}

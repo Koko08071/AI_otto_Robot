@@ -1,0 +1,18 @@
+.face-card.concept {
+  border-color: #73b9b0;
+  background: #f5fbf9;
+}
+
+.face-card.concept:hover {
+  border-color: #218b7c;
+  background: #eaf7f3;
+}
+
+.face-card.concept img {
+  background: #111820;
+}
+
+.face-card.concept small {
+  color: #167466;
+  font-weight: 700;
+}

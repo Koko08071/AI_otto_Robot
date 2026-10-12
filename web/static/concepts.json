@@ -1,0 +1,8 @@
+[
+  {"id":"neon_shades","label":"霓虹墨镜","group":"彩色装扮","source":"原创 EAF 动画","preview":"/concepts/neon_shades.gif","playable":true},
+  {"id":"cycling_goggles","label":"骑行风镜","group":"彩色装扮","source":"原创 EAF 动画","preview":"/concepts/cycling_goggles.gif","playable":true},
+  {"id":"space_visor","label":"宇航面罩","group":"彩色装扮","source":"原创 EAF 动画","preview":"/concepts/space_visor.gif","playable":true},
+  {"id":"hero_mask","label":"超级英雄","group":"彩色装扮","source":"原创 EAF 动画","preview":"/concepts/hero_mask.gif","playable":true},
+  {"id":"science_goggles","label":"科学护目镜","group":"彩色装扮","source":"原创 EAF 动画","preview":"/concepts/science_goggles.gif","playable":true},
+  {"id":"rainbow_party","label":"彩虹派对","group":"彩色装扮","source":"原创 EAF 动画","preview":"/concepts/rainbow_party.gif","playable":true}
+]

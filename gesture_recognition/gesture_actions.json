@@ -1,0 +1,53 @@
+{
+  "finger_gun": {
+    "label": "中弹侧倒（保持倒地）",
+    "program": {
+      "name": "shot_fall_side",
+      "reset_phase_on_repeat": true,
+      "segments": [
+        {"type": "move", "duration": 170, "pose": [110, 70, 85, 65]},
+        {"type": "move", "duration": 140, "pose": [130, 55, 55, 40]},
+        {"type": "move", "duration": 120, "pose": [140, 45, 35, 28]},
+        {"type": "move", "duration": 100, "pose": [145, 45, 20, 20]},
+        {"type": "hold", "duration": 250}
+      ]
+    }
+  },
+  "heart": {
+    "label": "爱你-grok版-纠偏",
+    "composition": {
+      "id": "a1cd58a0-74a2-4b2d-a92a-a5cd90637dfc",
+      "name": "爱你-grok版-纠偏"
+    }
+  },
+  "little_finger": {
+    "label": "你是笨蛋",
+    "composition": {
+      "id": "a02b547d-0df4-4a68-afdc-a92351ef40fa",
+      "name": "你是笨蛋"
+    }
+  },
+  "ok": {
+    "label": "归位",
+    "program": {
+      "name": "return_home",
+      "reset_phase_on_repeat": true,
+      "segments": [
+        {"type": "move", "duration": 1200, "pose": [90, 90, 100, 90]}
+      ]
+    }
+  },
+  "fist": {
+    "label": "后退",
+    "program": {
+      "name": "walk_reverse_complete_p450",
+      "reset_phase_on_repeat": true,
+      "segments": [
+        {"type": "move", "duration": 160, "pose": [90, 90, 100, 90]},
+        {"type": "move", "duration": 130, "pose": [90, 90, 74, 66]},
+        {"type": "oscillate", "duration": 1800, "period": 450, "amplitude": [30, 30, 20, 20], "offset": [0, 0, 4, -4], "phase": [0, 0, -90, -90]},
+        {"type": "move", "duration": 1200, "pose": [90, 90, 100, 90]}
+      ]
+    }
+  }
+}

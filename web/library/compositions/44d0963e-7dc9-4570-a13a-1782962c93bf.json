@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "id": "44d0963e-7dc9-4570-a13a-1782962c93bf",
+  "name": "生气",
+  "trigger": "光头，没头发，没有头发，扁扁，笨蛋，蠢，好傻",
+  "revision": 11,
+  "createdAt": "2026-10-10T08:37:11.917720+00:00",
+  "updatedAt": "2026-10-10T13:15:58.158125+00:00",
+  "durationMs": 3632,
+  "clipCount": 5,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "b6eea28c-e60f-4034-bd43-aecf30e9305a",
+          "resourceId": "gesture_angry_complete",
+          "startMs": 0,
+          "durationMs": 1303,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "愤怒 [补全版]",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 1303,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "gesture_angry_complete",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 156,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 94,
+                  "pose": [
+                    90,
+                    90,
+                    70,
+                    110
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 486
+                },
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    110,
+                    110,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 112
+                },
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    70,
+                    70,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 112
+                },
+                {
+                  "type": "move",
+                  "duration": 156,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "be468c3b-1042-4d58-a12d-d397e92687cc",
+          "resourceId": "angry_20s",
+          "startMs": 1030,
+          "durationMs": 2520,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "生气",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 2520,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/angry_20s.gif"
+          }
+        },
+        {
+          "id": "c5a8fb38-73f1-4e7e-aa26-42f7920ff3b6",
+          "resourceId": "smile_static",
+          "startMs": 0,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "静态微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_static.gif"
+          }
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": [
+        {
+          "id": "66bca940-1368-42c3-9489-d1dec1f49e5f",
+          "resourceId": "3dcf8939-a5d4-456d-ac79-64b4f549b9ed",
+          "startMs": 2470,
+          "durationMs": 1162,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "不跟你玩了！",
+            "revision": 1,
+            "kind": "audio",
+            "durationMs": 1162,
+            "source": "",
+            "url": "/api/audio/3dcf8939-a5d4-456d-ac79-64b4f549b9ed-7ec5169e8804427b8aecaaa68a9d8c99.wav",
+            "mime": "audio/wav",
+            "sha256": "fdfce777c730568e113b6da82e7637183aeb21f96bf29a7b78aee0a837162cd1"
+          }
+        },
+        {
+          "id": "ac27a08a-b073-49a1-a48e-3fca212eee61",
+          "resourceId": "2ea554c7-61af-4f7f-bb5a-200d165df51f",
+          "startMs": 50,
+          "durationMs": 687,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "哼",
+            "revision": 3,
+            "kind": "audio",
+            "durationMs": 687,
+            "source": "",
+            "url": "/api/audio/2ea554c7-61af-4f7f-bb5a-200d165df51f-851171f46bdd4bacb11aea43fc1cda97.wav",
+            "mime": "audio/wav",
+            "sha256": "2cf091d6ab188a7eceba600eeb35f7e3da012e47e064c8d23ad119ece34b8c2f"
+          }
+        }
+      ]
+    }
+  ]
+}

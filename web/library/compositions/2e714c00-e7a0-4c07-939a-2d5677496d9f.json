@@ -1,0 +1,425 @@
+{
+  "schemaVersion": 1,
+  "id": "2e714c00-e7a0-4c07-939a-2d5677496d9f",
+  "name": "变僵尸",
+  "trigger": "变僵尸，僵尸来了",
+  "revision": 2,
+  "createdAt": "2026-10-10T17:48:09.883991+00:00",
+  "updatedAt": "2026-10-10T17:48:09.883991+00:00",
+  "durationMs": 7801,
+  "clipCount": 8,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "8943f6f1-6165-4baa-9ef0-99b175f2364c",
+          "resourceId": "home_complete_p250",
+          "startMs": 0,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "467654a0-5a71-4902-aa87-d3bc49b9b6c4",
+          "resourceId": "walk_complete_p750",
+          "startMs": 301,
+          "durationMs": 3675,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "行走（前进） · 慢速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 3675,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "walk_complete_p750",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 375,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 150,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    114.0,
+                    106.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 3000,
+                  "period": 750,
+                  "amplitude": [
+                    30,
+                    30,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    4,
+                    -4
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 150,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "walk",
+            "familyLabel": "行走（前进）",
+            "variantLabel": "慢速补全"
+          }
+        },
+        {
+          "id": "911f876d-40ac-4577-a8fb-9b6bdfef65d5",
+          "resourceId": "jitter_complete_p500",
+          "startMs": 4000,
+          "durationMs": 1460,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "抖动 · 中速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 1460,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "jitter_complete_p500",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 500,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 230,
+                  "pose": [
+                    70.0,
+                    110.0,
+                    90.0,
+                    90.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    20,
+                    20,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 230,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "jitter",
+            "familyLabel": "抖动",
+            "variantLabel": "中速补全"
+          }
+        },
+        {
+          "id": "881c613a-27e9-4c2f-be02-2555fdf6ae3d",
+          "resourceId": "gesture_confused_complete_p500",
+          "startMs": 5460,
+          "durationMs": 1371,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "困惑 · 中速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 1371,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "gesture_confused_complete_p500",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 250,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 150,
+                  "pose": [
+                    110,
+                    70,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 620
+                },
+                {
+                  "type": "move",
+                  "duration": 250,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 100,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "gesture_confused",
+            "familyLabel": "困惑",
+            "variantLabel": "中速补全"
+          }
+        },
+        {
+          "id": "fd36c8f1-92d8-4197-8511-f7c75c3a76b5",
+          "resourceId": "home_complete_p250",
+          "startMs": 7500,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "expr-zombie_act-0",
+          "resourceId": "zombie_act",
+          "startMs": 0,
+          "durationMs": 2040,
+          "muted": false,
+          "loopCount": 2,
+          "resourceSnapshot": {
+            "label": "变僵尸",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 2040,
+            "source": "custom EMO-inspired / Emote Pack remix",
+            "preview": "/official/zombie_act.gif",
+            "introMs": 200,
+            "loopMs": 760,
+            "outroMs": 320,
+            "hasLoopRange": true,
+            "hasStopFrame": false,
+            "supportsRepeat": true,
+            "loopCount": 2
+          }
+        },
+        {
+          "id": "expr-sad_05s15s-1",
+          "resourceId": "sad_05s15s",
+          "startMs": 2040,
+          "durationMs": 3000,
+          "muted": false,
+          "loopCount": 1,
+          "resourceSnapshot": {
+            "label": "难过",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 3000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/sad_05s15s.gif",
+            "introMs": 480,
+            "loopMs": 1520,
+            "outroMs": 1000,
+            "hasLoopRange": true,
+            "hasStopFrame": false,
+            "supportsRepeat": true,
+            "loopCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": []
+    },
+    {
+      "id": "music",
+      "kind": "music",
+      "muted": true,
+      "clips": []
+    }
+  ]
+}

@@ -1,0 +1,528 @@
+{
+  "schemaVersion": 1,
+  "id": "68cd6661-2824-4b81-b1e5-588ded7b1404",
+  "name": "击鼓",
+  "trigger": "击鼓，打鼓",
+  "revision": 1,
+  "createdAt": "2026-10-10T17:48:09.876750+00:00",
+  "updatedAt": "2026-10-10T17:48:09.876750+00:00",
+  "durationMs": 6000,
+  "clipCount": 9,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "a41f6ef8-f7fd-4e30-b0b8-9a4181e7ba02",
+          "resourceId": "home_complete_p250",
+          "startMs": 0,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "045a1488-3d87-400a-8c8e-e8d02a4b1ed2",
+          "resourceId": "jitter_complete_p250",
+          "startMs": 301,
+          "durationMs": 730,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "抖动 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 730,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "jitter_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 250,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 115,
+                  "pose": [
+                    70.0,
+                    110.0,
+                    90.0,
+                    90.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    20,
+                    20,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 115,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "jitter",
+            "familyLabel": "抖动",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "ab803ad4-58f8-4371-9b6c-b998dba3347b",
+          "resourceId": "updown_complete_p250",
+          "startMs": 1100,
+          "durationMs": 475,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "起伏 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 475,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "updown_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    90.0,
+                    90.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "updown",
+            "familyLabel": "起伏",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "678e3003-806e-4678-8e17-b71205661b18",
+          "resourceId": "jitter_complete_p250",
+          "startMs": 1800,
+          "durationMs": 730,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "抖动 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 730,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "jitter_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 250,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 115,
+                  "pose": [
+                    70.0,
+                    110.0,
+                    90.0,
+                    90.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    20,
+                    20,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 115,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "jitter",
+            "familyLabel": "抖动",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "051ec19a-32f3-4402-8010-72e7f209f182",
+          "resourceId": "flapping_complete_p250",
+          "startMs": 2600,
+          "durationMs": 491,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "拍翼 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 491,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "flapping_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 58,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    80.0,
+                    100.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    12,
+                    12,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    180,
+                    -90,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 58,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "flapping",
+            "familyLabel": "拍翼",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "897f0c01-1b83-4779-8aff-d6750c8d8b8b",
+          "resourceId": "home_complete_p250",
+          "startMs": 3300,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "a7008951-3aa3-405e-a64b-6ae4fa3ed8ea",
+          "resourceId": "confident_08",
+          "startMs": 0,
+          "durationMs": 1200,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "自信",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1200,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/confident_08.gif",
+            "introMs": 800,
+            "loopMs": 200,
+            "outroMs": 0,
+            "hasLoopRange": false,
+            "hasStopFrame": true,
+            "supportsRepeat": true,
+            "loopCount": 2
+          },
+          "loopCount": 2
+        },
+        {
+          "id": "14957e6b-0fec-485f-8987-d16e1894825b",
+          "resourceId": "shocked_05s_",
+          "startMs": 1800,
+          "durationMs": 3000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "震惊",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 3000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/shocked_05s_.gif",
+            "introMs": 480,
+            "loopMs": 1000,
+            "outroMs": 1520,
+            "hasLoopRange": true,
+            "hasStopFrame": false,
+            "supportsRepeat": true,
+            "loopCount": 1
+          },
+          "loopCount": 1
+        },
+        {
+          "id": "325b6593-8a17-41b6-9e94-136de0326aa6",
+          "resourceId": "smile_static",
+          "startMs": 5000,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "静态微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_static.gif",
+            "introMs": 480,
+            "loopMs": 520,
+            "outroMs": 0,
+            "hasLoopRange": false,
+            "hasStopFrame": true,
+            "supportsRepeat": true,
+            "loopCount": 1
+          },
+          "loopCount": 1
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": []
+    },
+    {
+      "id": "music",
+      "kind": "music",
+      "muted": true,
+      "clips": []
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "7f39a4ca-2ee1-44a8-95f4-094bc7b18447",
+  "name": "好吃",
+  "trigger": "好吃，给你吃，早餐，午餐，晚餐",
+  "revision": 14,
+  "createdAt": "2026-10-10T08:33:22.464062+00:00",
+  "updatedAt": "2026-10-10T13:15:58.156896+00:00",
+  "durationMs": 3060,
+  "clipCount": 2,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "5a60cfff-e5de-411e-864e-15c85cc7bf44",
+          "resourceId": "tiptoeswing_complete",
+          "startMs": 1670,
+          "durationMs": 517,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "踮脚摇摆 [补全版]",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 517,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "tiptoeswing_complete",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 139,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 64,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    110.0,
+                    70.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 64,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "28a46a24-afb7-49c9-96ab-bc8d279897e4",
+          "resourceId": "yummy_20_s",
+          "startMs": 60,
+          "durationMs": 3000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "美味",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 3000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/yummy_20_s.gif"
+          }
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": []
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+# Local Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local models and generated media
+models/
+voice-model/
+web/library/audio/
+web/library/_backups/
+*.pt
+*.onnx
+*.bin
+*.wav
+*.mp3
+
+# Device-specific configuration and logs
+.env
+*.log
+logs/
+
+# Build output
+firmware/build/
+firmware/managed_components/
+

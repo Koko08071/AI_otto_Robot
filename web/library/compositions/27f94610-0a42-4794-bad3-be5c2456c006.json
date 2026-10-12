@@ -1,0 +1,2352 @@
+{
+  "schemaVersion": 1,
+  "id": "27f94610-0a42-4794-bad3-be5c2456c006",
+  "name": "才艺展示",
+  "trigger": "才艺展示，来点惊喜，展示技能",
+  "revision": 1,
+  "createdAt": "2026-10-10T17:48:09.886787+00:00",
+  "updatedAt": "2026-10-10T17:48:09.886787+00:00",
+  "durationMs": 12090,
+  "clipCount": 10,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "279c8817-6724-401d-87d5-50a8de7b5592",
+          "resourceId": "home_complete_p250",
+          "startMs": 0,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "b6bee5cf-e9c6-4bff-9af2-4313a1074f61",
+          "resourceId": "moonwalker_complete_p250",
+          "startMs": 301,
+          "durationMs": 527,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "太空步 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 527,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "moonwalker_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 139,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 69,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    82.0,
+                    68.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    12,
+                    -12
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    -150
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 69,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "moonwalker",
+            "familyLabel": "太空步",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "75a98241-2eb4-4fa8-8383-af0dec0ff9c3",
+          "resourceId": "crusaito_complete_p250",
+          "startMs": 900,
+          "durationMs": 583,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "交叉步 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 583,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "crusaito_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 139,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 97,
+                  "pose": [
+                    112.34994712401958,
+                    112.34994712401958,
+                    104.0,
+                    58.67949192431123
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    25,
+                    25,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    14,
+                    -14
+                  ],
+                  "phase": [
+                    5156.62,
+                    5156.62,
+                    0,
+                    -60
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 97,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "crusaito",
+            "familyLabel": "交叉步",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "dcea2fc9-b8db-4d0c-8803-81c559b15ded",
+          "resourceId": "ascendingturn_complete_p250",
+          "startMs": 1600,
+          "durationMs": 501,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "升降转身 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 501,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "ascendingturn_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 139,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 56,
+                  "pose": [
+                    77.0,
+                    103.0,
+                    94.0,
+                    94.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    13,
+                    13,
+                    13,
+                    13
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    17,
+                    -9
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    -90,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 56,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "ascendingturn",
+            "familyLabel": "升降转身",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "7964f41a-bafe-46df-b27e-fb9e9d578734",
+          "resourceId": "gesture_superhappy_complete_p500",
+          "startMs": 2300,
+          "durationMs": 3520,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "超级开心 · 中速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 3520,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "gesture_superhappy_complete_p500",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 500,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 671
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 648
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 500,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 200,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "gesture_superhappy",
+            "familyLabel": "超级开心",
+            "variantLabel": "中速补全"
+          }
+        },
+        {
+          "id": "431c0eaf-af3a-483f-b165-4167ff574d79",
+          "resourceId": "gesture_victory_complete_p500",
+          "startMs": 5820,
+          "durationMs": 5969,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "胜利 · 中速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 5969,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "gesture_victory_complete_p500",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 500,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    91,
+                    89
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    92,
+                    88
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    93,
+                    87
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    94,
+                    86
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    95,
+                    85
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    96,
+                    84
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    97,
+                    83
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    98,
+                    82
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    99,
+                    81
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    80
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    101,
+                    79
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    102,
+                    78
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    103,
+                    77
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    104,
+                    76
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    105,
+                    75
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    106,
+                    74
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    107,
+                    73
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    108,
+                    72
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    109,
+                    71
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    110,
+                    70
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    111,
+                    69
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    112,
+                    68
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    113,
+                    67
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    114,
+                    66
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    115,
+                    65
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    116,
+                    64
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    117,
+                    63
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    118,
+                    62
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    119,
+                    61
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    120,
+                    60
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    121,
+                    59
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    122,
+                    58
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    123,
+                    57
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    124,
+                    56
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    125,
+                    55
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    126,
+                    54
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    127,
+                    53
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    128,
+                    52
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    129,
+                    51
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    130,
+                    50
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    131,
+                    49
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    132,
+                    48
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    133,
+                    47
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    134,
+                    46
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    135,
+                    45
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    136,
+                    44
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    137,
+                    43
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    138,
+                    42
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    139,
+                    41
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    140,
+                    40
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    141,
+                    39
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    142,
+                    38
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    143,
+                    37
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    144,
+                    36
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    145,
+                    35
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    146,
+                    34
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    147,
+                    33
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    148,
+                    32
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    149,
+                    31
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    150,
+                    30
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    149,
+                    31
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    148,
+                    32
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    147,
+                    33
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    146,
+                    34
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    145,
+                    35
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    144,
+                    36
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    143,
+                    37
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    142,
+                    38
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    141,
+                    39
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    140,
+                    40
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    139,
+                    41
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    138,
+                    42
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    137,
+                    43
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    136,
+                    44
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    135,
+                    45
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    134,
+                    46
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    133,
+                    47
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    132,
+                    48
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    131,
+                    49
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    130,
+                    50
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    129,
+                    51
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    128,
+                    52
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    127,
+                    53
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    126,
+                    54
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    125,
+                    55
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    124,
+                    56
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    123,
+                    57
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    122,
+                    58
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    121,
+                    59
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    120,
+                    60
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    119,
+                    61
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    118,
+                    62
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    117,
+                    63
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    116,
+                    64
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    115,
+                    65
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    114,
+                    66
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    113,
+                    67
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    112,
+                    68
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    111,
+                    69
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    110,
+                    70
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    109,
+                    71
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    108,
+                    72
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    107,
+                    73
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    106,
+                    74
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    105,
+                    75
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    104,
+                    76
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    103,
+                    77
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    102,
+                    78
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    101,
+                    79
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    80
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    99,
+                    81
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    98,
+                    82
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    97,
+                    83
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    96,
+                    84
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    95,
+                    85
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    94,
+                    86
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    93,
+                    87
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    92,
+                    88
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "move",
+                  "duration": 10,
+                  "pose": [
+                    90,
+                    90,
+                    91,
+                    89
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 16
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 648
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 500,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 200,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "gesture_victory",
+            "familyLabel": "胜利",
+            "variantLabel": "中速补全"
+          }
+        },
+        {
+          "id": "39e4f50a-7bac-49a8-baee-3c23e1c40612",
+          "resourceId": "home_complete_p250",
+          "startMs": 11789,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "590d3358-f988-4615-b4ef-1b63596f5bea",
+          "resourceId": "confident_08",
+          "startMs": 0,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "自信",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/confident_08.gif",
+            "introMs": 800,
+            "loopMs": 200,
+            "outroMs": 0,
+            "hasLoopRange": false,
+            "hasStopFrame": true,
+            "supportsRepeat": true,
+            "loopCount": 1
+          },
+          "loopCount": 1
+        },
+        {
+          "id": "95b064c9-ca9e-4b18-aafd-961171a0827f",
+          "resourceId": "laugh_05s_10",
+          "startMs": 1200,
+          "durationMs": 3000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "大笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 3000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/laugh_05s_10.gif",
+            "introMs": 480,
+            "loopMs": 1000,
+            "outroMs": 520,
+            "hasLoopRange": true,
+            "hasStopFrame": false,
+            "supportsRepeat": true,
+            "loopCount": 2
+          },
+          "loopCount": 2
+        },
+        {
+          "id": "d42faf6d-769d-41ed-bc20-43b3b09d6f45",
+          "resourceId": "smile_05s",
+          "startMs": 4500,
+          "durationMs": 1520,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1520,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_05s.gif",
+            "introMs": 480,
+            "loopMs": 520,
+            "outroMs": 0,
+            "hasLoopRange": false,
+            "hasStopFrame": true,
+            "supportsRepeat": true,
+            "loopCount": 2
+          },
+          "loopCount": 2
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": []
+    },
+    {
+      "id": "music",
+      "kind": "music",
+      "muted": true,
+      "clips": []
+    }
+  ]
+}

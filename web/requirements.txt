@@ -1,0 +1,4 @@
+bleak>=3.0,<4
+faster-whisper>=1.2,<2
+numpy>=2,<3
+opencc-python-reimplemented>=0.1.7,<1

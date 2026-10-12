@@ -1,0 +1,4 @@
+# Compile-only profile for the optional player; GPIO mapping is still a candidate.
+CONFIG_OTTO_BOARD_NO_CAMERA=y
+CONFIG_OTTO_EMOTE_GEN_PLAYER=y
+# CONFIG_OTTO_SERVO_OUTPUT_ENABLE is not set

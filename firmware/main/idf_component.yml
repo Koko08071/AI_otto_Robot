@@ -1,0 +1,3 @@
+dependencies:
+  espressif/cjson: "^1.7.19"
+  espressif2022/esp_emote_gen_player: "0.0.2"

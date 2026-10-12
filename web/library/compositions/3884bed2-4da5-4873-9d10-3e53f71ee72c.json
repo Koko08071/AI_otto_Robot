@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 1,
+  "id": "3884bed2-4da5-4873-9d10-3e53f71ee72c",
+  "name": "我伤心了",
+  "trigger": "我伤心了，我难过，安慰我",
+  "revision": 1,
+  "createdAt": "2026-10-10T17:48:09.895999+00:00",
+  "updatedAt": "2026-10-10T17:48:09.895999+00:00",
+  "durationMs": 11500,
+  "clipCount": 5,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "2e7bf785-49b9-4c67-97d1-f7b8068e2638",
+          "resourceId": "home_complete_p250",
+          "startMs": 0,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "b3f7a229-8053-4a25-8696-ea1d07c95f3c",
+          "resourceId": "gesture_sad_complete_p500",
+          "startMs": 301,
+          "durationMs": 3111,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "悲伤 · 中速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 3111,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "gesture_sad_complete_p500",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 250,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 350,
+                  "pose": [
+                    110,
+                    70,
+                    20,
+                    160
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 2010
+                },
+                {
+                  "type": "move",
+                  "duration": 250,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "hold",
+                  "duration": 150
+                },
+                {
+                  "type": "move",
+                  "duration": 100,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "gesture_sad",
+            "familyLabel": "悲伤",
+            "variantLabel": "中速补全"
+          }
+        },
+        {
+          "id": "b8994e24-9325-4f10-ae70-6e7c37fd089d",
+          "resourceId": "home_complete_p250",
+          "startMs": 3412,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "0283e474-d1fb-4860-adc7-2e5d5e6598f5",
+          "resourceId": "sad_05s15s",
+          "startMs": 0,
+          "durationMs": 4520,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "难过",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 4520,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/sad_05s15s.gif",
+            "introMs": 480,
+            "loopMs": 1520,
+            "outroMs": 1000,
+            "hasLoopRange": true,
+            "hasStopFrame": false,
+            "supportsRepeat": true,
+            "loopCount": 2
+          },
+          "loopCount": 2
+        },
+        {
+          "id": "30ffb21c-dddd-4f21-8429-58bdd5689d63",
+          "resourceId": "sigh_20s_20s",
+          "startMs": 6500,
+          "durationMs": 5000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "叹气",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 5000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/sigh_20s_20s.gif",
+            "introMs": 2000,
+            "loopMs": 2000,
+            "outroMs": 1000,
+            "hasLoopRange": true,
+            "hasStopFrame": false,
+            "supportsRepeat": true,
+            "loopCount": 1
+          },
+          "loopCount": 1
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": []
+    },
+    {
+      "id": "music",
+      "kind": "music",
+      "muted": true,
+      "clips": []
+    }
+  ]
+}

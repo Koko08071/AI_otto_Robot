@@ -1,0 +1,1799 @@
+{
+  "schemaVersion": 1,
+  "id": "472e7c83-1ffd-4285-8a2d-102dc38e5da1",
+  "name": "爱你",
+  "trigger": "王心凌，爱你",
+  "revision": 3,
+  "createdAt": "2026-10-10T10:18:50.537383+00:00",
+  "updatedAt": "2026-10-10T17:45:51.310376+00:00",
+  "durationMs": 19879,
+  "clipCount": 32,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "10ed3585-a5b1-401e-ae91-48c016d1cc50",
+          "resourceId": "home_complete_p250",
+          "startMs": 0,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "8dfc2c45-c9b9-429f-809f-ec26e9d6fe87",
+          "resourceId": "tiptoeswing_complete_p250",
+          "startMs": 789,
+          "durationMs": 517,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "踮脚摇摆 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 517,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "tiptoeswing_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 139,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 64,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    110.0,
+                    70.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 64,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "tiptoeswing",
+            "familyLabel": "踮脚摇摆",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "2634aa64-5780-4a03-9875-76fcab760c7d",
+          "resourceId": "swing_complete_p250",
+          "startMs": 1533,
+          "durationMs": 475,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "摇摆 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 475,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "swing_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    100.0,
+                    80.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "swing",
+            "familyLabel": "摇摆",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "5bfb62f3-a368-4db9-9a00-f4555f8ead45",
+          "resourceId": "gesture_love_complete_p250",
+          "startMs": 2136,
+          "durationMs": 917,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "爱心 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 917,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "gesture_love_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 83,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 159
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 250,
+                  "amplitude": [
+                    25,
+                    25,
+                    15,
+                    15
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    11,
+                    -11
+                  ],
+                  "phase": [
+                    5156.62,
+                    5156.62,
+                    0,
+                    -60
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 83,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "hold",
+                  "duration": 58
+                },
+                {
+                  "type": "move",
+                  "duration": 33,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "gesture_love",
+            "familyLabel": "爱心",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "0890343f-7367-485b-92f3-1c86df3a2f5c",
+          "resourceId": "moonwalker_complete_p250",
+          "startMs": 3344,
+          "durationMs": 527,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "太空步 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 527,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "moonwalker_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 139,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 69,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    82.0,
+                    68.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    12,
+                    -12
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    -150
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 69,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "moonwalker",
+            "familyLabel": "太空步",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "371bfebe-f102-4e92-83e6-f988abcbd953",
+          "resourceId": "moonwalker_reverse_complete_p250",
+          "startMs": 3924,
+          "durationMs": 527,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "太空步 · 反向 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 527,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "moonwalker_reverse_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 139,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 69,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    122.0,
+                    88.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    12,
+                    -12
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    90,
+                    150
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 69,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "moonwalker_reverse",
+            "familyLabel": "太空步 · 反向",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "eb0bb353-d91b-40a3-8fc2-0545e95194d0",
+          "resourceId": "crusaito_complete_p250",
+          "startMs": 5155,
+          "durationMs": 583,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "交叉步 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 583,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "crusaito_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 139,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 97,
+                  "pose": [
+                    112.34994712401958,
+                    112.34994712401958,
+                    104.0,
+                    58.67949192431123
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    25,
+                    25,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    14,
+                    -14
+                  ],
+                  "phase": [
+                    5156.62,
+                    5156.62,
+                    0,
+                    -60
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 97,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "crusaito",
+            "familyLabel": "交叉步",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "2a160db5-1b48-46fb-9281-73ebabddb9db",
+          "resourceId": "flapping_complete_p250",
+          "startMs": 5738,
+          "durationMs": 491,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "拍翼 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 491,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "flapping_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 58,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    80.0,
+                    100.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    12,
+                    12,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    180,
+                    -90,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 58,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "flapping",
+            "familyLabel": "拍翼",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "9cc87dcc-5efa-4a39-90f5-ff163487045a",
+          "resourceId": "ascendingturn_complete_p250",
+          "startMs": 6943,
+          "durationMs": 501,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "升降转身 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 501,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "ascendingturn_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 139,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 56,
+                  "pose": [
+                    77.0,
+                    103.0,
+                    94.0,
+                    94.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    13,
+                    13,
+                    13,
+                    13
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    17,
+                    -9
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    -90,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 56,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "ascendingturn",
+            "familyLabel": "升降转身",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "c5c2cee5-8033-43b9-bd7b-b39df67d1b67",
+          "resourceId": "tiptoeswing_complete_p250",
+          "startMs": 7546,
+          "durationMs": 517,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "踮脚摇摆 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 517,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "tiptoeswing_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 139,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 64,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    110.0,
+                    70.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 64,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "tiptoeswing",
+            "familyLabel": "踮脚摇摆",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "bae2ad7a-c36b-4e5f-84fd-f1e90ada8128",
+          "resourceId": "gesture_love_complete_p250",
+          "startMs": 8731,
+          "durationMs": 917,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "爱心 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 917,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "gesture_love_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 83,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 159
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 250,
+                  "amplitude": [
+                    25,
+                    25,
+                    15,
+                    15
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    11,
+                    -11
+                  ],
+                  "phase": [
+                    5156.62,
+                    5156.62,
+                    0,
+                    -60
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 83,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "hold",
+                  "duration": 58
+                },
+                {
+                  "type": "move",
+                  "duration": 33,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "gesture_love",
+            "familyLabel": "爱心",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "7e7858b5-ab62-42ab-9c77-7e3e79272905",
+          "resourceId": "jitter_complete_p250",
+          "startMs": 9938,
+          "durationMs": 730,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "抖动 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 730,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "jitter_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 250,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 115,
+                  "pose": [
+                    70.0,
+                    110.0,
+                    90.0,
+                    90.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    20,
+                    20,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 115,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "jitter",
+            "familyLabel": "抖动",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "2e4700ea-104c-4790-815d-796d8e0d01c0",
+          "resourceId": "shakeleg_complete_p250",
+          "startMs": 10668,
+          "durationMs": 681,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "抖腿 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 681,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "shakeleg_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 75,
+                  "pose": [
+                    90,
+                    90,
+                    115,
+                    90
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 45
+                },
+                {
+                  "type": "move",
+                  "duration": 75,
+                  "pose": [
+                    90,
+                    90,
+                    125,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    108,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    125,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 100,
+                  "pose": [
+                    90,
+                    90,
+                    92,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 88,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "shakeleg",
+            "familyLabel": "抖腿",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "a707a671-cb27-4aa0-bdfc-22332b0390c1",
+          "resourceId": "crusaito_reverse_complete_p250",
+          "startMs": 11749,
+          "durationMs": 527,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "交叉步 · 反向 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 527,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "crusaito_reverse_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 139,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 69,
+                  "pose": [
+                    112.34994712401958,
+                    112.34994712401958,
+                    104.0,
+                    93.32050807568876
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    25,
+                    25,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    14,
+                    -14
+                  ],
+                  "phase": [
+                    5156.62,
+                    5156.62,
+                    0,
+                    60
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 69,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "crusaito_reverse",
+            "familyLabel": "交叉步 · 反向",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "0f204a7a-b255-4f37-9e4b-21548ff90521",
+          "resourceId": "moonwalker_complete_p250",
+          "startMs": 12934,
+          "durationMs": 527,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "太空步 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 527,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "moonwalker_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 139,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 69,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    82.0,
+                    68.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    12,
+                    -12
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    -150
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 69,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "moonwalker",
+            "familyLabel": "太空步",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "67d3d4ec-813a-4fbb-8aea-e5700d3ad2b5",
+          "resourceId": "flapping_complete_p250",
+          "startMs": 14141,
+          "durationMs": 491,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "拍翼 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 491,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "flapping_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 58,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    80.0,
+                    100.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    12,
+                    12,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    180,
+                    -90,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 58,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "flapping",
+            "familyLabel": "拍翼",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "c40602f7-c905-4bc8-8d42-2c0cd1bfc54f",
+          "resourceId": "gesture_happy_complete_p250",
+          "startMs": 15348,
+          "durationMs": 866,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "开心 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 866,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "gesture_happy_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 156,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 133
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 108
+                },
+                {
+                  "type": "move",
+                  "duration": 156,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "gesture_happy",
+            "familyLabel": "开心",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "0eed31e2-eeab-4990-a9ee-81d4893d2604",
+          "resourceId": "swing_complete_p250",
+          "startMs": 16533,
+          "durationMs": 475,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "摇摆 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 475,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "swing_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    100.0,
+                    80.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "swing",
+            "familyLabel": "摇摆",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "b07eb580-1f65-458a-a790-dddb9c88bc73",
+          "resourceId": "gesture_love_complete_p250",
+          "startMs": 17601,
+          "durationMs": 917,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "爱心 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 917,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "gesture_love_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 83,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 159
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 250,
+                  "amplitude": [
+                    25,
+                    25,
+                    15,
+                    15
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    11,
+                    -11
+                  ],
+                  "phase": [
+                    5156.62,
+                    5156.62,
+                    0,
+                    -60
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 83,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "hold",
+                  "duration": 58
+                },
+                {
+                  "type": "move",
+                  "duration": 33,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "gesture_love",
+            "familyLabel": "爱心",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "9af07e3c-eb44-4072-943b-151b37b8ab30",
+          "resourceId": "home_complete_p250",
+          "startMs": 18646,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "a4157175-9651-4652-b51f-a5f5071e5402",
+          "resourceId": "shy_20s_40s",
+          "startMs": 0,
+          "durationMs": 1800,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "害羞",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1800,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/shy_20s_40s.gif"
+          }
+        },
+        {
+          "id": "d89d6e6e-28fb-40fd-9695-1f3f7e77be07",
+          "resourceId": "smile_05s",
+          "startMs": 1800,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_05s.gif"
+          }
+        },
+        {
+          "id": "51a69e5c-c5f2-455e-b146-6694ae8fca22",
+          "resourceId": "laugh_05s_10",
+          "startMs": 2800,
+          "durationMs": 2000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "大笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 2000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/laugh_05s_10.gif"
+          }
+        },
+        {
+          "id": "c408210c-e3ed-4992-b013-2e4c422999e1",
+          "resourceId": "smile_static",
+          "startMs": 5000,
+          "durationMs": 1200,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "静态微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1200,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_static.gif"
+          }
+        },
+        {
+          "id": "5f0d0101-5c89-49a0-8849-a7dd4a7eacf8",
+          "resourceId": "confident_08",
+          "startMs": 6400,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "自信",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/confident_08.gif"
+          }
+        },
+        {
+          "id": "de373056-a04e-4a2a-9092-8227a1fb39ec",
+          "resourceId": "snigger_10s",
+          "startMs": 7600,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "窃笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/snigger_10s.gif"
+          }
+        },
+        {
+          "id": "b6d1b8ff-da6c-4f7f-877c-9f450efd9fbe",
+          "resourceId": "laugh_05s_10",
+          "startMs": 8800,
+          "durationMs": 2000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "大笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 2000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/laugh_05s_10.gif"
+          }
+        },
+        {
+          "id": "eb54e985-3c88-4575-b632-17615d710876",
+          "resourceId": "shy_20s_40s",
+          "startMs": 11000,
+          "durationMs": 2500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "害羞",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 2500,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/shy_20s_40s.gif"
+          }
+        },
+        {
+          "id": "2b9f6453-7de4-4290-82af-c80dd087d4f3",
+          "resourceId": "smile_05s",
+          "startMs": 13600,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_05s.gif"
+          }
+        },
+        {
+          "id": "77e0d239-c90a-4369-97b7-0d059916d0f0",
+          "resourceId": "laugh_05s_10",
+          "startMs": 14800,
+          "durationMs": 2000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "大笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 2000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/laugh_05s_10.gif"
+          }
+        },
+        {
+          "id": "15d504a8-fe6a-430f-97ad-6977a4961743",
+          "resourceId": "smile_static",
+          "startMs": 17000,
+          "durationMs": 2800,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "静态微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 2800,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_static.gif"
+          }
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": [
+        {
+          "id": "f17ac6c1-5765-4d91-9e94-5066e6a208ab",
+          "resourceId": "5144d03f-10dc-423f-bd38-e3ec2d999bcd",
+          "startMs": 0,
+          "durationMs": 19879,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "爱你",
+            "revision": 1,
+            "kind": "audio",
+            "durationMs": 19879,
+            "source": "爱你",
+            "url": "/api/audio/5144d03f-10dc-423f-bd38-e3ec2d999bcd-4457582d4a6844b5bc7a91e6f913882c.wav",
+            "mime": "audio/wav",
+            "sha256": "8150dc3f940a7ef09dfc7d3d19ecf1aa02f22b054a8da2774039ab253cc76b1b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "kind": "music",
+      "muted": true,
+      "clips": []
+    }
+  ]
+}

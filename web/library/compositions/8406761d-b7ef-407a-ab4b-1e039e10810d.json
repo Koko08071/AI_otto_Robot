@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "id": "8406761d-b7ef-407a-ab4b-1e039e10810d",
+  "name": "编排示例：归位＋微笑",
+  "revision": 4,
+  "createdAt": "2026-10-10T02:44:42.537495+00:00",
+  "updatedAt": "2026-10-10T13:15:58.159662+00:00",
+  "durationMs": 3000,
+  "clipCount": 4,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "322f84b6-9297-45b7-b5e7-f79b9e11a416",
+          "resourceId": "home_complete",
+          "startMs": 0,
+          "durationMs": 375,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 [补全版]",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 375,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 156,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 156,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "6ca7e766-8658-4730-9f65-54413c788837",
+          "resourceId": "home_complete",
+          "startMs": 2000,
+          "durationMs": 375,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 [补全版]",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 375,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 156,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 156,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "e64d74a6-5120-4df0-8c81-c5b2a93278a1",
+          "resourceId": "smile_05s",
+          "startMs": 0,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_05s.gif"
+          }
+        },
+        {
+          "id": "4770d594-a10f-4549-a9fe-76884d245731",
+          "resourceId": "smile_05s",
+          "startMs": 2000,
+          "durationMs": 1000,
+          "muted": true,
+          "resourceSnapshot": {
+            "label": "微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_05s.gif"
+          }
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": []
+    }
+  ]
+}

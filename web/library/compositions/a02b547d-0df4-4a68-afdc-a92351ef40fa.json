@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "id": "a02b547d-0df4-4a68-afdc-a92351ef40fa",
+  "name": "你是笨蛋",
+  "trigger": "你是笨蛋",
+  "revision": 10,
+  "createdAt": "2026-10-10T07:52:04.858330+00:00",
+  "updatedAt": "2026-10-10T13:15:58.157213+00:00",
+  "durationMs": 10350,
+  "clipCount": 8,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "6e2dddbd-6b2e-458a-8b4c-49076c8f2f8d",
+          "resourceId": "home_complete",
+          "startMs": 0,
+          "durationMs": 375,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 [补全版]",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 375,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 156,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 156,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "ca43d24e-4328-440c-88fd-4faa5ecaf57d",
+          "resourceId": "turn_complete",
+          "startMs": 1210,
+          "durationMs": 2542,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "转向 [补全版]",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 2107,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "turn_complete",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 106,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 150,
+                  "pose": [
+                    90,
+                    90,
+                    74,
+                    66
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 2050,
+                  "period": 512,
+                  "amplitude": [
+                    30,
+                    10,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    4,
+                    -4
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    -90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 150,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 86,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "7a911284-7d87-4da2-a573-7dfbcbb8ad02",
+          "resourceId": "angry_20s",
+          "startMs": 1040,
+          "durationMs": 2520,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "生气",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 2520,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/angry_20s.gif"
+          }
+        },
+        {
+          "id": "595b7ebc-c00e-44f5-a83a-5edb0dd1eeea",
+          "resourceId": "cry_10s_10s",
+          "startMs": 3630,
+          "durationMs": 3200,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "哭泣",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 3200,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/cry_10s_10s.gif"
+          }
+        },
+        {
+          "id": "f9efc504-057c-4a48-b4e7-46bacb78e34f",
+          "resourceId": "smile_static",
+          "startMs": 9350,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "静态微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_static.gif"
+          }
+        },
+        {
+          "id": "283839bf-fb2f-4488-8694-dd8b1a6e07e1",
+          "resourceId": "smile_static",
+          "startMs": 0,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "静态微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_static.gif"
+          }
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": [
+        {
+          "id": "2f7dc9e6-dc54-4c42-942a-bc02aa43948a",
+          "resourceId": "2ea554c7-61af-4f7f-bb5a-200d165df51f",
+          "startMs": 110,
+          "durationMs": 687,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "哼",
+            "revision": 1,
+            "kind": "audio",
+            "durationMs": 687,
+            "source": "",
+            "url": "/api/audio/2ea554c7-61af-4f7f-bb5a-200d165df51f-4aaa5fe21fa4430f8aae053822255dd9.wav",
+            "mime": "audio/wav",
+            "sha256": "26b7865c1c296d5a893075f65a1ddad66f285354f5a984b6c9665c34db225fa1"
+          }
+        },
+        {
+          "id": "d4d887e6-4670-45ab-9f29-b03a471b5015",
+          "resourceId": "3dcf8939-a5d4-456d-ac79-64b4f549b9ed",
+          "startMs": 3880,
+          "durationMs": 1162,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "不跟你玩了！",
+            "revision": 1,
+            "kind": "audio",
+            "durationMs": 1162,
+            "source": "",
+            "url": "/api/audio/3dcf8939-a5d4-456d-ac79-64b4f549b9ed-7ec5169e8804427b8aecaaa68a9d8c99.wav",
+            "mime": "audio/wav",
+            "sha256": "fdfce777c730568e113b6da82e7637183aeb21f96bf29a7b78aee0a837162cd1"
+          }
+        }
+      ]
+    }
+  ]
+}

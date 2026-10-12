@@ -1,0 +1,1157 @@
+{
+  "schemaVersion": 1,
+  "id": "dd435784-b519-4a40-aff1-52b8cada58d2",
+  "name": "爱你·快舞",
+  "trigger": "快舞，跳爱你，爱你快舞",
+  "revision": 1,
+  "createdAt": "2026-10-10T17:45:51.313482+00:00",
+  "updatedAt": "2026-10-10T17:45:51.313482+00:00",
+  "durationMs": 19879,
+  "clipCount": 33,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "b01a57b6-2df9-4644-ba10-e075a194e602",
+          "resourceId": "home",
+          "startMs": 93,
+          "durationMs": 375,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 375,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 156,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 156,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "6d1a9b1f-dbfa-4b0b-8126-10bec03c4780",
+          "resourceId": "tiptoeswing",
+          "startMs": 789,
+          "durationMs": 250,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "踮脚摇摆",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 250,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "tiptoeswing",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "7e5429e9-19a0-4678-a792-e89d9aa789e0",
+          "resourceId": "moonwalker",
+          "startMs": 1533,
+          "durationMs": 250,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "太空步",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 250,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "moonwalker",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    12,
+                    -12
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    -150
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "7214af16-a8fd-4390-babc-962826ff46d7",
+          "resourceId": "moonwalker",
+          "startMs": 2136,
+          "durationMs": 250,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "太空步",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 250,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "moonwalker",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    12,
+                    -12
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    -150
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "6ee6fb49-8f82-441f-943a-975c0dc89350",
+          "resourceId": "moonwalker_reverse",
+          "startMs": 2740,
+          "durationMs": 250,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "太空步 · 反向",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 250,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "moonwalker_reverse",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    12,
+                    -12
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    90,
+                    150
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "03aaeac4-0c7a-40f8-9c5c-807b32e360de",
+          "resourceId": "moonwalker_reverse",
+          "startMs": 3344,
+          "durationMs": 250,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "太空步 · 反向",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 250,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "moonwalker_reverse",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    12,
+                    -12
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    90,
+                    150
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "c23c94e6-5b04-4a95-b0c8-0b98514dd7c7",
+          "resourceId": "crusaito",
+          "startMs": 3924,
+          "durationMs": 250,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "交叉步",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 250,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "crusaito",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    25,
+                    25,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    14,
+                    -14
+                  ],
+                  "phase": [
+                    5156.62,
+                    5156.62,
+                    0,
+                    -60
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "2df60b0d-cdc4-4c7d-8099-b5feb59b9ede",
+          "resourceId": "crusaito_reverse",
+          "startMs": 4551,
+          "durationMs": 250,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "交叉步 · 反向",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 250,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "crusaito_reverse",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    25,
+                    25,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    14,
+                    -14
+                  ],
+                  "phase": [
+                    5156.62,
+                    5156.62,
+                    0,
+                    60
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "3914fb1f-698c-4c22-b363-b8e4e8ef306f",
+          "resourceId": "ascendingturn",
+          "startMs": 5155,
+          "durationMs": 250,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "升降转身",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 250,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "ascendingturn",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    13,
+                    13,
+                    13,
+                    13
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    17,
+                    -9
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "f1bc9c0a-0499-4c83-9e5a-fd107947ed99",
+          "resourceId": "flapping",
+          "startMs": 5735,
+          "durationMs": 250,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "拍翼",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 250,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "flapping",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    12,
+                    12,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    180,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "95cf2a43-77cf-46f4-9364-72fdd3314333",
+          "resourceId": "jitter",
+          "startMs": 6339,
+          "durationMs": 250,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "抖动",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 250,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "jitter",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    20,
+                    20,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    0,
+                    0
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "adcadb94-b220-4e9f-9c62-fae7f1017ae0",
+          "resourceId": "swing",
+          "startMs": 6943,
+          "durationMs": 250,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "摇摆",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 250,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "swing",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "53a0c89f-3853-4c77-91b4-507b60a0a01e",
+          "resourceId": "moonwalker",
+          "startMs": 7546,
+          "durationMs": 250,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "太空步",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 250,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "moonwalker",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    12,
+                    -12
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    -150
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "61f129b4-4bd0-4a7c-9af4-7c5b743b49f0",
+          "resourceId": "crusaito",
+          "startMs": 8127,
+          "durationMs": 250,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "交叉步",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 250,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "crusaito",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    25,
+                    25,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    14,
+                    -14
+                  ],
+                  "phase": [
+                    5156.62,
+                    5156.62,
+                    0,
+                    -60
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "0911ad18-42e7-494b-8926-557a14040cb3",
+          "resourceId": "flapping",
+          "startMs": 8731,
+          "durationMs": 250,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "拍翼",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 250,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "flapping",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    12,
+                    12,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    180,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "72d1f43f-a03f-4b06-8305-06ded2c7358d",
+          "resourceId": "tiptoeswing",
+          "startMs": 9334,
+          "durationMs": 250,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "踮脚摇摆",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 250,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "tiptoeswing",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "50cd0ddb-d0b8-4d38-86e9-def6b46f2893",
+          "resourceId": "ascendingturn",
+          "startMs": 9938,
+          "durationMs": 250,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "升降转身",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 250,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "ascendingturn",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    13,
+                    13,
+                    13,
+                    13
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    17,
+                    -9
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "2a72ac05-a86f-4e0c-a645-b8703430be52",
+          "resourceId": "moonwalker_reverse",
+          "startMs": 10542,
+          "durationMs": 250,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "太空步 · 反向",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 250,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "moonwalker_reverse",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    12,
+                    -12
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    90,
+                    150
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "8116c69e-fa43-4eb5-ba6b-7f087bd0f847",
+          "resourceId": "swing",
+          "startMs": 11146,
+          "durationMs": 250,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "摇摆",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 250,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "swing",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "bcda1a96-8e83-4f1c-bf2c-e1dfd867c94f",
+          "resourceId": "crusaito_reverse",
+          "startMs": 11749,
+          "durationMs": 250,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "交叉步 · 反向",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 250,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "crusaito_reverse",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    25,
+                    25,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    14,
+                    -14
+                  ],
+                  "phase": [
+                    5156.62,
+                    5156.62,
+                    0,
+                    60
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "a6c855f0-2442-4187-9f09-d3d565a83786",
+          "resourceId": "flapping",
+          "startMs": 12353,
+          "durationMs": 250,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "拍翼",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 250,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "flapping",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    12,
+                    12,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    180,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "04e5adf5-93d1-4a88-84eb-d378550a6eea",
+          "resourceId": "home",
+          "startMs": 12934,
+          "durationMs": 375,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 375,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 156,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 156,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "0f94ae4e-db67-4ccc-8433-4237af764f52",
+          "resourceId": "smile_static",
+          "startMs": 0,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "静态微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_static.gif"
+          }
+        },
+        {
+          "id": "20be7beb-54ac-4979-96ec-cc2ab6410da1",
+          "resourceId": "laugh_05s_10",
+          "startMs": 1000,
+          "durationMs": 2000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "大笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 2000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/laugh_05s_10.gif"
+          }
+        },
+        {
+          "id": "7d63f85a-527d-41e6-8372-6c058b1b49df",
+          "resourceId": "mock_05s",
+          "startMs": 3200,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "调皮",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/mock_05s.gif"
+          }
+        },
+        {
+          "id": "d6f9ec57-035b-4c8d-a74c-9402be2ccda9",
+          "resourceId": "confident_08",
+          "startMs": 4500,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "自信",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/confident_08.gif"
+          }
+        },
+        {
+          "id": "f1221b6c-7d3a-49b3-b97e-d489c91bf49f",
+          "resourceId": "snigger_10s",
+          "startMs": 5800,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "窃笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/snigger_10s.gif"
+          }
+        },
+        {
+          "id": "b9f1877e-722f-4ff8-b9b8-c47e32771f18",
+          "resourceId": "laugh_05s_10",
+          "startMs": 7200,
+          "durationMs": 2000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "大笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 2000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/laugh_05s_10.gif"
+          }
+        },
+        {
+          "id": "7750280e-f08c-4a18-9476-680c1a86deba",
+          "resourceId": "shy_20s_40s",
+          "startMs": 9500,
+          "durationMs": 3000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "害羞",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 3000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/shy_20s_40s.gif"
+          }
+        },
+        {
+          "id": "e5726495-68e3-41ce-9872-af2ec34aeab1",
+          "resourceId": "smile_05s",
+          "startMs": 12800,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_05s.gif"
+          }
+        },
+        {
+          "id": "2147ac2b-9d6a-46e3-a91f-1a7cecc85591",
+          "resourceId": "laugh_05s_10",
+          "startMs": 14000,
+          "durationMs": 2000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "大笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 2000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/laugh_05s_10.gif"
+          }
+        },
+        {
+          "id": "ccce5726-d43e-4a62-856f-ebc686c72107",
+          "resourceId": "smile_static",
+          "startMs": 16500,
+          "durationMs": 3300,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "静态微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 3300,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_static.gif"
+          }
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": [
+        {
+          "id": "9d8c4da7-25d0-46a1-9986-c26d7cc33440",
+          "resourceId": "5144d03f-10dc-423f-bd38-e3ec2d999bcd",
+          "startMs": 0,
+          "durationMs": 19879,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "爱你",
+            "revision": 1,
+            "kind": "audio",
+            "durationMs": 19879,
+            "source": "爱你",
+            "url": "/api/audio/5144d03f-10dc-423f-bd38-e3ec2d999bcd-4457582d4a6844b5bc7a91e6f913882c.wav",
+            "mime": "audio/wav",
+            "sha256": "8150dc3f940a7ef09dfc7d3d19ecf1aa02f22b054a8da2774039ab253cc76b1b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "kind": "music",
+      "muted": true,
+      "clips": []
+    }
+  ]
+}

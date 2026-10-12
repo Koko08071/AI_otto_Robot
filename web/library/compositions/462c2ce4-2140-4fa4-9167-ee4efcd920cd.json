@@ -1,0 +1,1601 @@
+{
+  "schemaVersion": 1,
+  "id": "462c2ce4-2140-4fa4-9167-ee4efcd920cd",
+  "name": "爱你-grok版",
+  "trigger": "爱你格罗克，格罗克爱你",
+  "revision": 10,
+  "createdAt": "2026-10-10T17:51:41.757495+00:00",
+  "updatedAt": "2026-10-10T18:28:47.518536+00:00",
+  "durationMs": 19879,
+  "clipCount": 35,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "ec26bbfe-d44b-47da-876d-fe7d876d214f",
+          "resourceId": "home_p500",
+          "startMs": 0,
+          "durationMs": 601,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 601,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_p500",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 250,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 250,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 100,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "bfe7f0ca-9f1f-4e8c-9b69-9c79e0fad24e",
+          "resourceId": "updown_p500",
+          "startMs": 606,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "起伏 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "updown_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "updown",
+            "familyLabel": "起伏",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "c2d44c31-d815-4980-8558-eb06db84ef8d",
+          "resourceId": "updown_p500",
+          "startMs": 1212,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "起伏 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "updown_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "updown",
+            "familyLabel": "起伏",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "81a6fcdd-0f6f-4be5-a65a-5972c9b4f5bd",
+          "resourceId": "updown_p500",
+          "startMs": 1818,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "起伏 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "updown_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "updown",
+            "familyLabel": "起伏",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "d6d4bb94-1572-428e-9bf8-d83cca2732b4",
+          "resourceId": "updown_p500",
+          "startMs": 2424,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "起伏 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "updown_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "updown",
+            "familyLabel": "起伏",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "26f8d7c9-e361-401c-8c7d-be806af787ae",
+          "resourceId": "swing_p500",
+          "startMs": 3030,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "摇摆 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "swing_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ]
+            },
+            "familyId": "swing",
+            "familyLabel": "摇摆",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "342e21eb-4bd7-4325-8a57-cfd7792ea016",
+          "resourceId": "swing_p500",
+          "startMs": 3636,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "摇摆 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "swing_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ]
+            },
+            "familyId": "swing",
+            "familyLabel": "摇摆",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "a899fabc-73d7-43c5-9cd5-5fa95cc1d288",
+          "resourceId": "swing_p500",
+          "startMs": 4242,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "摇摆 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "swing_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ]
+            },
+            "familyId": "swing",
+            "familyLabel": "摇摆",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "ff0450f0-1794-40b2-bd14-d0742df0651b",
+          "resourceId": "swing_p500",
+          "startMs": 4848,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "摇摆 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "swing_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              ]
+            },
+            "familyId": "swing",
+            "familyLabel": "摇摆",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "bb145ae7-9c10-459a-80df-3108163eab67",
+          "resourceId": "jitter_p500",
+          "startMs": 5455,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "抖动 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "jitter_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    20,
+                    20,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    0,
+                    0
+                  ]
+                }
+              ]
+            },
+            "familyId": "jitter",
+            "familyLabel": "抖动",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "8770a72b-6798-4c79-948d-9364a3ac983d",
+          "resourceId": "jitter_p500",
+          "startMs": 6061,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "抖动 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "jitter_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    20,
+                    20,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    0,
+                    0
+                  ]
+                }
+              ]
+            },
+            "familyId": "jitter",
+            "familyLabel": "抖动",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "19939f40-65b9-48cd-a8b3-08bee79e86a4",
+          "resourceId": "jitter_p500",
+          "startMs": 6667,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "抖动 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "jitter_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    20,
+                    20,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    0,
+                    0
+                  ]
+                }
+              ]
+            },
+            "familyId": "jitter",
+            "familyLabel": "抖动",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "4abd0843-4a9e-4d90-a63b-3168a33346e0",
+          "resourceId": "jitter_p500",
+          "startMs": 7273,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "抖动 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "jitter_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    20,
+                    20,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    0,
+                    0
+                  ]
+                }
+              ]
+            },
+            "familyId": "jitter",
+            "familyLabel": "抖动",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "0c6bb90f-9d00-4b22-8ed1-7a23f04e3b7f",
+          "resourceId": "flapping_p500",
+          "startMs": 7879,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "拍翼 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "flapping_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    12,
+                    12,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    180,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "flapping",
+            "familyLabel": "拍翼",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "cbc905ec-f240-4b7f-b426-2a285496972a",
+          "resourceId": "flapping_p500",
+          "startMs": 8485,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "拍翼 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "flapping_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    12,
+                    12,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    180,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "flapping",
+            "familyLabel": "拍翼",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "13f5bd04-fb63-4ad4-97a6-eb69f80a6e6a",
+          "resourceId": "flapping_p500",
+          "startMs": 9091,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "拍翼 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "flapping_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    12,
+                    12,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    180,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "flapping",
+            "familyLabel": "拍翼",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "fee1f67d-6d5a-4a51-85cf-b8ca309e5c98",
+          "resourceId": "flapping_p500",
+          "startMs": 9697,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "拍翼 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "flapping_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    12,
+                    12,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    180,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "flapping",
+            "familyLabel": "拍翼",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "f297df26-65bf-4573-90da-ddd40abc66a2",
+          "resourceId": "jitter_p500",
+          "startMs": 10303,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "抖动 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "jitter_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    20,
+                    20,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    0,
+                    0
+                  ]
+                }
+              ]
+            },
+            "familyId": "jitter",
+            "familyLabel": "抖动",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "2bce6b5b-524a-4813-8f2c-550d5e1b26e7",
+          "resourceId": "jitter_p500",
+          "startMs": 10909,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "抖动 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "jitter_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    20,
+                    20,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    0,
+                    0
+                  ]
+                }
+              ]
+            },
+            "familyId": "jitter",
+            "familyLabel": "抖动",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "271b5e88-6896-4b95-9ddf-1cac5f41b692",
+          "resourceId": "updown_p500",
+          "startMs": 11515,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "起伏 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "updown_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "updown",
+            "familyLabel": "起伏",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "5e8e865f-3ab6-4836-ba22-fa0b907da269",
+          "resourceId": "flapping_p500",
+          "startMs": 12121,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "拍翼 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "flapping_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    12,
+                    12,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    180,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "flapping",
+            "familyLabel": "拍翼",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "2ca89aba-2ee9-493f-88ba-afef969e7bd1",
+          "resourceId": "updown_p500",
+          "startMs": 12727,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "起伏 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "updown_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "updown",
+            "familyLabel": "起伏",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "e5b91720-bacd-45e2-a180-4ced6565ee75",
+          "resourceId": "jitter_p500",
+          "startMs": 13333,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "抖动 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "jitter_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    20,
+                    20,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    0,
+                    0
+                  ]
+                }
+              ]
+            },
+            "familyId": "jitter",
+            "familyLabel": "抖动",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "ac62f30e-6dcb-472e-bd22-e27fcd86f20e",
+          "resourceId": "updown_p500",
+          "startMs": 13939,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "起伏 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "updown_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "updown",
+            "familyLabel": "起伏",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "0ca7fa36-4a2c-4d34-8494-f7283beb8330",
+          "resourceId": "jitter_p500",
+          "startMs": 14545,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "抖动 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "jitter_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    20,
+                    20,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    0,
+                    0
+                  ]
+                }
+              ]
+            },
+            "familyId": "jitter",
+            "familyLabel": "抖动",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "a2cca812-d8f2-45d8-801f-cda6099c2b50",
+          "resourceId": "jitter_p500",
+          "startMs": 15152,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "抖动 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "jitter_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    20,
+                    20,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    0,
+                    0
+                  ]
+                }
+              ]
+            },
+            "familyId": "jitter",
+            "familyLabel": "抖动",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "d33748ed-7c34-4149-a43b-d2c88f910f74",
+          "resourceId": "flapping_p500",
+          "startMs": 15758,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "拍翼 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "flapping_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    12,
+                    12,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    180,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "flapping",
+            "familyLabel": "拍翼",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "b42e5566-56d6-4002-9cbf-4a747bb15740",
+          "resourceId": "jitter_p500",
+          "startMs": 16364,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "抖动 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "jitter_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    20,
+                    20,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    0,
+                    0
+                  ]
+                }
+              ]
+            },
+            "familyId": "jitter",
+            "familyLabel": "抖动",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "4fa4ff93-119d-44b8-b59e-a68f9afecea8",
+          "resourceId": "flapping_p500",
+          "startMs": 16970,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "拍翼 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "flapping_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    12,
+                    12,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    10,
+                    -10
+                  ],
+                  "phase": [
+                    0,
+                    180,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "flapping",
+            "familyLabel": "拍翼",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "a595f39e-6d70-4baf-98bf-1f6093349cb2",
+          "resourceId": "updown_p500",
+          "startMs": 17576,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "起伏 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "updown_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "updown",
+            "familyLabel": "起伏",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "99411746-a5ef-4998-b271-dae0d05d87e2",
+          "resourceId": "updown_p500",
+          "startMs": 18182,
+          "durationMs": 500,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "起伏 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 500,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "updown_p500",
+              "segments": [
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 500,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "updown",
+            "familyLabel": "起伏",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        },
+        {
+          "id": "bc7e9cfb-59a6-48f0-b029-4a0c4ea589f1",
+          "resourceId": "home_p500",
+          "startMs": 18880,
+          "durationMs": 601,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 中速",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 601,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_p500",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 250,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 250,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 100,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "中速",
+            "group": "基础动作"
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "90ef1b95-9944-4a03-b160-a30a76e4e5f0",
+          "resourceId": "laugh_05s_10",
+          "startMs": 60,
+          "durationMs": 2000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "大笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 2000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/laugh_05s_10.gif",
+            "introMs": 480,
+            "loopMs": 1000,
+            "outroMs": 520,
+            "hasLoopRange": true,
+            "hasStopFrame": false,
+            "supportsRepeat": true,
+            "loopCount": 1
+          },
+          "loopCount": 1
+        },
+        {
+          "id": "a6c373fa-8f18-42c7-8f6c-3b722741f03e",
+          "resourceId": "smile_05s",
+          "startMs": 18130,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_05s.gif",
+            "introMs": 480,
+            "loopMs": 520,
+            "outroMs": 0,
+            "hasLoopRange": false,
+            "hasStopFrame": true,
+            "supportsRepeat": true,
+            "loopCount": 1
+          },
+          "loopCount": 1
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": [
+        {
+          "id": "57ba1d67-1bdc-43c6-9828-e13664df7759",
+          "resourceId": "5144d03f-10dc-423f-bd38-e3ec2d999bcd",
+          "startMs": 0,
+          "durationMs": 19879,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "爱你",
+            "revision": 1,
+            "kind": "audio",
+            "durationMs": 19879,
+            "source": "爱你",
+            "url": "/api/audio/5144d03f-10dc-423f-bd38-e3ec2d999bcd-4457582d4a6844b5bc7a91e6f913882c.wav",
+            "mime": "audio/wav",
+            "sha256": "8150dc3f940a7ef09dfc7d3d19ecf1aa02f22b054a8da2774039ab253cc76b1b"
+          }
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "kind": "music",
+      "muted": false,
+      "clips": []
+    }
+  ]
+}

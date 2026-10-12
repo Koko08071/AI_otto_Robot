@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 1,
+  "id": "1a3b49e1-025a-44b5-8c7f-4aebac8b584f",
+  "name": "飞吻",
+  "trigger": "飞吻，给我个飞吻，拥抱，我爱你，喜欢你",
+  "revision": 2,
+  "createdAt": "2026-10-10T17:48:09.881522+00:00",
+  "updatedAt": "2026-10-10T17:48:09.881522+00:00",
+  "durationMs": 9400,
+  "clipCount": 6,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "5f137f5c-10ed-4446-9138-f62f8a4b5466",
+          "resourceId": "home_complete_p250",
+          "startMs": 0,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "4ad938da-255b-4e72-90bd-5968dfb7d762",
+          "resourceId": "gesture_love_complete_p500",
+          "startMs": 301,
+          "durationMs": 1835,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "爱心 · 中速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 1835,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "gesture_love_complete_p500",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 167,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 318
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 1000,
+                  "period": 500,
+                  "amplitude": [
+                    25,
+                    25,
+                    15,
+                    15
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    11,
+                    -11
+                  ],
+                  "phase": [
+                    5156.62,
+                    5156.62,
+                    0,
+                    -60
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 167,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "hold",
+                  "duration": 115
+                },
+                {
+                  "type": "move",
+                  "duration": 67,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "gesture_love",
+            "familyLabel": "爱心",
+            "variantLabel": "中速补全"
+          }
+        },
+        {
+          "id": "c3355f96-d15a-4fb5-b6ca-11837e5a0f70",
+          "resourceId": "gesture_love_complete_p250",
+          "startMs": 2200,
+          "durationMs": 917,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "爱心 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 917,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "gesture_love_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 83,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 159
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 500,
+                  "period": 250,
+                  "amplitude": [
+                    25,
+                    25,
+                    15,
+                    15
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    11,
+                    -11
+                  ],
+                  "phase": [
+                    5156.62,
+                    5156.62,
+                    0,
+                    -60
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 83,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "hold",
+                  "duration": 58
+                },
+                {
+                  "type": "move",
+                  "duration": 33,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "gesture_love",
+            "familyLabel": "爱心",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "827752ea-76b7-41d9-932e-666b29318fe5",
+          "resourceId": "home_complete_p250",
+          "startMs": 3300,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "expr-kiss_act-0",
+          "resourceId": "kiss_act",
+          "startMs": 0,
+          "durationMs": 1880,
+          "muted": false,
+          "loopCount": 2,
+          "resourceSnapshot": {
+            "label": "飞吻",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1880,
+            "source": "custom EMO-inspired / Emote Pack remix",
+            "preview": "/official/kiss_act.gif",
+            "introMs": 200,
+            "loopMs": 680,
+            "outroMs": 320,
+            "hasLoopRange": true,
+            "hasStopFrame": false,
+            "supportsRepeat": true,
+            "loopCount": 2
+          }
+        },
+        {
+          "id": "expr-shy_20s_40s-1",
+          "resourceId": "shy_20s_40s",
+          "startMs": 1880,
+          "durationMs": 7520,
+          "muted": false,
+          "loopCount": 1,
+          "resourceSnapshot": {
+            "label": "害羞",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 7520,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/shy_20s_40s.gif",
+            "introMs": 2000,
+            "loopMs": 4000,
+            "outroMs": 1520,
+            "hasLoopRange": true,
+            "hasStopFrame": false,
+            "supportsRepeat": true,
+            "loopCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": []
+    },
+    {
+      "id": "music",
+      "kind": "music",
+      "muted": true,
+      "clips": []
+    }
+  ]
+}

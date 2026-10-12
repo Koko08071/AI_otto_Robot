@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "id": "9a0bfe34-bbd1-4da9-9bac-9f270bad120f",
+  "name": "开心",
+  "trigger": "好酷，可爱，真棒，真帅，好帅，好棒",
+  "revision": 11,
+  "createdAt": "2026-10-10T08:02:03.688018+00:00",
+  "updatedAt": "2026-10-10T13:15:58.156018+00:00",
+  "durationMs": 3000,
+  "clipCount": 5,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "d2f7fdf2-b624-4ade-a4aa-3e0930c622f5",
+          "resourceId": "gesture_superhappy_complete",
+          "startMs": 0,
+          "durationMs": 1761,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "超级开心 [补全版]",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 1761,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "gesture_superhappy_complete",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 250,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 336
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 324
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 250,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 100,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "8ff20194-201d-4345-bf8d-798cb2d98ffa",
+          "resourceId": "confident_08",
+          "startMs": 1000,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "自信",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/confident_08.gif"
+          }
+        },
+        {
+          "id": "725bd16b-5d5b-4e45-8474-2b05d64519b2",
+          "resourceId": "smile_static",
+          "startMs": 0,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "静态微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_static.gif"
+          }
+        },
+        {
+          "id": "016458a0-2e46-406e-ba06-4de2628b0f6f",
+          "resourceId": "smile_static",
+          "startMs": 2000,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "静态微笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/smile_static.gif"
+          }
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": [
+        {
+          "id": "e289c085-be4f-499a-bb99-9191b6c87025",
+          "resourceId": "fc05cec8-c025-4423-8694-b678a3b90eb8",
+          "startMs": 870,
+          "durationMs": 910,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "那可不",
+            "revision": 1,
+            "kind": "audio",
+            "durationMs": 910,
+            "source": "",
+            "url": "/api/audio/fc05cec8-c025-4423-8694-b678a3b90eb8-70d392f13bd94b9a8cd70d2af558124c.wav",
+            "mime": "audio/wav",
+            "sha256": "25c90ffb924db933a50de67003d6e6fd820846aac2276c3b79bbc5a87b4e3f8a"
+          }
+        }
+      ]
+    }
+  ]
+}

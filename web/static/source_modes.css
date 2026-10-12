@@ -1,0 +1,17 @@
+.camera-input { padding: 16px 24px; border-bottom: 1px solid #d4ded2; display: flex; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+.camera-input[hidden] { display: none; }
+.camera-picture { position: relative; width: min(480px, 100%); aspect-ratio: 16 / 9; background: #171c18; }
+.camera-picture video { width: 100%; height: 100%; object-fit: contain; }
+.camera-labels { position: absolute; top: 10px; left: 12px; color: #46ff66; text-shadow: 0 1px 3px #000; font-size: 20px; white-space: pre-line; overflow-wrap: anywhere; max-width: calc(100% - 24px); }
+.camera-status { color: #315b46; font-size: 14px; }
+.voicebar { flex-wrap: wrap; height: auto; min-height: 64px; }
+#voice-source { max-width: 100%; }
+@media(max-width:600px) { .camera-input { padding: 12px; } .voicebar > * { min-width: 0; max-width: 100%; } }
+@media(max-width:600px) {
+ .sidebar { grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
+ .sidebar > section { min-width: 0; padding: 12px 8px; }
+ .preview-row { grid-template-columns: minmax(0,1fr); height: auto; }
+ .preview { min-height: 250px; }
+ .inspector { min-height: 130px; }
+ .titleblock { min-width: 0; flex-wrap: wrap; }
+}

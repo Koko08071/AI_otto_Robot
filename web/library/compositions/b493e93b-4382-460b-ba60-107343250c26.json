@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "id": "b493e93b-4382-460b-ba60-107343250c26",
+  "name": "我生气了",
+  "trigger": "我生气了，别生气",
+  "revision": 1,
+  "createdAt": "2026-10-10T17:48:09.899140+00:00",
+  "updatedAt": "2026-10-10T17:48:09.899140+00:00",
+  "durationMs": 6000,
+  "clipCount": 5,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "867df0dd-bdce-4350-9290-016cabb6945b",
+          "resourceId": "home_complete_p250",
+          "startMs": 0,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "bd8327cf-29ae-4d00-93ba-e7f9d49530d0",
+          "resourceId": "gesture_angry_complete_p500",
+          "startMs": 301,
+          "durationMs": 2088,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "愤怒 · 中速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 2088,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "gesture_angry_complete_p500",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 250,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 150,
+                  "pose": [
+                    90,
+                    90,
+                    70,
+                    110
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 777
+                },
+                {
+                  "type": "move",
+                  "duration": 100,
+                  "pose": [
+                    110,
+                    110,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 180
+                },
+                {
+                  "type": "move",
+                  "duration": 100,
+                  "pose": [
+                    70,
+                    70,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 180
+                },
+                {
+                  "type": "move",
+                  "duration": 250,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 100,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "gesture_angry",
+            "familyLabel": "愤怒",
+            "variantLabel": "中速补全"
+          }
+        },
+        {
+          "id": "de4e251e-c720-4f69-ba11-603267054b96",
+          "resourceId": "home_complete_p250",
+          "startMs": 2500,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "a4889239-8b35-490b-af10-4d7e72747d8f",
+          "resourceId": "angry_20s",
+          "startMs": 0,
+          "durationMs": 3040,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "生气",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 3040,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/angry_20s.gif",
+            "introMs": 2000,
+            "loopMs": 520,
+            "outroMs": 0,
+            "hasLoopRange": false,
+            "hasStopFrame": true,
+            "supportsRepeat": true,
+            "loopCount": 2
+          },
+          "loopCount": 2
+        },
+        {
+          "id": "198883e4-d78e-454e-8c1a-6d65a7bbd70e",
+          "resourceId": "mute_05s",
+          "startMs": 5000,
+          "durationMs": 1000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "无语",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/mute_05s.gif",
+            "introMs": 480,
+            "loopMs": 520,
+            "outroMs": 0,
+            "hasLoopRange": false,
+            "hasStopFrame": true,
+            "supportsRepeat": true,
+            "loopCount": 1
+          },
+          "loopCount": 1
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": []
+    },
+    {
+      "id": "music",
+      "kind": "music",
+      "muted": true,
+      "clips": []
+    }
+  ]
+}

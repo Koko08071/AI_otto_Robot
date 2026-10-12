@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "id": "a9f7aee0-75e5-460f-9248-b426a92b2f4c",
+  "name": "机身语音联调",
+  "trigger": "奥托你好",
+  "revision": 2,
+  "createdAt": "2026-10-10T05:59:09.402527+00:00",
+  "updatedAt": "2026-10-10T13:15:58.159214+00:00",
+  "durationMs": 2062,
+  "clipCount": 3,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "c0c08676-cd38-4ac7-870a-b8caa4e48a31",
+          "resourceId": "updown_complete",
+          "startMs": 0,
+          "durationMs": 475,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "起伏 [补全版]",
+            "kind": "motion",
+            "durationMs": 475,
+            "program": {
+              "name": "updown_complete",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    90.0,
+                    90.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "source": "OttoDIY/OttoDIYLib",
+            "revision": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "3b2ac440-747f-42cf-8fd3-99fa09579b9b",
+          "resourceId": "badminton_12",
+          "startMs": 0,
+          "durationMs": 2000,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "羽毛球",
+            "kind": "expression",
+            "durationMs": 2000
+          }
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": [
+        {
+          "id": "91147cdd-6b36-45df-9281-68d8491f3c7e",
+          "resourceId": "8a486d5d-e338-4cf4-9013-1f1eb17a7512",
+          "startMs": 0,
+          "durationMs": 2062,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "奥托问候",
+            "kind": "audio",
+            "durationMs": 2062,
+            "url": "/api/audio/8a486d5d-e338-4cf4-9013-1f1eb17a7512-6a24324e63394bdd8095454303a18bba.wav"
+          }
+        }
+      ]
+    }
+  ]
+}

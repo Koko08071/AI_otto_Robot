@@ -1,0 +1,587 @@
+{
+  "schemaVersion": 1,
+  "id": "3958423e-475d-40c9-a9ef-657ecb801b51",
+  "name": "变小狗",
+  "trigger": "变小狗，模仿小狗，小狗",
+  "revision": 2,
+  "createdAt": "2026-10-10T17:48:09.872034+00:00",
+  "updatedAt": "2026-10-10T17:48:09.872034+00:00",
+  "durationMs": 4200,
+  "clipCount": 9,
+  "tracks": [
+    {
+      "id": "motion",
+      "kind": "motion",
+      "muted": false,
+      "clips": [
+        {
+          "id": "74bfdaab-cc38-48a1-b6b4-c935fb651b9e",
+          "resourceId": "home_complete_p250",
+          "startMs": 0,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "5c83bf6d-0751-49a7-874b-7471717cee45",
+          "resourceId": "shakeleg_complete_p250",
+          "startMs": 350,
+          "durationMs": 681,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "抖腿 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 681,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "shakeleg_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 75,
+                  "pose": [
+                    90,
+                    90,
+                    115,
+                    90
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 45
+                },
+                {
+                  "type": "move",
+                  "duration": 75,
+                  "pose": [
+                    90,
+                    90,
+                    125,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    108,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    125,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 100,
+                  "pose": [
+                    90,
+                    90,
+                    92,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 88,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "shakeleg",
+            "familyLabel": "抖腿",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "79bc82ab-7f3a-4ccd-9b2c-6e3a0cef3c6a",
+          "resourceId": "shakeleg_reverse_complete_p250",
+          "startMs": 1100,
+          "durationMs": 681,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "抖腿 · 反向 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 681,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "shakeleg_reverse_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 75,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    75
+                  ]
+                },
+                {
+                  "type": "hold",
+                  "duration": 45
+                },
+                {
+                  "type": "move",
+                  "duration": 75,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    60
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    84
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 62,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    60
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 100,
+                  "pose": [
+                    90,
+                    90,
+                    92,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 88,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "shakeleg_reverse",
+            "familyLabel": "抖腿 · 反向",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "42ba270c-c241-4b1d-9aa5-f1b30231e56c",
+          "resourceId": "jitter_complete_p250",
+          "startMs": 1900,
+          "durationMs": 730,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "抖动 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 730,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "jitter_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 250,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 115,
+                  "pose": [
+                    70.0,
+                    110.0,
+                    90.0,
+                    90.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    20,
+                    20,
+                    0,
+                    0
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "phase": [
+                    -90,
+                    90,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 115,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "jitter",
+            "familyLabel": "抖动",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "f801e0be-6fc6-43a5-a2c8-51ca41d58d1c",
+          "resourceId": "updown_complete_p250",
+          "startMs": 2700,
+          "durationMs": 475,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "起伏 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 475,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "updown_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90.0,
+                    90.0,
+                    90.0,
+                    90.0
+                  ]
+                },
+                {
+                  "type": "oscillate",
+                  "duration": 250,
+                  "period": 250,
+                  "amplitude": [
+                    0,
+                    0,
+                    20,
+                    20
+                  ],
+                  "offset": [
+                    0,
+                    0,
+                    20,
+                    -20
+                  ],
+                  "phase": [
+                    0,
+                    0,
+                    -90,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "updown",
+            "familyLabel": "起伏",
+            "variantLabel": "快速补全"
+          }
+        },
+        {
+          "id": "8bd731ad-2a58-485c-be07-ae012f126bfc",
+          "resourceId": "home_complete_p250",
+          "startMs": 3400,
+          "durationMs": 301,
+          "muted": false,
+          "resourceSnapshot": {
+            "label": "归位 · 快速补全",
+            "revision": 1,
+            "kind": "motion",
+            "durationMs": 301,
+            "source": "OttoDIY/OttoDIYLib",
+            "program": {
+              "name": "home_complete_p250",
+              "reset_phase_on_repeat": true,
+              "segments": [
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                },
+                {
+                  "type": "move",
+                  "duration": 125,
+                  "pose": [
+                    90,
+                    90,
+                    90,
+                    90
+                  ]
+                },
+                {
+                  "type": "output",
+                  "enabled": false,
+                  "duration": 1
+                },
+                {
+                  "type": "move",
+                  "duration": 50,
+                  "pose": [
+                    90,
+                    90,
+                    100,
+                    90
+                  ]
+                }
+              ]
+            },
+            "familyId": "home",
+            "familyLabel": "归位",
+            "variantLabel": "快速补全"
+          }
+        }
+      ]
+    },
+    {
+      "id": "expression",
+      "kind": "expression",
+      "muted": false,
+      "clips": [
+        {
+          "id": "expr-dog_act-0",
+          "resourceId": "dog_act",
+          "startMs": 0,
+          "durationMs": 3200,
+          "muted": false,
+          "loopCount": 3,
+          "resourceSnapshot": {
+            "label": "变小狗",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 3200,
+            "source": "custom EMO-inspired / Emote Pack remix",
+            "preview": "/official/dog_act.gif",
+            "introMs": 240,
+            "loopMs": 880,
+            "outroMs": 320,
+            "hasLoopRange": true,
+            "hasStopFrame": false,
+            "supportsRepeat": true,
+            "loopCount": 3
+          }
+        },
+        {
+          "id": "expr-snigger_10s-1",
+          "resourceId": "snigger_10s",
+          "startMs": 3200,
+          "durationMs": 1000,
+          "muted": false,
+          "loopCount": 1,
+          "resourceSnapshot": {
+            "label": "窃笑",
+            "revision": 1,
+            "kind": "expression",
+            "durationMs": 1000,
+            "source": "Espressif Emote Pack / esp_emote_gen_player",
+            "preview": "/official/snigger_10s.gif",
+            "introMs": 960,
+            "loopMs": 40,
+            "outroMs": 0,
+            "hasLoopRange": false,
+            "hasStopFrame": true,
+            "supportsRepeat": true,
+            "loopCount": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "kind": "audio",
+      "muted": false,
+      "clips": []
+    },
+    {
+      "id": "music",
+      "kind": "music",
+      "muted": true,
+      "clips": []
+    }
+  ]
+}
