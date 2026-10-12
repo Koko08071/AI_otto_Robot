@@ -42,3 +42,19 @@
 多个冲突手势不会执行，stop 优先。首次实机调试托稳机身。
 识别类别总览可用 --list 查看；并非所有识别类别都有机器人响应。
 组合声音需要导入个人资源包，详见项目首页。
+
+<!-- FILE-INDEX:START -->
+## 当前目录逐项说明
+
+| 文件或子目录 | 用途说明 |
+|---|---|
+| [README.md](README.md) | 电脑摄像头识别、手势映射和指令发送：使用说明与当前目录文件导航 |
+| [gesture_actions.json](gesture_actions.json) | 手势对应动作与组合 ID：枪形侧倒、拳头后退、V 前进等 |
+| [motion_bridge.py](motion_bridge.py) | 手势别名归一化、动作冷却、设备身份核验与 HTTP 指令发送 |
+| [recognize.py](recognize.py) | 笔记本摄像头识别入口：YOLO 推理、类别显示、稳定判定及可选机器人响应 |
+| [robot_config.py](robot_config.py) | 统一读取本地配置和环境变量，按仓库位置解析模型路径 |
+| [test_motion_bridge.py](test_motion_bridge.py) | 手势映射、冷却、停止优先级、设备核验和组合调用测试 |
+| [test_recognize.py](test_recognize.py) | 识别稳定判定、手势候选与确认逻辑测试 |
+| [test_video_input.py](test_video_input.py) | 网页视频接入与识别流程的手势侧测试 |
+| [video_worker.py](video_worker.py) | 网页视频推理子进程：接收图像帧并返回手势识别结果 |
+<!-- FILE-INDEX:END -->
