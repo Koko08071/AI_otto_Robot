@@ -41,6 +41,10 @@
 
 ## 项目结构
 
+**[查看全部目录与文件的中文用途说明](docs/file-index.md)**：逐项覆盖代码、配置、组合 JSON、表情 GIF、关键帧、缩略视频和测试。进入任意子目录，也可在该目录 README 底部查看直属文件说明。
+
+GitHub 文件列表中间显示的是最近一次提交说明，后续修改时会变化；固定用途说明保存在 README 和上述总索引中。
+
 ```text
 firmware/              ESP32-S3 / ESP-IDF 固件源码
 web/                   本地网页控制台、多轨编排器与资源库
@@ -77,6 +81,8 @@ voice-model/           本地语音模型（下载生成，不提交）
 修改动作库后，已保存组合中的动作快照不会自动更新；需要在编排器里更新对应片段并重新保存。
 
 ## 快速启动网页控制台
+
+收到包含 `runtime/` 的 Windows 便携交接包时，直接解压后双击 `START.bat`，连接步骤见 [同事交接文档](HANDOFF.md)。从 GitHub 下载源码时，使用下面的安装流程。
 
 Windows 需先安装 Python 3.12。在下载的仓库根目录打开 PowerShell：
 
@@ -194,3 +200,25 @@ HaGRID 的 `three_gun` 是数据集定义的三指枪形，不等同于所有食
 - [OttoDIY Docs](https://github.com/txp666/ottodiy-docs)：OttoDIY 文档参考。
 - [OttoDIY Getting Started](https://ottodiy.tech/docs/getting-started)：官方入门教程。
 - [OttoDIYLib](https://github.com/OttoDIY/OttoDIYLib)：动作算法参考，使用或分发相关实现时请遵守上游许可证。
+
+<!-- FILE-INDEX:START -->
+## 当前目录逐项说明
+
+| 文件或子目录 | 用途说明 |
+|---|---|
+| [docs/](docs/) | 硬件通信、功能说明、维护文档和展示素材 |
+| [firmware/](firmware/) | ESP32-S3 板端源码、分区和构建配置 |
+| [gesture_recognition/](gesture_recognition/) | 电脑摄像头识别、手势映射和指令发送 |
+| [tools/](tools/) | 模型下载、资源迁移、环境检查和便携包工具 |
+| [web/](web/) | 网页服务、多轨组合、语音识别和机器人通信 |
+| [.gitignore](.gitignore) | 忽略本地配置、模型、虚拟环境、音频、压缩包与构建产物，避免误提交 |
+| [CHECK.bat](CHECK.bat) | 便携交接包双击检查入口，报告缺少的依赖、模型或声音文件 |
+| [HANDOFF.md](HANDOFF.md) | 同事交接详解：启动、Wi-Fi/BLE 连接、前端演示、故障排查与保存位置 |
+| [QUICKSTART.html](QUICKSTART.html) | 无需编辑器即可在浏览器打开的同事图文快速指南 |
+| [README.md](README.md) | 项目入口、配置、安装启动与同事交接：使用说明与当前目录文件导航 |
+| [START.bat](START.bat) | 便携交接包双击启动入口，使用 runtime 内的 Python 并自动打开浏览器 |
+| [config.example.json](config.example.json) | 机器人 IP、设备 ID、蓝牙名、模型路径和网页端口的配置模板；复制为 config.local.json 后本地填写 |
+| [requirements.txt](requirements.txt) | 电脑端总依赖清单，包含网页服务、手势推理和音频处理 |
+| [setup.ps1](setup.ps1) | 创建仓库内 .venv、安装 Python 依赖并生成本地配置 |
+| [start.ps1](start.ps1) | 使用 .venv 启动网页服务，适用于源码安装方式 |
+<!-- FILE-INDEX:END -->
