@@ -19,11 +19,11 @@ body{max-width:920px;margin:40px auto;padding:0 24px 48px;font:16px/1.8 "Microso
 <p>机器人需独立供电并运行现有固件，不用重新刷机。交接前，原电脑应停止动作并断开连接。</p>
 <table>
 <tr><th>连接方式</th><th>操作</th><th>适用范围</th></tr>
-<tr><td>Wi-Fi</td><td>电脑与机器人处于同一局域网。网页右上角选“Wi-Fi”，点击“连接机器人”。本包预填 <code>http://10.240.103.49</code>。</td><td>动作、表情和机身声音，完整展示优先。</td></tr>
+<tr><td>Wi-Fi</td><td>电脑与机器人处于同一局域网。先在 config.local.json 填写自己的机器人 IP 并重启，再在网页右上角选“Wi-Fi”，点击“连接机器人”。</td><td>动作、表情和机身声音，完整展示优先。</td></tr>
 <tr><td>蓝牙 BLE</td><td>开启电脑蓝牙，将机器人放近；网页选“蓝牙 BLE”，点击“连接机器人”。广播名为 <code>Otto-0E70</code>，无需先手工配对。</td><td>动作与表情。不要求同一 Wi-Fi；机身声音仍需要 Wi-Fi。</td></tr>
 </table>
 <p>设备 ID：<code>14:C1:9F:30:0E:70</code>。换网络后 IP 可能变化，在路由器设备列表或向项目负责人确认新 IP，再用记事本修改 <code>config.local.json</code> 中的 <code>OTTO_DEVICE_URL</code>，然后重启。不要填电脑自己的 IP。换 Wi-Fi 密码需另外配网，本包没有自动配网向导。</p>
-<p>本地控制不需要互联网；但 Wi-Fi 控制需要电脑能够访问机器人的局域网地址。可在浏览器打开 <code>http://10.240.103.49/api/status</code> 检查，正常会看到设备状态 JSON。</p>
+<p>本地控制不需要互联网；但 Wi-Fi 控制需要电脑能够访问机器人的局域网地址。在浏览器打开实际机器人地址下的 <code>/api/status</code> 检查，正常会看到设备状态 JSON。公开固件使用占位 Wi-Fi 参数，可先用蓝牙；要使用 Wi-Fi 需配置自己的网络并重新构建固件。</p>
 <h2>第三步：展示</h2>
 <ol>
 <li><strong>先单次动作：</strong>托稳机身，连接成功后点“返回站姿”，再选一个动作单次播放。</li>
@@ -42,5 +42,5 @@ body{max-width:920px;margin:40px auto;padding:0 24px 48px;font:16px/1.8 "Microso
 <li>识别卡顿：先停用摄像头和语音，单独测试动作；模型速度取决于电脑 CPU。</li>
 <li>表情打不开：网页预览素材不代表已烧录到当前机身，请选已确认可用的动画。</li>
 </ul>
-<p>详细说明、完整手势映射和维护目录见 <a href="HANDOFF.md">HANDOFF.md</a>（可用记事本打开）。不要删除 <code>runtime/</code>、<code>models/</code>、<code>voice-model/</code> 或 <code>web/library/</code>。本包不含完整刷机镜像，不需要为了启动控制台而刷机。</p>
+<p>详细说明、完整手势映射和维护目录见 <a href="HANDOFF.md">HANDOFF.md</a>（可用记事本打开）。不要删除 <code>runtime/</code>、<code>models/</code>、<code>voice-model/</code> 或 <code>web/library/</code>。公开刷机文件及适用范围见 <a href="flash/README.md">flash/README.md</a>；已有兼容固件无需刷机。</p>
 </html>

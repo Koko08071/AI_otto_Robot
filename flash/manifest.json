@@ -1,0 +1,47 @@
+{
+  "source_commit": "986353e8c96400a6e195e0acd37c1c6e5d713eeb",
+  "chip": "esp32s3",
+  "flash_size": "16MB",
+  "flash_mode": "dio",
+  "flash_freq": "80m",
+  "esp_idf": "v5.5.1",
+  "sdkconfig_defaults": [
+    "sdkconfig.defaults",
+    "sdkconfig.network-no-camera.defaults"
+  ],
+  "build_command": "idf.py \"-DSDKCONFIG_DEFAULTS=sdkconfig.defaults;sdkconfig.network-no-camera.defaults\" build",
+  "wifi": "Public placeholders only; configure own credentials and rebuild for Wi-Fi.",
+  "validation": "Build, ESP image checksums, partition sizes and known private credential scan passed. Not flashed or hardware-tested for this release.",
+  "files": [
+    {
+      "file": "bootloader.bin",
+      "offset": "0x0",
+      "size": 20896,
+      "sha256": "6185bd576245e9f019bbcaac19ee402a5fd89cdfcd8f3c6c57c492a5b4fcfde3"
+    },
+    {
+      "file": "partition-table.bin",
+      "offset": "0x8000",
+      "size": 3072,
+      "sha256": "40a8430d4aa2fd37114985cf0058455631e6fbdae0c37713378b6dfda3e58b95"
+    },
+    {
+      "file": "otto_expression_motion.bin",
+      "offset": "0x20000",
+      "size": 1409376,
+      "sha256": "10a629f9fa551df74cf7b0a9af39fa485d6a435019863ce0a53370b9b49d0628"
+    },
+    {
+      "file": "storage.bin",
+      "offset": "0x700000",
+      "size": 1048576,
+      "sha256": "9ce5b2fbc92175e213345aa5785df77deaefd3fe4f01c3c37e182b77ca947a88"
+    },
+    {
+      "file": "all_emote_assets.bin",
+      "offset": "0x800000",
+      "size": 8211975,
+      "sha256": "498a6d1ea55828bea3b5bb401e0f982078fc1bb2edc01746201df3d57adff7ab"
+    }
+  ]
+}

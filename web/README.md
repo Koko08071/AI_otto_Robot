@@ -12,7 +12,7 @@
 | [video_input.py](video_input.py) | 网页摄像头接入手势识别 |
 | [server.py](server.py) / [ble_link.py](ble_link.py) | 网页服务、Wi-Fi 与蓝牙通信 |
 
-启动步骤见[项目首页](../README.md)。模型和本机音频文件未随仓库上传；新增屏幕表情还需同步机器人固件资源。
+启动步骤见[项目首页](../README.md)。现有音频随源码提供，模型和完整 Windows 环境通过本项目 Releases 提供；新增屏幕表情仍需同步机器人固件资源。
 
 <!-- FILE-INDEX:START -->
 ## 当前目录逐项说明

@@ -26,6 +26,7 @@ JavaScript 测试使用 node --test web/tests/*.cjs。
 | [test_motion_tempo.cjs](test_motion_tempo.cjs) | 动作节奏变体、默认节奏及前端选择控件测试 |
 | [test_portable_runtime.py](test_portable_runtime.py) | 仓库相对路径、配置覆盖及非默认端口请求校验测试 |
 | [test_programs.py](test_programs.py) | 动作程序、角度边界、时长、协议容量、设备身份与表情预览测试 |
+| [test_release_models.py](test_release_models.py) | 发布模型包校验、按类型解压及路径越界拒绝测试 |
 | [test_video_input.py](test_video_input.py) | 网页视频帧会话、识别结果与控制接入测试 |
 | [test_voice_trigger.py](test_voice_trigger.py) | 语音输入、唤醒词、关键词触发和识别模型接入测试 |
 <!-- FILE-INDEX:END -->

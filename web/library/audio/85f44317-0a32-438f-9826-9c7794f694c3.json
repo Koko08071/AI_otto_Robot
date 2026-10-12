@@ -1,0 +1,14 @@
+{
+  "id": "85f44317-0a32-438f-9826-9c7794f694c3",
+  "label": "我来啦",
+  "kind": "audio",
+  "mime": "audio/wav",
+  "durationMs": 814,
+  "url": "/api/audio/85f44317-0a32-438f-9826-9c7794f694c3-7906bc300da94683a9cc69ff208878fa.wav",
+  "sha256": "2cb55be0e91e3b335b87f92aeab90a558973ac523a4076ae8e5271b8a0c92320",
+  "revision": 1,
+  "origin": "tts",
+  "sourceName": "我来啦",
+  "text": "我来啦",
+  "voice": "Eddy zh-CN · robotic EQ"
+}

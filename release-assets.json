@@ -1,0 +1,13 @@
+{
+  "tag": "v2026.10.12",
+  "models": {
+    "name": "otto-models-v2026.10.12.zip",
+    "url": "https://github.com/Koko08071/AI_otto_Robot/releases/download/v2026.10.12/otto-models-v2026.10.12.zip",
+    "sha256": "d7e93745b2d5285d831001ad7c023e09e7670b6d60e05e623e2d93abd8622717"
+  },
+  "windows": {
+    "name": "Otto-Robot-Windows-v2026.10.12.zip",
+    "url": "https://github.com/Koko08071/AI_otto_Robot/releases/download/v2026.10.12/Otto-Robot-Windows-v2026.10.12.zip",
+    "sha256": "600d7bab347400990f680722a4e45eb9275730cb468fe5f5b4279148a41f1173"
+  }
+}

@@ -1,5 +1,15 @@
 # Otto Robot Platform
 
+## 下载后直接运行
+
+**[下载完整 Windows 运行包](https://github.com/Koko08071/AI_otto_Robot/releases/download/v2026.10.12/Otto-Robot-Windows-v2026.10.12.zip)** · **[全部发布附件](https://github.com/Koko08071/AI_otto_Robot/releases/tag/v2026.10.12)**
+
+完整包适用于 Windows 10/11 Intel/AMD 64 位电脑，内置 Python、依赖、手势模型、离线语音模型、音频、动作、表情素材和公开刷机文件。**完整解压 → 双击 START.bat → 选择蓝牙或填写自己的机器人 Wi-Fi 地址 → 连接控制。** 不用安装 VS Code、Python 或开发环境。先看 [图文快速指南](QUICKSTART.html) 或 [交接说明](HANDOFF.md)。
+
+如果点的是 GitHub 的 **Code → Download ZIP**，得到的是源码包：双击 `START.bat` 会在首次运行时从本项目 Releases 下载并校验运行环境与模型，之后可离线启动。首次下载需要能访问 GitHub，并预留至少 6 GB 空间。想避免首次下载，请直接用上面的完整运行包。
+
+模型和运行环境作为 Releases 附件存储，音频及较小刷机文件随源码提供；没有使用 Git LFS。机器人仍需供电、兼容固件和可用的蓝牙/局域网连接。公开固件没有私人 Wi-Fi 密码；空白主板的使用限制见 [刷机说明](flash/README.md)。
+
 一个面向少儿编程与互动展示的 Otto 人形机器人项目，包含：
 
 - 四舵机动作控制与动作编排
@@ -51,8 +61,10 @@ web/                   本地网页控制台、多轨编排器与资源库
 gesture_recognition/   摄像头手势识别和手势到动作映射
 docs/                  硬件、通信、动作和维护文档
 tools/                 模型下载、环境检查、资源迁移和 Windows 语音合成
-models/                本地手势模型（下载生成，不提交）
-voice-model/           本地语音模型（下载生成，不提交）
+models/                手势模型目录（完整包内置，源码从 Releases 下载）
+voice-model/           离线语音模型（完整包内置，源码从 Releases 下载）
+flash/                 公开刷机文件、写入地址与校验清单
+expressions/official/  固件构建引用的机身表情分区镜像
 .venv/                 本项目 Python 环境（安装生成，不提交）
 ```
 
@@ -105,7 +117,7 @@ powershell -ExecutionPolicy Bypass -File .\start.ps1
 
 ## 启动手势识别
 
-安装脚本创建一个仓库内 `.venv`，网页和摄像头识别共用此环境。模型下载脚本取得 HaGRID YOLOv10x 权重并导出 OpenVINO，同时下载 Faster-Whisper base。首次需要联网，模型许可遵循上游；大模型推理速度取决于电脑性能。
+安装脚本创建一个仓库内 `.venv`，网页和摄像头识别共用此环境。模型下载脚本从本项目 Releases 获取已验证的 OpenVINO YOLOv10x 和 Faster-Whisper base，并核对 SHA256，无需再次转换模型。完整包已内置模型；源码首次下载需要联网，模型许可遵循上游，推理速度取决于电脑性能。
 
 手势模型默认在 `models/YOLOv10x_gestures_openvino_model/`，可通过 `config.local.json` 或 `--model` 指定：
 
@@ -118,11 +130,11 @@ powershell -ExecutionPolicy Bypass -File .\start.ps1
 
 ## 安全与提交边界
 
-不要把 Wi-Fi 密码、API 密钥、真实设备配置、YOLO 权重、语音模型、编译产物或刷机二进制提交到公开仓库。统一使用 `config.local.json`，同名环境变量优先；代码不自动加载 `.env`。
+Wi-Fi 密码、API 密钥和真实设备配置不公开，使用本地 `config.local.json`，同名环境变量优先；代码不自动加载 `.env`。模型通过本项目 Releases 提供；公开固件使用占位网络配置，镜像来源和校验值见 `flash/manifest.json`。
 
 ## 模型、声音与迁移
 
-仓库包含代码、网页素材、动作表情目录和已保存组合；不包含模型权重、个人音频和刷机镜像。无需复制 Python 安装目录、旧虚拟环境或整个 D 盘。
+源码包含代码、网页素材、动作表情目录、已保存组合、现有演示音频和公开刷机镜像。模型与 Windows 环境在 Releases，完整运行包将这些资源一并提供。无需复制旧虚拟环境或整个 D 盘。
 
 - 单独下载手势模型：`python tools/download_models.py --kind gesture`。
 - 单独下载语音模型：`python tools/download_models.py --kind voice`。
@@ -130,11 +142,11 @@ powershell -ExecutionPolicy Bypass -File .\start.ps1
 - 导出自己的声音和个人动作覆盖文件：`python tools/resources.py export 资源包.zip`。
 - 检查依赖、模型和组合音频：`python tools/check_environment.py`。
 
-以上 python 应使用本仓库 `.venv` 的解释器。缺少音频的历史组合需要导入资源包，或在编排器中替换/屏蔽声音片段；下载仓库本身不会取得这些音频。导入工具遇到同名文件会停止，避免覆盖修改。
+以上 python 应使用本仓库 `.venv` 的解释器（便携包可用 `runtime/python.exe`）。现有组合音频已随源码提供；迁移自己后来新增的音频时可使用资源导入导出工具。同名文件导入会停止，避免覆盖修改。
 
 Windows 语音监听使用“网页麦克风”或“机器人麦克风”；“本机 FFmpeg 麦克风”仍仅支持 macOS。Windows 合成声音使用系统中文语音，需安装可供 System.Speech 使用的中文语音；macOS 使用 say。音频转换优先调用系统 FFmpeg，否则使用 Python 依赖提供的 FFmpeg。
 
-固件源码和电脑运行环境是两部分。控制已有兼容固件的机器人不需要重新刷机；从空白主板复刻还需 ESP-IDF、匹配板型和动画分区资源，当前仓库不包含完整固件资源二进制，不能视作下载后直接烧录的完整包。
+控制已有兼容固件的机器人不需要重新刷机。`flash/` 提供匹配无摄像头 ESP32-S3、16 MB Flash 主板的公开镜像和动画分区，已完成构建及镜像校验，本次发布没有刷入实机测试。公开镜像可先使用蓝牙；要使用自己的 Wi-Fi，需配置网络参数并重新构建，详见刷机说明。
 
 首次实机运行请托稳机器人，准备断开舵机电源。网页停止按钮不是硬件急停。
 
@@ -207,9 +219,14 @@ HaGRID 的 `three_gun` 是数据集定义的三指枪形，不等同于所有食
 | 文件或子目录 | 用途说明 |
 |---|---|
 | [docs/](docs/) | 硬件通信、功能说明、维护文档和展示素材 |
+| [expressions/](expressions/) | 机身动画分区构建输入 |
 | [firmware/](firmware/) | ESP32-S3 板端源码、分区和构建配置 |
+| [flash/](flash/) | 公开刷机文件、写入地址与镜像校验信息 |
 | [gesture_recognition/](gesture_recognition/) | 电脑摄像头识别、手势映射和指令发送 |
+| [licenses/](licenses/) | 随项目保留的上游许可文本 |
+| [models/](models/) | GitHub Releases 手势模型下载说明 |
 | [tools/](tools/) | 模型下载、资源迁移、环境检查和便携包工具 |
+| [voice-model/](voice-model/) | GitHub Releases 离线语音模型下载说明 |
 | [web/](web/) | 网页服务、多轨组合、语音识别和机器人通信 |
 | [.gitignore](.gitignore) | 忽略本地配置、模型、虚拟环境、音频、压缩包与构建产物，避免误提交 |
 | [CHECK.bat](CHECK.bat) | 便携交接包双击检查入口，报告缺少的依赖、模型或声音文件 |
@@ -218,6 +235,7 @@ HaGRID 的 `three_gun` 是数据集定义的三指枪形，不等同于所有食
 | [README.md](README.md) | 项目入口、配置、安装启动与同事交接：使用说明与当前目录文件导航 |
 | [START.bat](START.bat) | 便携交接包双击启动入口，使用 runtime 内的 Python 并自动打开浏览器 |
 | [config.example.json](config.example.json) | 机器人 IP、设备 ID、蓝牙名、模型路径和网页端口的配置模板；复制为 config.local.json 后本地填写 |
+| [release-assets.json](release-assets.json) | GitHub 发布附件名称、下载链接和 SHA256 校验清单 |
 | [requirements.txt](requirements.txt) | 电脑端总依赖清单，包含网页服务、手势推理和音频处理 |
 | [setup.ps1](setup.ps1) | 创建仓库内 .venv、安装 Python 依赖并生成本地配置 |
 | [start.ps1](start.ps1) | 使用 .venv 启动网页服务，适用于源码安装方式 |

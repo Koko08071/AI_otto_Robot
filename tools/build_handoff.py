@@ -63,7 +63,7 @@ def main():
     if args.stage_only:
         print(f'Staged for verification: {target}', flush=True)
         return
-    archive = target.with_suffix('.zip')
+    archive = target.parent / (target.name + '.zip')
     if archive.exists():
         raise FileExistsError(archive)
     print('Compressing handoff...', flush=True)

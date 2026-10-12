@@ -1,0 +1,14 @@
+{
+  "id": "24ca1543-fb78-4760-b22e-e0d2824ca034",
+  "label": "收到",
+  "kind": "audio",
+  "mime": "audio/wav",
+  "durationMs": 766,
+  "url": "/api/audio/24ca1543-fb78-4760-b22e-e0d2824ca034-fa5aba8532e3488f97467f4e0e9664a6.wav",
+  "sha256": "c0ef62e87d3f6b79cb27c9c8f95ca5dec2f240c55c1a210e8159fa6bca22cc3a",
+  "revision": 1,
+  "origin": "tts",
+  "sourceName": "收到",
+  "text": "收到",
+  "voice": "Eddy zh-CN · robotic EQ"
+}

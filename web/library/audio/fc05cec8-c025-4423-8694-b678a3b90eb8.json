@@ -1,0 +1,14 @@
+{
+  "id": "fc05cec8-c025-4423-8694-b678a3b90eb8",
+  "label": "那可不",
+  "kind": "audio",
+  "mime": "audio/wav",
+  "durationMs": 910,
+  "url": "/api/audio/fc05cec8-c025-4423-8694-b678a3b90eb8-70d392f13bd94b9a8cd70d2af558124c.wav",
+  "sha256": "25c90ffb924db933a50de67003d6e6fd820846aac2276c3b79bbc5a87b4e3f8a",
+  "revision": 1,
+  "origin": "tts",
+  "sourceName": "那可不",
+  "text": "那可不",
+  "voice": "Eddy zh-CN · robotic EQ"
+}

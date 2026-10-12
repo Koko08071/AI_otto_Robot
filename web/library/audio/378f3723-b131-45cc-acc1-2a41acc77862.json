@@ -1,0 +1,12 @@
+{
+  "id": "378f3723-b131-45cc-acc1-2a41acc77862",
+  "label": "节拍舞曲-grok",
+  "kind": "audio",
+  "mime": "audio/wav",
+  "durationMs": 20000,
+  "url": "/api/audio/378f3723-b131-45cc-acc1-2a41acc77862-3f535350e03c447ebd72c86a8cf478ef.wav",
+  "sha256": "f03c49ea549a9edc1cd4f67588e61127a0a03d844c321facc0e2f4e0d6ace89c",
+  "revision": 1,
+  "origin": "upload",
+  "sourceName": "节拍舞曲-grok"
+}

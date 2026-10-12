@@ -1,0 +1,14 @@
+{
+  "id": "2ea554c7-61af-4f7f-bb5a-200d165df51f",
+  "label": "哼",
+  "kind": "audio",
+  "mime": "audio/wav",
+  "durationMs": 687,
+  "url": "/api/audio/2ea554c7-61af-4f7f-bb5a-200d165df51f-851171f46bdd4bacb11aea43fc1cda97.wav",
+  "sha256": "2cf091d6ab188a7eceba600eeb35f7e3da012e47e064c8d23ad119ece34b8c2f",
+  "revision": 3,
+  "origin": "tts",
+  "sourceName": "哼",
+  "text": "恨！",
+  "voice": "Eddy zh-CN · robotic EQ"
+}

@@ -1,4 +1,5 @@
 """Rebuild Chinese file descriptions from reviewed labels and resource metadata."""
+import argparse
 import json
 from pathlib import Path, PurePosixPath
 import subprocess
@@ -29,6 +30,13 @@ DIRECTORIES = {
     'web/static/official/_drafts/head_only': '头屏关键帧、过渡帧与视觉检查图',
     'web/static/official/_drafts/packer_named': '带循环时间标记的候选表情 GIF',
     'web/tests': '网页交互、协议、资源管理和识别接入测试',
+    'web/library/audio': '随项目提供的演示音频与声音元数据',
+    'models': 'GitHub Releases 手势模型下载说明',
+    'voice-model': 'GitHub Releases 离线语音模型下载说明',
+    'flash': '公开刷机文件、写入地址与镜像校验信息',
+    'expressions': '机身动画分区构建输入',
+    'expressions/official': '官方精简与头屏表情分区镜像',
+    'licenses': '随项目保留的上游许可文本',
 }
 FILES = {
     '.gitignore': '忽略本地配置、模型、虚拟环境、音频、压缩包与构建产物，避免误提交',
@@ -65,7 +73,19 @@ FILES = {
     'gesture_recognition/test_recognize.py': '识别稳定判定、手势候选与确认逻辑测试',
     'gesture_recognition/test_motion_bridge.py': '手势映射、冷却、停止优先级、设备核验和组合调用测试',
     'gesture_recognition/test_video_input.py': '网页视频接入与识别流程的手势侧测试',
-    'tools/download_models.py': '下载 HaGRID 手势权重并导出 OpenVINO，同时支持下载离线语音模型',
+    'tools/download_models.py': '从本项目 GitHub Releases 下载并校验已验证的手势与语音模型',
+    'tools/bootstrap_runtime.ps1': '源码包首次双击启动时下载、校验并安装 Windows 运行环境与模型',
+    'release-assets.json': 'GitHub 发布附件名称、下载链接和 SHA256 校验清单',
+    'web/tests/test_release_models.py': '发布模型包校验、按类型解压及路径越界拒绝测试',
+    'flash/manifest.json': '公开固件构建来源、写入地址和每个镜像的 SHA256',
+    'flash/bootloader.bin': '公开固件引导程序，写入 0x0',
+    'flash/partition-table.bin': '16 MB Flash 分区表，写入 0x8000',
+    'flash/otto_expression_motion.bin': '不含私人网络配置的公开主程序，写入 0x20000',
+    'flash/storage.bin': 'storage SPIFFS 分区镜像，写入 0x700000',
+    'flash/all_emote_assets.bin': '官方精简及 32 个头屏表情分区镜像，写入 0x800000',
+    'expressions/official/all_emote_assets.bin': '固件 CMake 构建引用的动画分区输入，与 flash 中同名镜像一致',
+    'licenses/OttoDIYLib-LICENSE.txt': 'OttoDIYLib 动作算法上游 GPL-3.0 许可文本',
+    'licenses/esp-emote-gfx-LICENSE.txt': 'Espressif 表情图形组件上游许可文本',
     'tools/check_environment.py': '检查 Python 依赖、模型目录及组合引用的音频，不发送机器人动作',
     'tools/resources.py': '导入或导出声音和个人动作覆盖 ZIP，拒绝覆盖已有文件',
     'tools/windows_tts.ps1': '调用 Windows System.Speech 将中文文本合成为 WAV',
@@ -128,6 +148,13 @@ def describe(name, labels):
     if name in FILES:
         return FILES[name]
     path = PurePosixPath(name)
+    if str(path.parent) == 'web/library/audio' and path.suffix in {'.wav', '.mp3', '.json'}:
+        if path.suffix == '.json':
+            item = json.loads((ROOT / name).read_text(encoding='utf-8'))
+            return f'声音“{item["label"]}”的元数据：音频地址、时长、来源和校验值'
+        metadata = ROOT / path.parent / (path.stem[:36] + '.json')
+        label = json.loads(metadata.read_text(encoding='utf-8'))['label'] if metadata.exists() else path.stem
+        return f'“{label}”的{path.suffix.upper()[1:]}音频；可能被已保存组合的资源快照引用'
     if path.name == 'README.md':
         return DIRECTORIES[str(path.parent) if str(path.parent) != '.' else ''] + '：使用说明与当前目录文件导航'
     if str(path.parent) == 'firmware/main' and path.stem in MODULES:
@@ -172,7 +199,13 @@ def describe(name, labels):
 
 
 def main():
-    raw = subprocess.check_output(['git', 'ls-files', '-z', '--cached', '--others', '--exclude-standard'], cwd=ROOT)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--tracked-only', action='store_true', help='Index staged/tracked files without unrelated unfinished work')
+    args = parser.parse_args()
+    command = ['git', 'ls-files', '-z', '--cached']
+    if not args.tracked_only:
+        command += ['--others', '--exclude-standard']
+    raw = subprocess.check_output(command, cwd=ROOT)
     files = {x for x in raw.decode('utf-8').split('\0') if x and (ROOT / x).is_file()}
     dirs = {''}
     for name in files:
@@ -214,7 +247,7 @@ def main():
         sections.append('\n')
     intro = '# 全部目录与文件用途索引\n\n'
     intro += f'本索引覆盖 {len(files)} 个源码、配置、文档与素材文件，按 {len(dirs)} 个目录分组。每级 README 也列出直属文件和子目录。\n\n'
-    intro += 'GitHub 文件列表中间一列是最近一次提交说明，并非固定备注；后续修改会更新它。固定用途说明请查看本索引或所在目录 README。组合名和表情名来自项目实际 JSON 元数据。模型、运行环境、个人音频和密码配置不随公开仓库提交，不在此清单内。\n\n'
+    intro += 'GitHub 文件列表中间一列是最近一次提交说明，并非固定备注；后续修改会更新它。固定用途说明请查看本索引或所在目录 README。组合名和表情名来自项目实际 JSON 元数据。模型与运行环境通过 GitHub Releases 提供；音频及公开刷机文件随源码提供，密码配置不公开。\n\n'
     intro += '维护时运行 `python tools/update_file_index.py` 更新索引；新增代码文件需先在脚本中补充用途，新增素材需补充对应资源目录元数据。\n\n'
     (ROOT / 'docs/file-index.md').write_text(intro + ''.join(sections), encoding='utf-8')
     print(f'Indexed {len(files)} files in {len(dirs)} directories')

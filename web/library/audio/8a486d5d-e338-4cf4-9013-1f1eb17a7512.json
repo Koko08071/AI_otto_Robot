@@ -1,0 +1,15 @@
+{
+  "id": "8a486d5d-e338-4cf4-9013-1f1eb17a7512",
+  "label": "奥托问候",
+  "kind": "audio",
+  "mime": "audio/wav",
+  "durationMs": 2062,
+  "url": "/api/audio/8a486d5d-e338-4cf4-9013-1f1eb17a7512-6a24324e63394bdd8095454303a18bba.wav",
+  "sha256": "8780467fd0c5665dace1396ed34ec5f87639359e11fda1322f2ef502c358eed9",
+  "revision": 5,
+  "origin": "tts",
+  "sourceName": "奥托问候",
+  "text": "你好，我是奥托机器人。",
+  "voice": "Eddy zh-CN · robotic EQ",
+  "deleted": true
+}

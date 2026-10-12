@@ -4,3 +4,4 @@ opencv-python>=4.10,<5
 openvino>=2024.6,<2027
 Pillow>=10,<13
 imageio-ffmpeg>=0.5,<1
+esptool>=4.8,<5

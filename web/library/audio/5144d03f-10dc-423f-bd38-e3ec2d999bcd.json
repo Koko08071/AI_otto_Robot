@@ -1,0 +1,12 @@
+{
+  "id": "5144d03f-10dc-423f-bd38-e3ec2d999bcd",
+  "label": "爱你",
+  "kind": "audio",
+  "mime": "audio/wav",
+  "durationMs": 19879,
+  "url": "/api/audio/5144d03f-10dc-423f-bd38-e3ec2d999bcd-4457582d4a6844b5bc7a91e6f913882c.wav",
+  "sha256": "8150dc3f940a7ef09dfc7d3d19ecf1aa02f22b054a8da2774039ab253cc76b1b",
+  "revision": 1,
+  "origin": "upload",
+  "sourceName": "爱你"
+}

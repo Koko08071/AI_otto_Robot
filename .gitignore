@@ -1,13 +1,15 @@
 # Local Python environments and caches
 .venv/
 runtime/
+.downloads/
 __pycache__/
 *.py[cod]
 
 # Local models and generated media
-models/
-voice-model/
-web/library/audio/
+models/*
+!models/README.md
+voice-model/*
+!voice-model/README.md
 web/library/_backups/
 web/behaviors/
 *.pt
@@ -15,6 +17,10 @@ web/behaviors/
 *.bin
 *.wav
 *.mp3
+!web/library/audio/*.wav
+!web/library/audio/*.mp3
+!flash/*.bin
+!expressions/official/*.bin
 
 # Device-specific configuration and logs
 .env

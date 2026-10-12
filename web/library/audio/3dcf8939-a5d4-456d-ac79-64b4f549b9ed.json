@@ -1,0 +1,14 @@
+{
+  "id": "3dcf8939-a5d4-456d-ac79-64b4f549b9ed",
+  "label": "不跟你玩了！",
+  "kind": "audio",
+  "mime": "audio/wav",
+  "durationMs": 1162,
+  "url": "/api/audio/3dcf8939-a5d4-456d-ac79-64b4f549b9ed-7ec5169e8804427b8aecaaa68a9d8c99.wav",
+  "sha256": "fdfce777c730568e113b6da82e7637183aeb21f96bf29a7b78aee0a837162cd1",
+  "revision": 1,
+  "origin": "tts",
+  "sourceName": "不跟你玩了！",
+  "text": "不跟你玩了！",
+  "voice": "Eddy zh-CN · robotic EQ"
+}

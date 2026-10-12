@@ -1,8 +1,8 @@
 # 全部目录与文件用途索引
 
-本索引覆盖 327 个源码、配置、文档与素材文件，按 21 个目录分组。每级 README 也列出直属文件和子目录。
+本索引覆盖 370 个源码、配置、文档与素材文件，按 28 个目录分组。每级 README 也列出直属文件和子目录。
 
-GitHub 文件列表中间一列是最近一次提交说明，并非固定备注；后续修改会更新它。固定用途说明请查看本索引或所在目录 README。组合名和表情名来自项目实际 JSON 元数据。模型、运行环境、个人音频和密码配置不随公开仓库提交，不在此清单内。
+GitHub 文件列表中间一列是最近一次提交说明，并非固定备注；后续修改会更新它。固定用途说明请查看本索引或所在目录 README。组合名和表情名来自项目实际 JSON 元数据。模型与运行环境通过 GitHub Releases 提供；音频及公开刷机文件随源码提供，密码配置不公开。
 
 维护时运行 `python tools/update_file_index.py` 更新索引；新增代码文件需先在脚本中补充用途，新增素材需补充对应资源目录元数据。
 
@@ -19,6 +19,7 @@ GitHub 文件列表中间一列是最近一次提交说明，并非固定备注�
 | [README.md](../README.md) | 项目入口、配置、安装启动与同事交接：使用说明与当前目录文件导航 |
 | [START.bat](../START.bat) | 便携交接包双击启动入口，使用 runtime 内的 Python 并自动打开浏览器 |
 | [config.example.json](../config.example.json) | 机器人 IP、设备 ID、蓝牙名、模型路径和网页端口的配置模板；复制为 config.local.json 后本地填写 |
+| [release-assets.json](../release-assets.json) | GitHub 发布附件名称、下载链接和 SHA256 校验清单 |
 | [requirements.txt](../requirements.txt) | 电脑端总依赖清单，包含网页服务、手势推理和音频处理 |
 | [setup.ps1](../setup.ps1) | 创建仓库内 .venv、安装 Python 依赖并生成本地配置 |
 | [start.ps1](../start.ps1) | 使用 .venv 启动网页服务，适用于源码安装方式 |
@@ -46,6 +47,23 @@ README 中使用的实机视频、动图和编排器截图
 | [multitrack-composer.png](../docs/media/multitrack-composer.png) | 多轨编排器真实截图，展示飞吻组合的动作与表情衔接 |
 | [robot-demo-preview.gif](../docs/media/robot-demo-preview.gif) | 实机视频的 6 秒无声节选，用于 README 自动播放 |
 | [robot-demo.mp4](../docs/media/robot-demo.mp4) | 用户提供的原始实机展示视频，约 24 秒，保留原音轨 |
+
+## expressions
+
+机身动画分区构建输入
+
+| 文件 | 用途说明 |
+|---|---|
+| [README.md](../expressions/README.md) | 机身动画分区构建输入：使用说明与当前目录文件导航 |
+
+## expressions/official
+
+官方精简与头屏表情分区镜像
+
+| 文件 | 用途说明 |
+|---|---|
+| [README.md](../expressions/official/README.md) | 官方精简与头屏表情分区镜像：使用说明与当前目录文件导航 |
+| [all_emote_assets.bin](../expressions/official/all_emote_assets.bin) | 固件 CMake 构建引用的动画分区输入，与 flash 中同名镜像一致 |
 
 ## firmware
 
@@ -125,6 +143,20 @@ ESP-IDF 本地组件与兼容层
 | [wifi_http.cpp](../firmware/main/wifi_http.cpp) | Wi-Fi 初始化及 HTTP 控制服务的实现 |
 | [wifi_http.hpp](../firmware/main/wifi_http.hpp) | Wi-Fi 初始化及 HTTP 控制服务的接口声明 |
 
+## flash
+
+公开刷机文件、写入地址与镜像校验信息
+
+| 文件 | 用途说明 |
+|---|---|
+| [README.md](../flash/README.md) | 公开刷机文件、写入地址与镜像校验信息：使用说明与当前目录文件导航 |
+| [all_emote_assets.bin](../flash/all_emote_assets.bin) | 官方精简及 32 个头屏表情分区镜像，写入 0x800000 |
+| [bootloader.bin](../flash/bootloader.bin) | 公开固件引导程序，写入 0x0 |
+| [manifest.json](../flash/manifest.json) | 公开固件构建来源、写入地址和每个镜像的 SHA256 |
+| [otto_expression_motion.bin](../flash/otto_expression_motion.bin) | 不含私人网络配置的公开主程序，写入 0x20000 |
+| [partition-table.bin](../flash/partition-table.bin) | 16 MB Flash 分区表，写入 0x8000 |
+| [storage.bin](../flash/storage.bin) | storage SPIFFS 分区镜像，写入 0x700000 |
+
 ## gesture_recognition
 
 电脑摄像头识别、手势映射和指令发送
@@ -141,6 +173,24 @@ ESP-IDF 本地组件与兼容层
 | [test_video_input.py](../gesture_recognition/test_video_input.py) | 网页视频接入与识别流程的手势侧测试 |
 | [video_worker.py](../gesture_recognition/video_worker.py) | 网页视频推理子进程：接收图像帧并返回手势识别结果 |
 
+## licenses
+
+随项目保留的上游许可文本
+
+| 文件 | 用途说明 |
+|---|---|
+| [OttoDIYLib-LICENSE.txt](../licenses/OttoDIYLib-LICENSE.txt) | OttoDIYLib 动作算法上游 GPL-3.0 许可文本 |
+| [README.md](../licenses/README.md) | 随项目保留的上游许可文本：使用说明与当前目录文件导航 |
+| [esp-emote-gfx-LICENSE.txt](../licenses/esp-emote-gfx-LICENSE.txt) | Espressif 表情图形组件上游许可文本 |
+
+## models
+
+GitHub Releases 手势模型下载说明
+
+| 文件 | 用途说明 |
+|---|---|
+| [README.md](../models/README.md) | GitHub Releases 手势模型下载说明：使用说明与当前目录文件导航 |
+
 ## tools
 
 模型下载、资源迁移、环境检查和便携包工具
@@ -148,13 +198,22 @@ ESP-IDF 本地组件与兼容层
 | 文件 | 用途说明 |
 |---|---|
 | [README.md](../tools/README.md) | 模型下载、资源迁移、环境检查和便携包工具：使用说明与当前目录文件导航 |
+| [bootstrap_runtime.ps1](../tools/bootstrap_runtime.ps1) | 源码包首次双击启动时下载、校验并安装 Windows 运行环境与模型 |
 | [build_handoff.py](../tools/build_handoff.py) | 收集源码、模型、素材及 Python 运行库，生成 Windows 同事交接 ZIP |
 | [check_environment.py](../tools/check_environment.py) | 检查 Python 依赖、模型目录及组合引用的音频，不发送机器人动作 |
-| [download_models.py](../tools/download_models.py) | 下载 HaGRID 手势权重并导出 OpenVINO，同时支持下载离线语音模型 |
+| [download_models.py](../tools/download_models.py) | 从本项目 GitHub Releases 下载并校验已验证的手势与语音模型 |
 | [portable_launcher.py](../tools/portable_launcher.py) | 便携包启动器：选择空闲端口、启动服务、打开浏览器；支持无动作启动检查 |
 | [resources.py](../tools/resources.py) | 导入或导出声音和个人动作覆盖 ZIP，拒绝覆盖已有文件 |
 | [update_file_index.py](../tools/update_file_index.py) | 维护中文文件索引，按配置说明及组合、表情元数据生成各级 README 导航 |
 | [windows_tts.ps1](../tools/windows_tts.ps1) | 调用 Windows System.Speech 将中文文本合成为 WAV |
+
+## voice-model
+
+GitHub Releases 离线语音模型下载说明
+
+| 文件 | 用途说明 |
+|---|---|
+| [README.md](../voice-model/README.md) | GitHub Releases 离线语音模型下载说明：使用说明与当前目录文件导航 |
 
 ## web
 
@@ -178,6 +237,38 @@ ESP-IDF 本地组件与兼容层
 | 文件 | 用途说明 |
 |---|---|
 | [README.md](../web/library/README.md) | 已保存组合以及本地声音资源：使用说明与当前目录文件导航 |
+
+## web/library/audio
+
+随项目提供的演示音频与声音元数据
+
+| 文件 | 用途说明 |
+|---|---|
+| [24ca1543-fb78-4760-b22e-e0d2824ca034-fa5aba8532e3488f97467f4e0e9664a6.wav](../web/library/audio/24ca1543-fb78-4760-b22e-e0d2824ca034-fa5aba8532e3488f97467f4e0e9664a6.wav) | “收到”的WAV音频；可能被已保存组合的资源快照引用 |
+| [24ca1543-fb78-4760-b22e-e0d2824ca034.json](../web/library/audio/24ca1543-fb78-4760-b22e-e0d2824ca034.json) | 声音“收到”的元数据：音频地址、时长、来源和校验值 |
+| [2ea554c7-61af-4f7f-bb5a-200d165df51f-4aaa5fe21fa4430f8aae053822255dd9.wav](../web/library/audio/2ea554c7-61af-4f7f-bb5a-200d165df51f-4aaa5fe21fa4430f8aae053822255dd9.wav) | “哼”的WAV音频；可能被已保存组合的资源快照引用 |
+| [2ea554c7-61af-4f7f-bb5a-200d165df51f-851171f46bdd4bacb11aea43fc1cda97.wav](../web/library/audio/2ea554c7-61af-4f7f-bb5a-200d165df51f-851171f46bdd4bacb11aea43fc1cda97.wav) | “哼”的WAV音频；可能被已保存组合的资源快照引用 |
+| [2ea554c7-61af-4f7f-bb5a-200d165df51f-f8d3c9e1e18e45fda0a0bfaea8b22fb9.wav](../web/library/audio/2ea554c7-61af-4f7f-bb5a-200d165df51f-f8d3c9e1e18e45fda0a0bfaea8b22fb9.wav) | “哼”的WAV音频；可能被已保存组合的资源快照引用 |
+| [2ea554c7-61af-4f7f-bb5a-200d165df51f.json](../web/library/audio/2ea554c7-61af-4f7f-bb5a-200d165df51f.json) | 声音“哼”的元数据：音频地址、时长、来源和校验值 |
+| [378f3723-b131-45cc-acc1-2a41acc77862-3f535350e03c447ebd72c86a8cf478ef.wav](../web/library/audio/378f3723-b131-45cc-acc1-2a41acc77862-3f535350e03c447ebd72c86a8cf478ef.wav) | “节拍舞曲-grok”的WAV音频；可能被已保存组合的资源快照引用 |
+| [378f3723-b131-45cc-acc1-2a41acc77862.json](../web/library/audio/378f3723-b131-45cc-acc1-2a41acc77862.json) | 声音“节拍舞曲-grok”的元数据：音频地址、时长、来源和校验值 |
+| [3dcf8939-a5d4-456d-ac79-64b4f549b9ed-7ec5169e8804427b8aecaaa68a9d8c99.wav](../web/library/audio/3dcf8939-a5d4-456d-ac79-64b4f549b9ed-7ec5169e8804427b8aecaaa68a9d8c99.wav) | “不跟你玩了！”的WAV音频；可能被已保存组合的资源快照引用 |
+| [3dcf8939-a5d4-456d-ac79-64b4f549b9ed.json](../web/library/audio/3dcf8939-a5d4-456d-ac79-64b4f549b9ed.json) | 声音“不跟你玩了！”的元数据：音频地址、时长、来源和校验值 |
+| [5144d03f-10dc-423f-bd38-e3ec2d999bcd-4457582d4a6844b5bc7a91e6f913882c.wav](../web/library/audio/5144d03f-10dc-423f-bd38-e3ec2d999bcd-4457582d4a6844b5bc7a91e6f913882c.wav) | “爱你”的WAV音频；可能被已保存组合的资源快照引用 |
+| [5144d03f-10dc-423f-bd38-e3ec2d999bcd.json](../web/library/audio/5144d03f-10dc-423f-bd38-e3ec2d999bcd.json) | 声音“爱你”的元数据：音频地址、时长、来源和校验值 |
+| [85f44317-0a32-438f-9826-9c7794f694c3-7906bc300da94683a9cc69ff208878fa.wav](../web/library/audio/85f44317-0a32-438f-9826-9c7794f694c3-7906bc300da94683a9cc69ff208878fa.wav) | “我来啦”的WAV音频；可能被已保存组合的资源快照引用 |
+| [85f44317-0a32-438f-9826-9c7794f694c3.json](../web/library/audio/85f44317-0a32-438f-9826-9c7794f694c3.json) | 声音“我来啦”的元数据：音频地址、时长、来源和校验值 |
+| [8a486d5d-e338-4cf4-9013-1f1eb17a7512-64a6b9d6c4ec457ea708f53987ecc506.wav](../web/library/audio/8a486d5d-e338-4cf4-9013-1f1eb17a7512-64a6b9d6c4ec457ea708f53987ecc506.wav) | “奥托问候”的WAV音频；可能被已保存组合的资源快照引用 |
+| [8a486d5d-e338-4cf4-9013-1f1eb17a7512-6a24324e63394bdd8095454303a18bba.wav](../web/library/audio/8a486d5d-e338-4cf4-9013-1f1eb17a7512-6a24324e63394bdd8095454303a18bba.wav) | “奥托问候”的WAV音频；可能被已保存组合的资源快照引用 |
+| [8a486d5d-e338-4cf4-9013-1f1eb17a7512-e9ee5b3dd8be422f9f6230a0edb6a31b.wav](../web/library/audio/8a486d5d-e338-4cf4-9013-1f1eb17a7512-e9ee5b3dd8be422f9f6230a0edb6a31b.wav) | “奥托问候”的WAV音频；可能被已保存组合的资源快照引用 |
+| [8a486d5d-e338-4cf4-9013-1f1eb17a7512-fe898dd3fde0477789e2f9ddc9640394.wav](../web/library/audio/8a486d5d-e338-4cf4-9013-1f1eb17a7512-fe898dd3fde0477789e2f9ddc9640394.wav) | “奥托问候”的WAV音频；可能被已保存组合的资源快照引用 |
+| [8a486d5d-e338-4cf4-9013-1f1eb17a7512.json](../web/library/audio/8a486d5d-e338-4cf4-9013-1f1eb17a7512.json) | 声音“奥托问候”的元数据：音频地址、时长、来源和校验值 |
+| [README.md](../web/library/audio/README.md) | 随项目提供的演示音频与声音元数据：使用说明与当前目录文件导航 |
+| [b7611b9b-5f08-4979-bb83-a91f4e5c0065-87a64d0937ff422885232bff5a15bb11.wav](../web/library/audio/b7611b9b-5f08-4979-bb83-a91f4e5c0065-87a64d0937ff422885232bff5a15bb11.wav) | “10月10日”的WAV音频；可能被已保存组合的资源快照引用 |
+| [b7611b9b-5f08-4979-bb83-a91f4e5c0065.json](../web/library/audio/b7611b9b-5f08-4979-bb83-a91f4e5c0065.json) | 声音“10月10日”的元数据：音频地址、时长、来源和校验值 |
+| [fc05cec8-c025-4423-8694-b678a3b90eb8-70d392f13bd94b9a8cd70d2af558124c.wav](../web/library/audio/fc05cec8-c025-4423-8694-b678a3b90eb8-70d392f13bd94b9a8cd70d2af558124c.wav) | “那可不”的WAV音频；可能被已保存组合的资源快照引用 |
+| [fc05cec8-c025-4423-8694-b678a3b90eb8.json](../web/library/audio/fc05cec8-c025-4423-8694-b678a3b90eb8.json) | 声音“那可不”的元数据：音频地址、时长、来源和校验值 |
+| [爱你.mp3](../web/library/audio/%E7%88%B1%E4%BD%A0.mp3) | “爱你”的MP3音频；可能被已保存组合的资源快照引用 |
 
 ## web/library/compositions
 
@@ -477,6 +568,7 @@ ESP-IDF 本地组件与兼容层
 | [test_motion_tempo.cjs](../web/tests/test_motion_tempo.cjs) | 动作节奏变体、默认节奏及前端选择控件测试 |
 | [test_portable_runtime.py](../web/tests/test_portable_runtime.py) | 仓库相对路径、配置覆盖及非默认端口请求校验测试 |
 | [test_programs.py](../web/tests/test_programs.py) | 动作程序、角度边界、时长、协议容量、设备身份与表情预览测试 |
+| [test_release_models.py](../web/tests/test_release_models.py) | 发布模型包校验、按类型解压及路径越界拒绝测试 |
 | [test_video_input.py](../web/tests/test_video_input.py) | 网页视频帧会话、识别结果与控制接入测试 |
 | [test_voice_trigger.py](../web/tests/test_voice_trigger.py) | 语音输入、唤醒词、关键词触发和识别模型接入测试 |
 
