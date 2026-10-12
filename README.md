@@ -154,6 +154,7 @@ Windows 语音监听使用“网页麦克风”或“机器人麦克风”；“
 
 - [硬件与通信说明](docs/hardware-and-protocol.md)
 - [动作与手势映射](docs/gesture-actions.md)
+- [手势识别接入交接文档](docs/gesture-integration-handoff.md)
 - [网页与多轨编排器](docs/web-composer.md)
 - [开发与发布清单](docs/maintenance.md)
 

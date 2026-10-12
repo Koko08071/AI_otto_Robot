@@ -3,6 +3,8 @@
 在电脑上识别手势，通过 Wi-Fi 或本地 Studio 服务向机器人发送指令。
 代码和模型路径均相对于本仓库，不要求存在 D:\Robot。
 
+完整的跨电脑接入说明见[手势识别接入交接文档](../docs/gesture-integration-handoff.md)，包括模型类别、前端视频 API、Wi-Fi/BLE 协议、映射规则和测试顺序。
+
 ## 安装与运行
 
 先按[项目首页](../README.md)执行 setup.ps1、下载模型并填写 config.local.json。

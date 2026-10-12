@@ -15,6 +15,7 @@
 | [README.md](README.md) | 硬件通信、功能说明、维护文档和展示素材：使用说明与当前目录文件导航 |
 | [file-index.md](file-index.md) | 全仓库逐目录、逐文件的中文用途总索引 |
 | [gesture-actions.md](gesture-actions.md) | 手势动作映射：文档说明 |
+| [gesture-integration-handoff.md](gesture-integration-handoff.md) | 手势识别接入交接文档：文档说明 |
 | [hardware-and-protocol.md](hardware-and-protocol.md) | 硬件与通信：文档说明 |
 | [maintenance.md](maintenance.md) | 维护与发布：文档说明 |
 | [web-composer.md](web-composer.md) | 网页与多轨编排器：文档说明 |

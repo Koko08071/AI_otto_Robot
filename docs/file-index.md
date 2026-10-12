@@ -1,6 +1,6 @@
 # 全部目录与文件用途索引
 
-本索引覆盖 370 个源码、配置、文档与素材文件，按 28 个目录分组。每级 README 也列出直属文件和子目录。
+本索引覆盖 371 个源码、配置、文档与素材文件，按 28 个目录分组。每级 README 也列出直属文件和子目录。
 
 GitHub 文件列表中间一列是最近一次提交说明，并非固定备注；后续修改会更新它。固定用途说明请查看本索引或所在目录 README。组合名和表情名来自项目实际 JSON 元数据。模型与运行环境通过 GitHub Releases 提供；音频及公开刷机文件随源码提供，密码配置不公开。
 
@@ -33,6 +33,7 @@ GitHub 文件列表中间一列是最近一次提交说明，并非固定备注�
 | [README.md](../docs/README.md) | 硬件通信、功能说明、维护文档和展示素材：使用说明与当前目录文件导航 |
 | [file-index.md](../docs/file-index.md) | 全仓库逐目录、逐文件的中文用途总索引 |
 | [gesture-actions.md](../docs/gesture-actions.md) | 手势动作映射：文档说明 |
+| [gesture-integration-handoff.md](../docs/gesture-integration-handoff.md) | 手势识别接入交接文档：文档说明 |
 | [hardware-and-protocol.md](../docs/hardware-and-protocol.md) | 硬件与通信：文档说明 |
 | [maintenance.md](../docs/maintenance.md) | 维护与发布：文档说明 |
 | [web-composer.md](../docs/web-composer.md) | 网页与多轨编排器：文档说明 |
