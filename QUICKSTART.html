@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Otto 机器人 · 同事快速交接</title>
+<style>
+body{max-width:920px;margin:40px auto;padding:0 24px 48px;font:16px/1.8 "Microsoft YaHei",sans-serif;color:#20332e;background:#fff}h1{font-size:28px}h2{font-size:21px;margin-top:32px;border-bottom:1px solid #d8e0dc;padding-bottom:8px}code{background:#eef3f0;padding:2px 5px;overflow-wrap:anywhere}a{color:#216846}table{border-collapse:collapse;width:100%;font-size:15px}td,th{border:1px solid #d8e0dc;padding:10px;text-align:left}img{width:100%;height:auto}li{margin:8px 0}.lead{font-size:18px}strong{color:#1b5b42}
+</style>
+<h1>Otto 机器人 · 同事快速交接</h1>
+<p class="lead">完整解压 → 双击 START.bat → 连接机器人 → 在网页上操作。</p>
+<p>适用于 Windows 10/11、Intel/AMD 64 位电脑。包内已带 Python、依赖、手势与语音模型、动作、表情预览和声音素材，无需安装开发环境。建议 16 GB 内存，预留至少 6 GB 空间。</p>
+<h2>第一步：启动</h2>
+<ol>
+<li>将 ZIP <strong>完整解压</strong>到本地，例如 <code>D:\Otto-Robot</code>，不要在压缩包里直接运行。</li>
+<li>双击根目录 <strong>START.bat</strong>，浏览器会自动打开控制台。</li>
+<li>保持黑色启动窗口打开。默认端口为 8765，占用时自动换端口，实际网址以窗口显示为准。</li>
+</ol>
+<h2>第二步：连接</h2>
+<p>机器人需独立供电并运行现有固件，不用重新刷机。交接前，原电脑应停止动作并断开连接。</p>
+<table>
+<tr><th>连接方式</th><th>操作</th><th>适用范围</th></tr>
+<tr><td>Wi-Fi</td><td>电脑与机器人处于同一局域网。网页右上角选“Wi-Fi”，点击“连接机器人”。本包预填 <code>http://10.240.103.49</code>。</td><td>动作、表情和机身声音，完整展示优先。</td></tr>
+<tr><td>蓝牙 BLE</td><td>开启电脑蓝牙，将机器人放近；网页选“蓝牙 BLE”，点击“连接机器人”。广播名为 <code>Otto-0E70</code>，无需先手工配对。</td><td>动作与表情。不要求同一 Wi-Fi；机身声音仍需要 Wi-Fi。</td></tr>
+</table>
+<p>设备 ID：<code>14:C1:9F:30:0E:70</code>。换网络后 IP 可能变化，在路由器设备列表或向项目负责人确认新 IP，再用记事本修改 <code>config.local.json</code> 中的 <code>OTTO_DEVICE_URL</code>，然后重启。不要填电脑自己的 IP。换 Wi-Fi 密码需另外配网，本包没有自动配网向导。</p>
+<p>本地控制不需要互联网；但 Wi-Fi 控制需要电脑能够访问机器人的局域网地址。可在浏览器打开 <code>http://10.240.103.49/api/status</code> 检查，正常会看到设备状态 JSON。</p>
+<h2>第三步：展示</h2>
+<ol>
+<li><strong>先单次动作：</strong>托稳机身，连接成功后点“返回站姿”，再选一个动作单次播放。</li>
+<li><strong>组合动作：</strong>点“多轨编排器”，选“我的组合”。“预览”只在网页展示；“机器人运行本组合”才会控制实机。</li>
+<li><strong>手势：</strong>先连接机器人，再开启网页摄像头并允许权限。拳头后退、V 手势前进、OK 回到站姿、Stop 停止、双手比心播放“爱你”。手势枪触发侧倒，请先准备软垫。</li>
+<li><strong>语音：</strong>在编排器选择“网页麦克风”，开启监听并允许权限，先说“小黄小黄”，再说“飞吻”或“跳舞”等已配置关键词。</li>
+</ol>
+<img src="docs/media/multitrack-composer.png" alt="多轨编排器的飞吻组合界面">
+<h2>退出与排查</h2>
+<p>退出顺序：<strong>停止动作 → 返回站姿 → 断开连接 → 关闭启动窗口</strong>。不要依赖关网页或断网停止板端连续动作，紧急情况断开舵机电源。</p>
+<ul>
+<li>网页没打开：查看启动窗口地址，手工打开；双击 <strong>CHECK.bat</strong> 检查模型和依赖。</li>
+<li>Wi-Fi 失败：确认同一局域网、IP 正确、没有访客网络隔离。</li>
+<li>蓝牙找不到：开启蓝牙、靠近机器人、断开原电脑连接。</li>
+<li>能动没声音：确认机器人 Wi-Fi 可达，组合声音轨未屏蔽。</li>
+<li>识别卡顿：先停用摄像头和语音，单独测试动作；模型速度取决于电脑 CPU。</li>
+<li>表情打不开：网页预览素材不代表已烧录到当前机身，请选已确认可用的动画。</li>
+</ul>
+<p>详细说明、完整手势映射和维护目录见 <a href="HANDOFF.md">HANDOFF.md</a>（可用记事本打开）。不要删除 <code>runtime/</code>、<code>models/</code>、<code>voice-model/</code> 或 <code>web/library/</code>。本包不含完整刷机镜像，不需要为了启动控制台而刷机。</p>
+</html>
