@@ -17,8 +17,31 @@ firmware/              ESP32-S3 / ESP-IDF 固件源码
 web/                   本地网页控制台、多轨编排器与资源库
 gesture_recognition/   摄像头手势识别和手势到动作映射
 docs/                  硬件、通信、动作和维护文档
-tools/                 构建与校验工具
 ```
+
+## 按功能找文件
+
+动作和表情集中在 `web/`，手势识别在 `gesture_recognition/`，机器人板端执行代码在 `firmware/`。点击下面的路径即可进入对应文件。
+
+| 要查看或修改的功能 | 文件位置 | 内容 |
+|---|---|---|
+| 动作库 | [web/static/actions.json](web/static/actions.json) | 前进、后退、跳舞、中弹侧倒等动作，以及角度、幅度、周期、时长 |
+| 表情目录 | [web/static/expressions.json](web/static/expressions.json) | 表情名称、ID、时长和预览资源路径 |
+| 表情素材 | [web/static/official/](web/static/official/) / [web/static/concepts/](web/static/concepts/) | 表情图片、GIF 和缩略预览；网页素材不等于已烧录到机器人 |
+| 网页前端 | [web/static/](web/static/) | 首页 index.html、交互 app.js、样式 styles.css 等 |
+| 多轨编排器 | [web/static/composer.js](web/static/composer.js) | 配套 composer.html / composer.css，编排动作、表情和声音 |
+| 已保存组合 | [web/library/compositions/](web/library/compositions/) | “爱你”“你是笨蛋”等组合的轨道、片段和触发词；包含保存时的资源快照 |
+| 语音控制 | [web/voice_trigger.py](web/voice_trigger.py) | 语音识别、唤醒词和组合触发逻辑 |
+| 手势识别 | [gesture_recognition/recognize.py](gesture_recognition/recognize.py) | 摄像头读取、YOLO 识别、类别显示与稳定判定 |
+| 手势对应动作 | [gesture_recognition/gesture_actions.json](gesture_recognition/gesture_actions.json) | 配置识别到某个手势后执行哪个动作或组合 |
+| 手势指令发送 | [gesture_recognition/motion_bridge.py](gesture_recognition/motion_bridge.py) | 手势别名、冷却、设备核验及动作发送 |
+| 网页摄像头接入 | [web/video_input.py](web/video_input.py) | 将浏览器视频帧接入手势识别流程 |
+| 网页服务与通信 | [web/server.py](web/server.py) / [web/ble_link.py](web/ble_link.py) | HTTP 服务、机器人指令转发和蓝牙通信 |
+| 板端动作执行 | [firmware/main/behavior.cpp](firmware/main/behavior.cpp) / [firmware/main/otto_motion.cpp](firmware/main/otto_motion.cpp) | 动作时序、插值和舵机 PWM 输出 |
+| 板端表情显示 | [firmware/main/robot_face.cpp](firmware/main/robot_face.cpp) / [firmware/main/board_display.cpp](firmware/main/board_display.cpp) | 动画播放和屏幕驱动 |
+| 使用与维护文档 | [docs/](docs/) | 硬件通信、手势映射、编排器和维护说明 |
+
+修改动作库后，已保存组合中的动作快照不会自动更新；需要在编排器里更新对应片段并重新保存。
 
 ## 快速启动网页控制台
 
